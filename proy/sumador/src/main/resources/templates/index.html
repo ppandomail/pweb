@@ -1,0 +1,21 @@
+<html>
+<head>
+</head>
+<body>
+	<h1>Sumador</h1>
+	<form th:action="@{/sumar}" method="get">
+		<div>
+			<label>Numero 1</label>
+			<input type="text" id="n1" th:name="n1" />			
+		</div>
+		<div>
+			<label>Numero 2</label>
+			<input type="text" id="n2" th:name="n2"/>			
+		</div>
+		<div>
+			<input type="submit" value="Calcular" />
+		</div>
+		<p>Resultado: <span id="rtado">[[${resultado}]] </span></p>		
+	</form>
+</body>
+</html>

@@ -1,0 +1,5 @@
+package com.jpa_mvc.proyecto_jpa_mvc.controller;
+
+public class UsuarioController {
+
+}

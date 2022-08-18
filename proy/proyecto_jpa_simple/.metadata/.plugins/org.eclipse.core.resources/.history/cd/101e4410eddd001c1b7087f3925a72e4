@@ -1,0 +1,5 @@
+package ar.edu.ub.proyecto_jpa_mysql.model;
+
+public class Persona {
+
+}

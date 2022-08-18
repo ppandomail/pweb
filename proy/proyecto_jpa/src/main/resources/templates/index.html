@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+	body, html {
+		width:250px;
+	}
+	input:not([type="checkbox"]):not([type="radio"]),select {
+		width:160px;
+	}
+	input:not([type="radio"]), select {
+		margin-bottom:15px;
+	}
+	.button {
+		width:200px !important;
+	}
+</style>
+</head>
+<body>
+	<span>Información</span>
+	<form th:action="@{/crearUsuario}" th:object="${usuario}" method="POST" id="userForm">
+		<div style="border:1px solid black; padding:20px;">
+			<span th:if="${usuario.id != null}"> <input type="text" th:field="${usuario.id}" readonly><br/></span>
+		
+			<label th:text="Usuario"></label><br/>
+			<input type="text" th:field="${usuario.nombreUsuario}"/><br/>
+			
+			<label th:text="Nombre"></label><br/>
+			<input type="text" th:field="${usuario.nombreCompleto}"/><br/>
+			
+			<label th:text="Rol"></label><br/>
+			<select th:field="${usuario.roles}" multiple="multiple">
+				<option th:each="rol :${roles}" th:value="${rol.id}" th:text="${rol.descripcion}">
+				</option>	
+			</select>	
+		</div><br/>
+		
+		<span>Configuración</span>
+		<div style="border:1px solid black; padding:20px;">
+			<input type="checkbox" th:field="${usuario.configuracion.activo}" th:checked="${usuario.configuracion.activo}? 'Checked'"/>Estado Activo </br>
+			
+			<label th:text="Idioma"></label><br/>
+			<select th:field="${usuario.configuracion.idioma}">
+				<option th:value="1" th:text="Portugues">
+				<option th:value="2" th:text="Ingles">
+				<option th:value="3" th:text="Español">
+				</option>	
+			</select><br/>
+			
+			<label th:text="País"></label><br/>
+			<input type="radio" th:field="${usuario.configuracion.pais}" th:value="1" />
+			<label th:for="${usuario.configuracion.pais}" th:text="'Brasil'"></label><br/>
+			<input type="radio" th:field="${usuario.configuracion.pais}" th:value="2" />
+			<label th:for="${usuario.configuracion.pais}" th:text="'EEUU'"></label><br/>
+		</div>
+		<input type="submit" th:value="${usuario.id != null}? 'Guardar' : 'Crear'" th:class="button" />
+		<th:block th:if="${usuario.id != null}">
+			<a th:href="@{/}">Cancel</a>
+		</th:block>	
+	</form>
+	
+	<table border="1">
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>Usuario</th>
+				<th>Nombre</th>
+				<th>Roles</th>
+				<th>Acciones</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="usuario : ${usuarios}">
+				<td th:text="${usuario.id}"></td>
+				<td th:text="${usuario.nombreUsuario}"></td>
+				<td th:text="${usuario.nombreCompleto}"></td>
+				<td>
+					<th:block th:each="rol, iter: ${usuario.roles}">
+						<label th:text="${rol.descripcion}"></label>
+						<th:block th:if="${!iter.last}">, </th:block>
+					</th:block>
+				<td>
+					<a th:href="@{'/editarUsuario/' + ${usuario.id}}">Editar</a> | 
+				    <a th:href="@{'/eliminarUsuario/' + ${usuario.id}}">Eliminar</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+</body>
+</html>
