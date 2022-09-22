@@ -11,11 +11,13 @@
 
 ## Programa
 
-1. [Introducción](doc/introduccion.md)
+1. [Introducción](doc/intro.md)
 1. Desarrollo Frontend
      1. [HTML5](doc/html5.md)
      1. [CSS3](doc/css3.md)
      1. [Javascript](doc/js.md)
+     1. [RWD](doc/rwd.md)
+     1. [Bootstrap](doc/bootstrap.md)
      1. [Vue](doc/vue.md)
 1. Desarrollo Backend
      1. [Java Spring Boot](doc/spring-boot.md)
