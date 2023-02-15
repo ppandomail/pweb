@@ -1,8 +1,12 @@
-# Programación 3
+# Programación Web 1 (UNO) / Programación 3 (UB)
 
 ## Docentes
 
 * Titular: Mg. Ing. Pablo Pandolfo
+
+## Presentación
+
+* ¡Bienvenidos y bienvenidas al curso de Programación Web!
 
 ## Objetivos
 
@@ -12,25 +16,31 @@
 ## Programa
 
 1. [Introducción](doc/intro.md)
-1. Desarrollo Frontend
+1. [Git](doc/git.md)
+1. **Desarrollo Frontend**
      1. [HTML5](doc/html5.md)
      1. [CSS3](doc/css3.md)
      1. [Javascript](doc/js.md)
      1. [RWD](doc/rwd.md)
      1. [Bootstrap](doc/bootstrap.md)
      1. [Vue](doc/vue.md)
-1. Desarrollo Backend
+1. **Desarrollo Backend (Solo UB)**
      1. [Java Spring Boot](doc/spring-boot.md)
      1. [Python Django](doc/django.md)
      1. [Python Flask](doc/flask.md)
 
 ## Bibliografia
 
-* [Java](https://www.java.com/es/)
+* [GitHub](https://docs.github.com/en/get-started/quickstart/hello-world)
+* [HTML](https://developer.mozilla.org/es/docs/Web/HTML)
+* [CSS](https://developer.mozilla.org/es/docs/Web/CSS)
+* [JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference)
+* [Java](https://docs.oracle.com/javaee/7/index.html)
 * [Spring Boot](https://spring.io/projects/spring-boot)
 * [Python](https://www.python.org)
 * [Flask](https://flask-es.readthedocs.io)
 * [Django](https://www.djangoproject.com)
+* [Stack Overflow](https://es.stackoverflow.com)
 * [Apuntes (Pablo Pandolfo)](doc/)
 
 ## Condiciones para aprobar
