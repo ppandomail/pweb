@@ -3,6 +3,8 @@
 ## Docentes
 
 * Titular: Mg. Ing. Pablo Pandolfo
+* Adjunto: Ing. Pedro Occhipinti
+* Ayudante: Sr. Martin Ivaldi
 
 ## Presentación
 
@@ -23,7 +25,7 @@
      1. [Javascript](doc/js.md)
      1. [RWD](doc/rwd.md)
      1. [Bootstrap](doc/bootstrap.md)
-     1. [Vue](doc/vue.md)
+     1. [Vue](doc/vue.md) (Solo UB)
 1. **Desarrollo Backend (Solo UB)**
      1. [Java Spring Boot](doc/spring-boot.md)
      1. [Python Django](doc/django.md)
