@@ -1,14 +1,15 @@
 # JavaScript
 
-* Es un lenguaje de programación interpretado.
+* Es un lenguaje de programación interpretado, no compilado.
 * El código puede ser interpretado:
   * **En el cliente**: computadora del usuario
   * **En el servidor**: entorno de desarrollo Node.js
 * Nace en 1995. Creador: Brendan Eich.
 * Utilizado para generar scripts para la web.
+* Valida datos en la máquina del cliente antes de enviarlos al servidor.
 * Es un lenguaje multiparadigma, basada en prototipos (estilo de POO), dinámico, soporta estilos de programación funcional. OO e imperativa.
-* Es case sensitive, es decir, es capaz de distinguir mayúsculas y minúsculas
-
+* Es case sensitive, es decir, es capaz de distinguir mayúsculas y minúsculas.
+* Las diferentes versiones de JavaScript han sido finalmente integradas en un estándar denominado ECMAScript-262. Las versiones actuales de los navegadores soportan este estándar.
 
 ## Usos
 
@@ -36,7 +37,7 @@
                Comentario
                multilinea
             */
-            alert("Hola mundo en ventana")        // muestra ventana
+            alert("Hola mundo en ventana")        // muestra ventana de aviso
             console.log("Hola mundo en consola")  // muestra en consola (F12)
         </script>
     </body>
@@ -698,10 +699,11 @@ b.click()
 ## AJAX
 
 * JavaScript Asíncrono y XML (AJAX).
-* Es un conjunto de técnicas que permiten evitar las demoras que pueden presentarse en las clásicas peticiones y posteriores resultados del servidor; para lograrlo se encarga de transmitir pequeños paquetes de datos en segundo plano.
+* Es un conjunto de técnicas de desarrollo web que permiten evitar las demoras que pueden presentarse en las clásicas peticiones y posteriores resultados del servidor; para lograrlo se encarga de transmitir pequeños paquetes de datos en segundo plano.
 * Entonces, la principal característica de AJAX reside en que hace posible efectuar peticiones al servidor y obtener resultados en segundo plano. Luego, utiliza los datos obtenidos para modificar los contenidos presentes en la página con la posibilidad de ofrecer efectos dinámicos y que se desplieguen con rapidez.
 * Esto es posible pues no se necesita recargar la página por completo como sucede con otras tecnologías que realizan peticiones al servidor.
 * Crea aplicaciones más rápidas y con mejor respuesta a las acciones del usuario.
+* Aplicaciones web como Gmail, Facebook, Twitter, hacen uso de AJAX para mejorar la experiencia de usuario, ya que muchas de las consultas que se realizan al servidor no requieren recargar toda la página y muestran la información recibida del servidor de una manera rápida y precisa.
 
 ### Pasos
 
@@ -832,4 +834,88 @@ function manejarError() {
 }
 ```
 
+### Ejemplo: Mover cuadrado con animate
 
+```html
+<button>Mover el cuadrado</button>
+<div id="cuadrado"></div>
+```
+
+```css
+div {
+  background: blue;
+  height: 100px;
+  margin: 10px;
+  position: absolute;
+  width: 100px;
+}
+```
+
+```javascript
+$(document).ready(function(){
+    $("button").click(function(){
+        $("#cuadrado").animate({
+            height: '150px', 
+            left: '500px',
+            opacity: '0.7',
+            top: '100px',
+            width: '150px'
+        }, 1500);
+    });
+});
+```
+
+### Ejemplo: bola con time
+
+```html
+<div id="bola"></div>
+```
+
+```css
+#bola {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border: black 2px solid;
+  border-radius : 10px;
+  position: relative;
+}
+```
+
+```javascript
+$(function(){
+  function animarBola() {
+    $("#bola").animate({left: '+=150'}, "slow")
+              .animate({top: '+=150'}, "slow")
+              .animate({left: '-=150'}, "slow")
+              .animate({top: '-=150'}, "slow");   
+  }
+  
+  setInterval(animarBola, 2400);
+});
+```
+
+### Ejemplo: Reloj
+
+```html
+<span id="hora"></span>
+```
+
+```css
+* {
+    font-family: Helvetica;
+    font-size: 20px;
+    text-align: center;
+}
+```
+
+```javascript
+$(function() {
+    function mostrarHora() {
+        var fecha = new Date(), // nuevo objeto Fecha
+        hora = fecha.getHours() + ":" + fecha.getMinutes() + ":" + fecha.getSeconds();
+         $('#hora').text(hora);
+    }
+    setInterval(mostrarHora, 1000); // la función "mostrarHora" se ejecuta cada segundo
+});
+```

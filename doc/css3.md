@@ -3,7 +3,7 @@
 * CSS: Cascading Style Sheets (Hojas de Estilo en Cascada)
 * Nació en 1996.
 * La función del CSS es gestionar la apariencia (estilos) del sitio web (trazado, posicionamiento, diseño, color, tamaño del texto, etc.)
-* Lenguaje de texto orientado al diseño gráfico.
+* Lenguaje de texto orientado al diseño gráfico que describe el estilo de un documento HTML, es decir, como deben mostrarse los elementos HTML.
 * Es el código que se ocupa de dar vida gráfica al contenido por el cual navegamos.
 * Con una hoja de estilo CSS vinculada al documento HTML, se cambia significativamente la forma de visualizar el contenido web.
 
@@ -27,6 +27,7 @@
 ```
 
 * Los estilos en línea son una manera práctica de probar estilos y ver cómo modifican los elementos, pero no se recomiendan para proyectos extensos.
+* Tienen la máxima prioridad y anulará los estilos externos e internos y los valores predeterminados del navegador.
 * La razón es que el atributo style solo afecta al elemento en el que se ha declarado. Si queremos asignar el mismo estilo a otros elementos, tenemos que repetir el código en cada uno de ellos, lo cual incrementa innecesariamente el tamaño del documento, complicando su actualización y mantenimiento.
 
 ### Incorporación interna
@@ -106,6 +107,7 @@ font-size: 24px;
 p {
   color: #FF0000;
   font-size: 24px;
+  text-align: center;
 }
 ```
 

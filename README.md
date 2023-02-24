@@ -22,6 +22,7 @@
 1. **Desarrollo Frontend**
      1. [HTML5](doc/html5.md)
      1. [CSS3](doc/css3.md)
+     1. [AW](doc/aw.md)
      1. [Javascript](doc/js.md)
      1. [RWD](doc/rwd.md)
      1. [Bootstrap](doc/bootstrap.md)
@@ -45,9 +46,36 @@
 * [Stack Overflow](https://es.stackoverflow.com)
 * [Apuntes (Pablo Pandolfo)](doc/)
 
-## Condiciones para aprobar
+## Cronograma UNO
 
-* 75% asistencia
-* Aprobar parcial con nota >= 4
-* Aprobar TP con nota >= 4
-* Final con nota >= 4
+| **Clase** | **Fecha** | **Tema** |
+| -- | -- | -- |
+| 01 | 03/03 | Presentación. Ecosistema Web |
+| 02 | 10/03 | Git |
+| 03 | 17/03 | HTML5 |
+| 04 | 24/03 | **FERIADO** |
+| 05 | 31/03 | HTML5 |
+| 06 | 07/04 | **FERIADO** |
+| 07 | 14/04 | CSS3 |
+| 08 | 21/04 | CSS3 |
+| 09 | 28/04 | **1er. Parcial** |
+| 10 | 05/05 | JS |
+| 11 | 12/05 | JS |
+| 12 | 19/05 | JS |
+| 13 | 26/05 | **FERIADO** |
+| 14 | 02/06 | Vue |
+| 15 | 09/06 | **2do. Parcial** |
+| 16 | 16/06 | **Entrega TP** |
+| 17 | 23/06 | **Recuperatorios** |
+| 18 | 30/06 | Cierre de Notas |
+
+## Criterios de evaluación UNO
+
+* **Regularidad**
+  * Dos parciales, con nota >= 4
+  * 80% asistencia
+  * Resolución TP Obligatorio
+  * Dos recuperatorios, con nota >= 4
+
+* **Final (Alumnos Regulares)**
+  * Final, con nota >= 4 oral y/o escrito
