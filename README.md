@@ -23,7 +23,7 @@
      1. [Javascript](doc/js.md)
      1. [RWD](doc/rwd.md)
      1. [Bootstrap](doc/bootstrap.md)
-     1. [Vue](doc/vue.md) (Solo UB)
+     1. [Vue](doc/vue.md) (Sólo UB)
 1. **Desarrollo Backend (Sólo UB)**
      1. [Java Spring Boot](doc/spring-boot.md)
      1. [Python Django](doc/django.md)
