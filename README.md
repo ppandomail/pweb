@@ -3,21 +3,18 @@
 ## Docentes
 
 * Titular: Mg. Ing. Pablo Pandolfo
-* Adjunto: Ing. Pedro Occhipinti
-* Ayudante: Sr. Martin Ivaldi
-
-## Presentación
-
-* ¡Bienvenidos y bienvenidas al curso de Programación Web!
+* UNO:
+  * Adjunto: Ing. Pedro Occhipinti
+  * Ayudante: Sr. Martin Ivaldi
 
 ## Objetivos
 
-* En esta materia se presentan las tecnologías que complementan el desarrollo de aplicaciones o portales web, tanto estáticos como dinámicos. El recorrido comienza con los lenguajes de frontend, para luego pasar al desarrollo backend. Finalmente se integrarán estos saberes con el ecosistema móvil y de webapps.
-* Convertirse en desarrolladores de soluciones web, conociendo cada una de las tecnologías que complementan el desarrollo de aplicaciones o portales web, tanto estáticos como dinámicos.
+* Conocer las tecnologías que complementan el desarrollo de aplicaciones o portales web, tanto estáticos como dinámicos. El recorrido comienza con los lenguajes de frontend, para luego pasar al desarrollo backend. Finalmente se integrarán estos saberes con el ecosistema móvil y de webapps.
+* Convertirse en desarrolladores de soluciones web.
 
 ## Programa
 
-1. [Introducción](doc/intro.md)
+1. [Ecosistema Web](doc/intro.md)
 1. [Git](doc/git.md)
 1. **Desarrollo Frontend**
      1. [HTML5](doc/html5.md)
@@ -27,12 +24,12 @@
      1. [RWD](doc/rwd.md)
      1. [Bootstrap](doc/bootstrap.md)
      1. [Vue](doc/vue.md) (Solo UB)
-1. **Desarrollo Backend (Solo UB)**
+1. **Desarrollo Backend (Sólo UB)**
      1. [Java Spring Boot](doc/spring-boot.md)
      1. [Python Django](doc/django.md)
      1. [Python Flask](doc/flask.md)
 
-## Bibliografia
+## Bibliografía
 
 * [GitHub](https://docs.github.com/en/get-started/quickstart/hello-world)
 * [HTML](https://developer.mozilla.org/es/docs/Web/HTML)
