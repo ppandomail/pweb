@@ -21,15 +21,15 @@
   * Funciona bajo cualquier plataforma (Windows, MacOS, Linux, etc.)
   * Está integrado en una amplia variedad de entornos de desarrollo (IDEs)
 
-![Sitio Oficial Git](https://git-scm.com)
+[Sitio Oficial Git](https://git-scm.com)
 
 * **GitHub/GitLab** son plataformas web para gestionar proyectos con Git en equipo
   * Grupos / Proyectos
   * Permite el seguimiento de Issues
   * Permite colaborar entre distintos equipos
 
-![Sitio Oficial GitHub](https://github.com)
-![Sitio Oficial GitLab](https://about.gitlab.com)
+[Sitio Oficial GitHub](https://github.com)
+[Sitio Oficial GitLab](https://about.gitlab.com)
 
 ## Git
 
@@ -168,7 +168,7 @@ index. (verdes)
 
 ```cmd
 $git checkout feature
-````
+```
 
 ![Ckeckout branch](img/git-checkout-branch.png)
 

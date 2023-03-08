@@ -47,8 +47,8 @@
 
 | **Clase** | **Fecha** | **Tema** |
 | -- | -- | -- |
-| 01 | 03/03 | Presentación. Ecosistema Web |
-| 02 | 10/03 | Git |
+| 01 | 03/03 | Presentación |
+| 02 | 10/03 | Ecosistema Web. Git |
 | 03 | 17/03 | HTML5 |
 | 04 | 24/03 | **FERIADO** |
 | 05 | 31/03 | HTML5 |
@@ -69,10 +69,9 @@
 ## Criterios de evaluación UNO
 
 * **Regularidad**
-  * Dos parciales, con nota >= 4
+  * Dos entregas, con nota >= 4
   * 80% asistencia
-  * Resolución TP Obligatorio
-  * Dos recuperatorios, con nota >= 4
+  * Un recuperatorio integrador, con nota >= 4
 
 * **Final (Alumnos Regulares)**
   * Final, con nota >= 4 oral y/o escrito
