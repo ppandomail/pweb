@@ -9,7 +9,7 @@
 
 ## Objetivos
 
-* Que los alumnos adquieran los conocimientos iniciales para desarrollarse en el área de programación; con experiencia en las tecnologías HTML, CSS y Javascript.
+* Que los alumnos adquieran los conocimientos iniciales para desarrollarse en el área de programación; con experiencia en tecnologías web: HTML, CSS y Javascript.
 
 ## Reglas
 
