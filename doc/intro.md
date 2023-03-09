@@ -139,6 +139,10 @@
 * **Maquetador**: lleva el diseño a código HTML y CSS. No se preocupa de la lógica, sólo de la presentación.
 * **Programador frontend**: agrega datos reales desde una API y lógica a la presentación creada por el maquetador.
 
+```plain
+Un desarrollador web frontend se encarga de producir código HTML, CSS y JS para el lado del cliente, entendible e interpretable por el navegador y que resulte en una experiencia web utilizable por el usuario
+```
+
 ## Roles del Backend
 
 * **Backend developer**: se encarga de la lógica del negocio (el código del lado del servidor) y crea las APIs para que el frontend pueda consumirlas.
@@ -173,9 +177,10 @@
 ## Editor de código
 
 * Es una herramienta especializada en desempeñar una tarea muy específica, editar archivos para escribir y modificar código.
-* Ejemplos: Visual Studio Code, Sublime Text, Atom, NotePad++, Brackets, etc.
+* Ejemplos: Visual Studio Code, Sublime Text, CodePen, Atom, NotePad++, Brackets, etc.
   * [Descargar instalador de Visual Studio Code](https://code.visualstudio.com/download)
   * [Instalar y Configurar Sublime Text 3](https://youtu.be/rA7VucHRrRw)
+  * [CodePen online](https://codepen.io/)
 
 ## Etapas básicas en el desarrollo de un proyecto web
 

@@ -15,18 +15,19 @@
 
 * Respeto
 * Puntualidad
+* Mantenerse al día con las tecnologías
 
 ## Programa
 
-1. [Ecosistema Web](doc/intro.md)
-1. [Git](doc/git.md)
+1. [Ecosistema Web -> Vocabulario](doc/intro.md)
+1. [Git -> Colaboración](doc/git.md)
 1. **Desarrollo Frontend**
-     1. [HTML5](doc/html5.md)
-     1. [CSS3](doc/css3.md)
-     1. [A11Y](doc/aw.md)
-     1. [Bootstrap](doc/bootstrap.md)
-     1. [RWD](doc/rwd.md)
-     1. [Javascript](doc/js.md)
+     1. [HTML5 -> Estructura](doc/html5.md)
+     1. [CSS3 -> Diseño](doc/css3.md)
+     1. [A11Y -> Accesibilidad](doc/aw.md)
+     1. [Bootstrap -> Usabilidad](doc/bootstrap.md)
+     1. [RWD -> Adaptabilidad](doc/rwd.md)
+     1. [Javascript -> Lógica](doc/js.md)
      1. [Vue](doc/vue.md) (Sólo UB)
 1. **Desarrollo Backend (Sólo UB)**
      1. [Java Spring Boot](doc/spring-boot.md)
@@ -78,6 +79,17 @@
 * Ejercicios cortos conceptuales
 * Consultas
 * Trabajo sobre los proyectos y las entregas (ejemplo CV Web)
+
+## Requisitos
+
+* Computadora con acceso a Internet
+* ACTITUD + PROACTIVIDAD
+
+## Proceso
+
+* No es fácil
+* No es rápido
+* Intentar ser DIVERTIDO
 
 ## Criterios de evaluación UNO
 
