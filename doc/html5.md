@@ -34,7 +34,7 @@
       ```
 
 * Una página web se compone de dos partes:
-  * Cabecera \<head> : esta sección proporciona información general sobre la página como su título, la codificación (para la gestión de caracteres especiales), etc. Esta sección suele ser bastante corta. La información que contiene la cabecera no se muestra en la página y es simplemente información general concebida para la computadora. ¡Sin embargo, es muy importante!
+  * Cabecera \<head> : esta sección proporciona información general sobre la página como su título, la codificación (para la gestión de caracteres especiales), documentos vinculados, etc. Esta sección suele ser bastante corta. La información que contiene la cabecera no se muestra en la página y es simplemente información general concebida para la computadora. ¡Sin embargo, es muy importante!
   * Cuerpo \<body>: es aquí donde se encuentra la parte principal de la página. Todo lo que tecleemos aquí se mostrará en la pantalla. La mayor parte de nuestro código se tecleará en el cuerpo.
 
 ## Atributos
@@ -71,6 +71,9 @@
 | \<html> | Etiqueta principal del código. Incluye el contenido completo de la página | \<html> ... \</html> |
 | \<head> | Información para el navegador | \<head> ... \</head> |
 | \<meta charset="utf-8" /> | Determina la forma en la que se van a mostrar los caracteres especiales (acentos, caracteres japones, etc.) | |
+| \<meta name="description" content="descripción de mi página"/> | Define la descripción de la página | |
+| \<meta name="keywords" content="ap2023, HTML, programación" /> | Define palabras claves | |
+| \<meta name="author" content="nombre del autor" /> | Define autor de la página | |
 | \<title> | Para el título de la Web, visible en la pestaña del navegador | \<title> Este es el título de mi página \</title> |
 | \<link> | Para enlazar CSS y elementos externos | \<link> ... \</link> |
 | \<style> | Para hojas de estilos | \<style\> h1 {color:red;}  p {color:blue;} \</style\> |
@@ -83,6 +86,34 @@
 | \<br> | Para insertar un salto de línea. No requiere un tag de cierre |  \<p>Hola \<br> Mundo \</p> |
 | \<hr> | Para trazar una línea horizontal. No requiere un tag de cierre | \<p>Hola\</p> \<hr> \<p>Mundo\</p> |
 | \<blockquote> | Para insertar una acotación o una cita dentro del párrafo | \<blockquote cite="http://..."> \<p>Hola Mundo\</p>\</blockquote> |
+
+### Ejemplo títulos
+
+    ```html
+    <html>
+      <head></head>
+      <body>
+        <h1>heading 1</h1>
+        <h2>heading 2</h2>
+        <h3>heading 3</h3>
+        <h4>heading 4</h4>
+        <h5>heading 5</h5>
+        <h6>heading 6</h6>
+      </body>
+    </html>
+    ```
+
+### Ejemplo párrafos
+
+    ```html
+    <html>
+      <head></head>
+      <body>
+        <p>Esto es un párrafo</p>
+        <p>Esto es otro párrafo</p>
+      </body>
+    </html>
+    ```
 
 ## Etiquetas estructurales HTML5
 
@@ -119,6 +150,18 @@
 | \<del> | Para texto tachado | \<p>Este texto \<del>no</del> funciona</p> |
 | \<ins> | Para texto insertado | \<p>Este texto \<ins>si</ins> funciona</p> ||
 | \<mark> | Para resaltar parte de un texto | \<p>Este \<mark>texto</mark> esta resaltado</p> |
+
+### Ejemplo formato de texto
+
+    ```html
+    <html>
+      <head></head>
+      <body>
+        <p>Este es un texto <strong> importante</strong></p>
+        <p>Este es un texto <em> con énfasis</em></p>
+      </body>
+    </html>
+    ```
 
 ## Tags para listas
 
@@ -264,6 +307,34 @@
         </table>
         ```
 
+### Colspan y rowspan
+
+* Existen atributos que nos permiten modificar la forma en la que se presentan los datos:
+  * **colspan**: nos permite definir una celda que ocupa más de una columna de la tabla.
+  * **rowspan**: nos permite definir una celda que ocupa más de una fila dentro de su columna.
+
+* Ejemplo:
+
+      ```html
+      <table>
+        <tr>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>DNI</th>
+          <th>Nacionalidad</th>
+          <th colspan="2">Teléfono</th>
+        </tr>
+        <tr>
+          <td>Alan</td>
+          <td>Turing</td>
+          <td>1111111111</td>
+          <td>inglés</td>
+          <td>22-222-2222</td>
+          <td>33-333-3333</td>
+        </tr>
+      </table>
+      ```
+
 ## Imágenes
 
 | Etiqueta | Uso |
@@ -279,7 +350,16 @@
     </p> 
     ```
 
-## Hipervinculos
+* En el caso de las imágenes, además de la dirección del archivo, podemos especificar:
+  * Dimensiones
+  * Texto alternativo: es un texto que aparece en el caso de que la imagen no se pueda mostrar.
+  * Bordes
+
+        ```html
+        <img src="imgs/bitbyte.jpg" width="350" height="350" alt="Chiste muy nerd de LOTR"/>
+        ```
+
+## Hipervínculos
 
 * Su uso permite navegar el contenido de una web, saltando entre las diferentes páginas que la conforman.
 * Tipos de hipervínculos:
@@ -300,6 +380,17 @@
 | _top | En todo el cuerpo de la ventana |
 | framename | En un marco con nombre |
 
+### Ejemplo hipervínculos
+
+    ```html
+    <html>
+      <head></head>
+      <body>
+        <a href="http://wwww.google.com">Ir a google</a>
+      </body>
+    </html>
+    ```
+
 ## Otros tags
 
 | Etiqueta | Uso | Ejemplo |
@@ -319,7 +410,8 @@
 
 ## Formularios
 
-* Son el mecanismo más popular de ingreso de datos.
+* Son el mecanismo más popular de ingreso de datos por parte del usuario.
+* Se definen con la etiqueta \<form>
 * Atributos de Form:
 
 | Atributo | Descripción |
@@ -560,7 +652,9 @@
       ```html
       <video width="720" controls poster="portada.jpg">
         <source src="nombre.mp4" type="video/mp4">
+        <source src="nombre.ogg" type="video/ogg">
         <source src="nombre.webm" type="video/webm">
+        Tu navegador no puede reproducir este formato de video.
       </video>
       ```
 
@@ -592,7 +686,7 @@
 * En los documentos HTML se tiene la posibilidad de embeber objetos, de manera tal que se visualicen cuando la página se carga.
 * Se puede embeber objetos PDF, video de YouTube, etc.
 * Estos objetos incrustados se realizan habitualmente a través de los elementos:
-  * \<iframe>
+  * \<iframe> o inline frame: se utiliza para mostrar otro documento dentro de nuestra página.
 
         ```html
         <body>
@@ -803,4 +897,11 @@ Debes crear una página web que tenga el mismo aspecto que la siguiente imagen:
     * **Nota**: por lo anterior, cuando realices esta actividad y compruebes cómo se visualiza tu página web en distintos navegadores es muy probable que obtengas diferentes resultados.
     Debes crear una página web que tenga el mismo aspecto que la siguiente imagen:
 
-![EJ13](img/HTML%20EJ13.png)
+      ![EJ13](img/HTML%20EJ13.png)
+
+14. Realizar una página web sobre alguna disciplina deportiva que incluya:
+    * Título
+    * Imágenes
+    * descripción
+    * video
+    * subpágina con la tabla de posiciones de algún torneo.

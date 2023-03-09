@@ -9,8 +9,12 @@
 
 ## Objetivos
 
-* Conocer las tecnologías que complementan el desarrollo de aplicaciones o portales web, tanto estáticos como dinámicos. El recorrido comienza con los lenguajes de frontend, para luego pasar al desarrollo backend. Finalmente se integrarán estos saberes con el ecosistema móvil y de webapps.
-* Convertirse en desarrolladores de soluciones web.
+* Que los alumnos adquieran los conocimientos iniciales para desarrollarse en el área de programación; con experiencia en las tecnologías HTML, CSS y Javascript.
+
+## Reglas
+
+* Respeto
+* Puntualidad
 
 ## Programa
 
@@ -19,10 +23,10 @@
 1. **Desarrollo Frontend**
      1. [HTML5](doc/html5.md)
      1. [CSS3](doc/css3.md)
-     1. [AW](doc/aw.md)
-     1. [Javascript](doc/js.md)
-     1. [RWD](doc/rwd.md)
+     1. [A11Y](doc/aw.md)
      1. [Bootstrap](doc/bootstrap.md)
+     1. [RWD](doc/rwd.md)
+     1. [Javascript](doc/js.md)
      1. [Vue](doc/vue.md) (Sólo UB)
 1. **Desarrollo Backend (Sólo UB)**
      1. [Java Spring Boot](doc/spring-boot.md)
@@ -34,6 +38,8 @@
 * [GitHub](https://docs.github.com/en/get-started/quickstart/hello-world)
 * [HTML](https://developer.mozilla.org/es/docs/Web/HTML)
 * [CSS](https://developer.mozilla.org/es/docs/Web/CSS)
+* [A11Y](https://www.w3.org/WAI/)
+* [Bootstrap](https://getbootstrap.com)
 * [JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference)
 * [Java](https://docs.oracle.com/javaee/7/index.html)
 * [Spring Boot](https://spring.io/projects/spring-boot)
@@ -65,6 +71,13 @@
 | 16 | 16/06 | PHP / Node |
 | 17 | 23/06 | **Recuperatorios** |
 | 18 | 30/06 | Cierre de Notas |
+
+## Clases
+
+* Clases teóricas - contenido virtual
+* Ejercicios cortos conceptuales
+* Consultas
+* Trabajo sobre los proyectos y las entregas (ejemplo CV Web)
 
 ## Criterios de evaluación UNO
 

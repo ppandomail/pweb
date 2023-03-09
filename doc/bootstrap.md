@@ -3,7 +3,7 @@
 * Es un framework creado por Twitter para realizar interfaces web adaptables (responsive web design) a cualquier dispositivo, ya sea una tablet, un teléfono o una PC.
 * La interfaz se adapta a cualquier tamaño y resolución de pantalla sin la intervención del usuario.
 * En Chrome, activando CTRL+SHIFT+M se invoca el visor responsivo (se puede ver cómo se comporta una misma web, emulando en las plataforma móviles).
-* Para hacer una plataforma totalmente compatible con los navegadores web más populares, el equipo de desarrollo de Bootstrap armó la lógica de las clases que conforman su interfaz, utilizando hojas de estilo CSS y JavaScript.
+* Para hacer una plataforma totalmente compatible con los navegadores web más populares, el equipo de desarrollo de bootstrap armó la lógica de las clases que conforman su interfaz, utilizando hojas de estilo CSS y JavaScript.
 * De esta manera, se garantiza que los navegadores web se comporten de la forma más estable posible cuando deben cargar un sitio web creado con este framework.
 
 ## Integración al proyecto
@@ -22,6 +22,32 @@
   <meta name="viewport" content=""width=device-width, initial-scale=1>
 </head>
 ```
+
+## Clases
+
+* Los estilos de bootstrap están definido por clases que nos permiten aplicar diseño rápido a los elementos que creamos en html.
+* Simplemente, buscamos en bootstrap el estilo que deseamos aplicar y le damos esa clase a nuestro elemento de css.
+* Recordemos que un elemento puede tener más de una clase.
+
+## Contenedores
+
+* **Responsive Container**:
+  * Contenedor por default de bootstrap.
+  * Está automáticamente centrado en el espacio que tenga disponible.
+  * Ancho predefinido.
+
+  ```html
+  <div class=”container”> </div>
+  ```
+
+* **Fluid Container**:
+  * No está centrado en el espacio disponible.
+  * No tiene márgenes predefinidos.
+  * Ancho 100%
+
+  ```html
+  <div class=”container-fluid”> </div>
+  ```
 
 ## Párrafos
 
@@ -69,6 +95,33 @@
 <button class="btn btn-danger">Botón de Peligro.</button>
 <button class="btn btn-default"><span class="glyphicon-plus"></span></button>
 ```
+
+![Clases de Botones](img/bootstrap-btn.png)
+
+## Tarjetas (cards)
+
+* Para definirlas tendremos que implementar un conjunto de divs con clases particulares que indiquen la utilidad de los mismos, además de los elementos que queramos incluir.
+* Clases:
+
+| Class | Descripción |
+| -- | -- |
+| class="card" | clase principal, define todo el recuadro de la tarjeta. No tiene ancho fijo, ocupa todo el espacio disponible |
+| class="card-body" | contenedor en el que se encuentra el contenido principal de nuestra tarjeta |
+| class="card-header" | contenedor de encabezado de la tarjeta |
+| class="card-footer" | contenedor de pie de la tarjeta |
+| class="card-img" | se aplica sobre un elemento de imagen. Define una imagen dentro de la tarjeta. También se puede utilizar "card-img-top" o "card-img-bottom" |
+| class="card-text" | se aplica sobre texto para el contenido de la tarjeta |
+| class="card-title" | se aplica sobre el título de la tarjeta |
+| class="card-subtitle" | subtitulo de la tarjeta |
+| class="card-img-overlay" | se aplica a un div para poner texto sobre imagen |
+
+![Ejemplo Card1](img/bootstrap-card1.png)
+
+![Ejemplo Card2](img/bootstrap-card2.png)
+
+![Ejemplo Card3](img/bootstrap-card3.png)
+
+![Ejemplo Card4](img/bootstrap-card4.png)
 
 ## Tablas
 
@@ -148,3 +201,15 @@
   <li class="list-group-item list-group-item-danger">Ecuador</li> 
 </ul>
 ```
+
+## Ejercicios
+
+1. Crear 8 tarjetas y agregar una de las siguientes clases al contenedor principal de cada tarjeta:
+    * bg-primary
+    * bg-secondary
+    * bg-success
+    * bg-danger
+    * bg-warning
+    * bg-info
+    * bg-light
+    * bg-dark
