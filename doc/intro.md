@@ -173,9 +173,9 @@
 ## Editor de código
 
 * Es una herramienta especializada en desempeñar una tarea muy específica, editar archivos para escribir y modificar código.
-* Ejemplos: Sublime Text, Atom, Visual Studio Code, NotePad++, Brackets, etc.
-
-* [Instalar y Configurar Sublime Text 3](https://youtu.be/rA7VucHRrRw)
+* Ejemplos: Visual Studio Code, Sublime Text, Atom, NotePad++, Brackets, etc.
+  * [Descargar instalador de Visual Studio Code](https://code.visualstudio.com/download)
+  * [Instalar y Configurar Sublime Text 3](https://youtu.be/rA7VucHRrRw)
 
 ## Etapas básicas en el desarrollo de un proyecto web
 
