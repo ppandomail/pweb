@@ -54,22 +54,22 @@
 
 | **Clase** | **Fecha** | **Tema** |
 | -- | -- | -- |
-| 01 | 03/03 | Presentación |
-| 02 | 10/03 | Ecosistema Web. Git |
-| 03 | 17/03 | HTML5 |
+| 01 | 03/03 | Presentación - Docentes/Alumnos |
+| 02 | 10/03 | Presentación - Materia |
+| 03 | 17/03 | Ecosistema Web. Git |
 | 04 | 24/03 | **FERIADO** |
 | 05 | 31/03 | HTML5 |
 | 06 | 07/04 | **FERIADO** |
-| 07 | 14/04 | CSS3 |
+| 07 | 14/04 | HTML5 |
 | 08 | 21/04 | CSS3 |
 | 09 | 28/04 | **Entrega 1** |
-| 10 | 05/05 | JS |
+| 10 | 05/05 | CSS3 |
 | 11 | 12/05 | JS |
 | 12 | 19/05 | JS |
 | 13 | 26/05 | **FERIADO** |
 | 14 | 02/06 | JS |
 | 15 | 09/06 | **Entrega 2** |
-| 16 | 16/06 | PHP / Node |
+| 16 | 16/06 | PHP / NodeJS |
 | 17 | 23/06 | **Recuperatorios** |
 | 18 | 30/06 | Cierre de Notas |
 
