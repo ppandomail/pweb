@@ -17,6 +17,8 @@
 
 ## Incorporación de CSS en un documento HTML. Técnicas
 
+![Formas de insertar CSS](img/CSS-insercion-HTML.JPG)
+
 ### Incorporación en línea
 
 * Utiliza un atributo global llamado **style** para insertar los estilos directamente en el elemento. Este atributo está disponible en cada uno de los elementos HTML y puede recibir una propiedad o una lista de propiedades que se aplicarán al elemento al que pertenece.
@@ -317,6 +319,8 @@ p, span {
   color: #CCCCCC;
 }
 ```
+
+![CSS caret-color](img/CSS-caret-color.JPG)
 
 #### Tamaño
 

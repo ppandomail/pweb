@@ -21,6 +21,9 @@
 
 ## Estructura básica de una página HTML5
 
+![HTML](img/HTML.JPG)
+
+
       ```html
       <!DOCTYPE html>
       <html> 
@@ -195,6 +198,8 @@
         <dd>capa de acceso a datos.</dd>
       </dl> 
       ```
+
+![Listas en HTML](img/HTML-listas.JPG)
 
 ## Ejemplo práctico del uso de etiquetas
 
@@ -479,6 +484,8 @@
       </select>
       ```
 
+![HTML Input Types](img/HTML-input-types.JPG)
+
 ## Atributos de input types
 
 * readonly: solo lectura, por default es false
@@ -706,6 +713,8 @@
           </object>
         </body>
         ```
+
+![Etiquetas HTML esenciales](img/HTML-etiquetas-esenciales.JPG)
 
 ## Ejercicios
 

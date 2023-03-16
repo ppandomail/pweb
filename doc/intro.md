@@ -4,6 +4,9 @@
 
 * [Búsquedas en Google](https://ignaciosantiago.com/como-buscar-en-google/)
   * Ejemplos: entrecomillar para frases exactas, combinar términos con OR, etc.
+
+    ![Trucos para Google](img/trucos-google.JPG)
+
 * **Lectura de Documentación Oficial**: todas las tecnologías tienen y cuentan con documentación oficial
   * Ejemplo: [HTML](https://developer.mozilla.org/es/docs/Web/HTML)
 * **Traductores de navegador**
@@ -16,18 +19,22 @@
 
 * En la metáfora que se propone, la World Wide Web serían las calles que unen a los distintos edificios o **servidores**. En ellos están almacenados todos los contenidos y servicios disponibles en Internet y los hacen disponibles para cualquier computadora. Es por ello que los servidores deben estar prendidos perpetuamente (tienen sistemas de seguridad ante problemas eléctricos u otros).
 
-![Servidores de Google](img/servers-google.jpeg)
+  ![Servidores de Google](img/servers-google.jpeg)
 
 * Es un **conjunto de documentos** que se conectan a través de **hipervínculos**, junto con la web nace HTML, este lenguaje de marcado permite escribir documentos que puedan conectarse entre ellos.
 * Utilizan el protocolo HTTP para conectar los servidores.
 * Solicitan y muestran las páginas web almacenadas en los servidores.
 * El 6 de agosto de 1991, Tim Berners-Lee, publicó el proyecto de la World Wide Web en el grupo de noticias alt.hypertext y con este suceso la Web comenzó a ser un servicio disponible públicamente en Internet.
 
+  ![Internet vs Web](img/internet-web.JPG)
+
+  ![Como funciona Internet](img/internet-funcionamiento.JPG)
+
 ## Arquitectura Cliente Servidor
 
 * Cada vez que navegas por Internet, usas la arquitectura cliente - servidor.
 
-![Arq. cliente-servidor](img/cliente_serv.png)
+  ![Arq. cliente-servidor](img/cliente_serv.png)
 
 ## Servidor Web
 
@@ -36,6 +43,8 @@
 * Cuando se recibe esta petición el servidor realiza la acción correspondiente, o responde de la manera adecuada y sigue escuchando.
 * Un servidor web dialoga (o se comunica) con sus clientes a través del protocolo HTTP
 * **Hosting**: es el espacio en un servidor donde se aloja un sitio web para que este pueda ser visible en Internet.
+
+  ![Tipos de servidor web y de hosting web](img/tipos-servidores-hostings.JPG)
 
 ## HTTP
 
@@ -50,7 +59,9 @@
 * No es más que la versión segura del http, es decir, una variante del mismo protocolo que se basa en la creación de un canal cifrado para la transmisión de la información, lo cual lo hace más apropiado para ciertos datos de tipo sensible (como claves y usuarios personales).
 * A diferencia del http, el https está protegido contra la intervención de terceros que puedan espiar el intercambio de información o hacerse con datos del mismo, mediante el uso de "capas de red" que permiten sólo al servidor y al cliente cifrar y descifrar la información enviada mediante el intercambio previo de certificados de red, una suerte de convalidación inicial de confianza para establecer la transferencia de información.
 
-![HTTP y HTTPS](img/https.png)
+  ![HTTP y HTTPS](img/https.png)
+
+  ![HTTPS](img/https.JPG)
 
 ## URL
 
@@ -61,7 +72,9 @@
 * Es la dirección que se escribe en la barra de direcciones del navegador, sirve para acceder a un sitio web.
 * Ejemplo: www.minegocio.com
 
-![Estructura de una URL](img/url.png)
+  ![Diferencia entre Web Hosting y Dominio](img/hosting-dominio.JPG)
+
+  ![Estructura de una URL](img/url.JPG)
 
 ## Dirección IP (Internet Protocol)
 
@@ -71,6 +84,8 @@
 * Para facilitar este envío, cada dispositivo conectado a internet recibe un número único.
 * Las de mayor uso fueron las IPv4 formadas por cuatro números separados con puntos. Cada número representa un byte.
 * Ejemplo: 172.54.221.6, 192.168.2.1
+
+  ![IP](img/ip.JPG)
 
 ## Página vs Sitio vs Aplicación
 
@@ -92,7 +107,7 @@
   * Los documentos HTML se pueden crear fácilmente desde cualquier computadora (como también lo veremos) pero para que se puedan almacenar en un servidor y puedan convertirse en páginas web se debe conseguir un dominio y un servicio de hosting.
   * Puede ser dinámica (con Base de Datos) o estática (sólo código)
 
-![Página Web](img/page.png)
+    ![Página Web](img/page.png)
 
 * **Sitio Web**:
   * Colección de páginas web vinculadas entre sí y estructuradas en un dominio; es decir, dotadas de una dirección web única.
@@ -122,7 +137,16 @@
 
 * Se divide en:
   * **Frontend**: es la parte encargada del lado del cliente (lo que se observa en pantalla)
+
+    ![Frontend](img/frontend-tecnolog%C3%ADas.JPG)
+
   * **Backend**: es la parte encargada del lado del servidor (no es visible)
+
+    ![Backend](img/backend-tecnologias.JPG)
+
+    ![Backend camino](img/backend-camino.JPG)
+
+    ![Full-stack herramientas de desarrollo](img/fullstack-herramientas.JPG)
 
 ## API
 
@@ -132,6 +156,8 @@
 * API Rest:
   * Rest es una arquitectura para APIs que se conectan vía web con el protocolo HTTP.
   * Permite acceder a la información con identificadores únicos (URI)
+
+  ![API](img/api.JPG)
 
 ## Roles del Frontend
 
@@ -163,7 +189,7 @@ Un desarrollador web frontend se encarga de producir código HTML, CSS y JS para
   * Brave (2016)
   * Edge Chromium (2020)
 
-![Principales Navegadores](img/browsers.png)
+    ![Principales Navegadores](img/browsers.png)
 
 ## Framework
 
@@ -206,11 +232,11 @@ Un desarrollador web frontend se encarga de producir código HTML, CSS y JS para
 * Guarda las métricas necesarias.
 * Herramientas: Selenium, Cypress, HP Quicktest Professional, Rational Functional Tester, etc.
 
-![Piramide QA esfuerzo y costo](img/piramide_qa1.png)
+  ![Piramide QA esfuerzo y costo](img/piramide_qa1.png)
 
-![Piramide QA niveles de tests](img/piramide_qa2.png)
+  ![Piramide QA niveles de tests](img/piramide_qa2.png)
 
-![Arquitectura QA](img/arq_qa.jpg)
+  ![Arquitectura QA](img/arq_qa.jpg)
 
 ## Metodología de Trabajo
 
@@ -220,9 +246,9 @@ Un desarrollador web frontend se encarga de producir código HTML, CSS y JS para
   * Es un marco de trabajo a través del cual las personas pueden abordar problemas complejos adaptativos, a la vez que entregan productos de forma eficiente y creativa con el máximo valor.
   * Permite actividades en equipo a través de procesos de iteraciones.
 
-![Fases Desarrollo](img/fases.JPG)
-![Scrum](img/scrum.JPG)
-![Tablero](img/tablero.jpg)
+  ![Fases Desarrollo](img/fases.JPG)
+  ![Scrum](img/scrum.JPG)
+  ![Tablero](img/tablero.jpg)
 
 ## Requisitos
 
