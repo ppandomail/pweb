@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Contacto</title>
+</head>
+
+<body>
+    <h1>¿Tienes algo para decir?</h1>
+    <p>A través de este formulario puedes enviarme un mensaje para ayudarme a corregir errores, a mejorar mi blog, o simplemente para decir hola. Cualquier cosa que tengas para decir es bienvenida, así que no lo dudes y déjame un mensaje. Estaré feliz de contestarte!</p>
+    <form action="../../form-result.php" target="_blank">
+        <fieldset>
+            <legend>Mensaje</legend>
+            <p><label>Tu nombre: <input type="text" name="nombre"/></label></p>
+            <p><label>Tu dirección de correo: <input type="text" name="correo" /></label></p>
+            <p><label>Tu mensaje:<br><textarea name="mensaje"></textarea></label></p>
+        </fieldset>
+        <fieldset>
+            <legend>Nuevos temas</legend>
+            <p>¿Qué temas te gustaría que trate más en mi sitio?<br>
+                <label><input type="checkbox" name="html"> HTML</label>
+                <label><input type="checkbox" name="graficos"> Gráficos</label>
+                <label><input type="checkbox" name="videojuegos"> Videojuegos</label>
+                <label><input type="checkbox" name="arte"> Arte</label>
+                <label><input type="checkbox" name="musica"> Música</label>
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar mensaje">
+            <input type="reset" value="Comenzar de nuevo">
+        </p>
+    </form>
+</body>
+
+</html>
