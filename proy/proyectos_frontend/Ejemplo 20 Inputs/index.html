@@ -21,7 +21,7 @@
     <h2>Búsqueda</h2>
     <input type="search" name="busquedamusica" placeholder="Canción, autor, álbum..." />
     <br>
-    <input type="search" name="busquedacodigo" size="4" maxlength="4" />
+    <input type="search" name="busquedacodigo" size="12" maxlength="4" />
     <br>
     <input type="search" name="busquedamodelos" list="listamodelos" />
     <datalist id="listamodelos">
@@ -34,9 +34,9 @@
     <input type="search" name="busquedacodigo" pattern="[A-Za-z0-9]{8,20}" title="Un código válido consiste en una cadena con 8 a 20 caracteres, cada uno de los cuales es una letra o un dígito" required />
     
     <h2>Password</h2>
-    <input type="password" name="pass" placeholder="Elije una contraseña fuerte" />
+    <input type="password" name="pass" size="25" placeholder="Elije una contraseña fuerte" />
     <br>
-    <input type="password" name="pass" pattern="[A-Za-z][A-Za-z0-9]*[0-9][A-Za-z0-9]*" title="Una contraseña válida es un conjuto de caracteres, donde cada uno consiste de una letra mayúscula o minúscula, o un dígito. La contraseña debe empezar con una letra y contener al menor un dígito" required />
+    <input type="password" name="pass" pattern="[A-Za-z][A-Za-z0-9]*[0-9][A-Za-z0-9]*" title="Una contraseña válida es una secuencia de caracteres, donde cada uno consiste de una letra mayúscula o minúscula, o un dígito. La contraseña debe empezar con una letra y contener al menos un dígito" required />
 
     <h2>Teléfono</h2>
     <input type="tel" name="telefono" placeholder="(Código de área) Número" />
@@ -52,7 +52,7 @@
     <input type="tel" name="telephone" pattern="\([0-9]{3}\) [0-9]{3}[ -][0-9]{4}" title="A valid telephone number consist of a 3 digits code area between brackets, a space, the three first digits of the number, a space or hypen (-), and four more digits" required />
 
     <h2>URL</h2>
-    <input type="url" name="sitioweb" placeholder="¿Tienes un sitio web?" />
+    <input type="url" name="sitioweb" placeholder="¿Tenes un sitio web?" />
     <br>
     <input type="url" name="motordebusqueda" value="http://www.google.com" />
     <br>
