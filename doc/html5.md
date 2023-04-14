@@ -1,7 +1,7 @@
 # HTML5
 
-* HTML: HyperText Markup Language (Lenguaje de marcas de HiperTextos).
-* Creado en 1989 por Tim Berners. La 1ra página se publicó en 1991.
+* HTML: HyperText Markup Language (Lenguaje de Marcas de Hiper Textos)
+* Creado en 1989 por Tim Berners. La 1ra. página se publicó en 1991.
 * Es el lenguaje básico utilizado para el desarrollo base o maquetación (dar la estructura y todo el sentido a los elementos) de una WEB.
 * Su función es gestionar y organizar el contenido. Por lo tanto, usarás el HTML para escribir lo que quieras que muestre la página: texto, enlaces, imágenes, etc.
 * Estandarizado por W3C (World Wide Web Consortium)
@@ -37,15 +37,15 @@
       ```
 
 * Una página web se compone de dos partes:
-  * Cabecera \<head> : esta sección proporciona información general sobre la página como su título, la codificación (para la gestión de caracteres especiales), documentos vinculados, etc. Esta sección suele ser bastante corta. La información que contiene la cabecera no se muestra en la página y es simplemente información general concebida para la computadora. ¡Sin embargo, es muy importante!
-  * Cuerpo \<body>: es aquí donde se encuentra la parte principal de la página. Todo lo que tecleemos aquí se mostrará en la pantalla. La mayor parte de nuestro código se tecleará en el cuerpo.
+  * **Cabecera \<head>**: esta sección proporciona información general sobre la página como su título, la codificación (para la gestión de caracteres especiales), documentos vinculados, etc. Esta sección suele ser bastante corta. La información que contiene la cabecera no se muestra en la página y es simplemente información general concebida para la computadora. ¡Sin embargo, es muy importante!
+  * **Cuerpo \<body>**: es aquí donde se encuentra la parte principal de la página. Todo lo que tecleemos aquí se mostrará en la pantalla. La mayor parte de nuestro código se tecleará en el cuerpo.
 
 ## Atributos
 
 * Cada una de las etiquetas contienen propiedades, la cuales toman la función de identificar o completar la información de esa etiqueta, a estas propiedades se le conoce como atributos.
 * Tipos de atributos:
-  * Atributos básicos: Ejemplos: id, class, style, title, name, etc.
-  * Atributos de eventos: Ejemplos: onclick, ondblclick, onmousedown, onfocus, etc.
+  * **Básicos**: Ejemplos: id, class, style, title, name, etc.
+  * **De eventos**: Ejemplos: onclick, ondblclick, onmousedown, onfocus, etc.
 
 ## Funcionamiento
 
@@ -81,9 +81,9 @@
 | \<link> | Para enlazar CSS y elementos externos | \<link> ... \</link> |
 | \<style> | Para hojas de estilos | \<style\> h1 {color:red;}  p {color:blue;} \</style\> |
 | \<script\> | Para enlazar interna o externamente un script de JavaScript | \<script type=“text/javascript”\> var mensaje = “Hola Mundo” \</script\> |
-| \<body\> | Para contenido visible de la pág web | \<body\> ... \\</body\> |
+| \<body\> | Para contenido visible de la pág web | \<body\> ... \</body\> |
 | \<h1>...\<h6> | Para encabezados (títulos) por jerarquía | \<h1> Este es el título principal \</h1> |
-| \<p> | Representa el texto o párrafo que compone la página web | \<p> Esto es un párrafo. \</p> |
+| \<p> | Representa el texto o párrafo que compone la página web | \<p> Esto es un párrafo \</p> |
 | \<div> | Especifica una sección dentro de un documento para agrupar elementos | \<div> ... \</div> |
 | \<span> | Para crear subdivisiones dentro de una capa (por ejemplo, div) | \<span style="color: green;">de\</span> |
 | \<br> | Para insertar un salto de línea. No requiere un tag de cierre |  \<p>Hola \<br> Mundo \</p> |
@@ -142,17 +142,17 @@
 
 | Etiqueta | Uso | Ejemplo |
 | -- | -- | -- |
-| \<strong> | Para estilo negrita | \<p>Hola \<strong> Mundo </strong> </p> |
-| \<em> | Para estilo cursiva (italic) | \<p>Hola \<em> Mundo </em> </p> |
-| \<code> | Para formato de fuente tipo consola | \<p>El formato del if es:</p> \<code>if a = 1 then {...} </code> |
-| \<samp> | Para representar el resultado del código | \<p>Resultado: </p> \<samp>true</samp> |
-| \<cite> | Para definir el título de una obra | \<p>\<cite>The Scream</cite> by Edward </p> |
-| \<wbr> | Para indicar al navegador que no debe cortar esa palabra | \<p>otorrino\<wbr>laringologo,\<wbr>de vez en cuando</p> |
-| \<sub> | Para formato subíndice | \<p>Este texto contiene una palabra con el tag \<sub>subíndice</sub>.</p> |
-| \<sup> | Para formato superíndice | \<p>Mientras que este texto contiene una palabra con el tag \<sup>superíndice</sup>.</p> |
-| \<del> | Para texto tachado | \<p>Este texto \<del>no</del> funciona</p> |
-| \<ins> | Para texto insertado | \<p>Este texto \<ins>si</ins> funciona</p> ||
-| \<mark> | Para resaltar parte de un texto | \<p>Este \<mark>texto</mark> esta resaltado</p> |
+| \<strong> | Para estilo negrita | \<p>Hola \<strong> Mundo \</strong> \</p> |
+| \<em> | Para estilo cursiva (italic) | \<p>Hola \<em> Mundo \</em> \</p> |
+| \<code> | Para formato de fuente tipo consola | \<p>El formato del if es:\</p> \<code>if a = 1 then {...} \</code> |
+| \<samp> | Para representar el resultado del código | \<p>Resultado: \</p> \<samp>true\</samp> |
+| \<cite> | Para definir el título de una obra | \<p>\<cite>The Scream\</cite> by Edward \</p> |
+| \<wbr> | Para indicar al navegador que no debe cortar esa palabra | \<p>otorrino\<wbr>laringologo,\<wbr>de vez en cuando\</p> |
+| \<sub> | Para formato subíndice | \<p>Este texto contiene una palabra con el tag \<sub>subíndice\</sub>.\</p> |
+| \<sup> | Para formato superíndice | \<p>Mientras que este texto contiene una palabra con el tag \<sup>superíndice\</sup>.\</p> |
+| \<del> | Para texto tachado | \<p>Este texto \<del>no\</del> funciona\</p> |
+| \<ins> | Para texto insertado | \<p>Este texto \<ins>si\</ins> funciona\</p> |
+| \<mark> | Para resaltar parte de un texto | \<p>Este \<mark>texto\</mark> esta resaltado\</p> |
 
 ### Ejemplo formato de texto
 
@@ -160,8 +160,8 @@
     <html>
       <head></head>
       <body>
-        <p>Este es un texto <strong> importante</strong></p>
-        <p>Este es un texto <em> con énfasis</em></p>
+        <p>Este es un texto <strong>importante</strong></p>
+        <p>Este es un texto <em>con énfasis</em></p>
       </body>
     </html>
     ```
@@ -400,8 +400,8 @@
 
 | Etiqueta | Uso | Ejemplo |
 | -- | -- | -- |
-| \<progress> | Para representar el progreso de una tarea | \<progress value="22" max="100"></progress> |
-| \<meter> | Para medir datos dentro de un rango dado (un indicador) | \<meter value="2" min="0" max="10">2 de 10</meter>|
+| \<progress> | Para representar el progreso de una tarea | \<progress value="22" max="100">\</progress> |
+| \<meter> | Para medir datos dentro de un rango dado (un indicador) | \<meter value="2" min="0" max="10">2 de 10\</meter> |
 
 * svg: para dibujar formas (rectángulos, círculos, elipses, etc.)
 
