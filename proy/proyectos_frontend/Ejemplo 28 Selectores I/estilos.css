@@ -1,0 +1,46 @@
+/* Selector universal */
+/* Todos los elementos de la página */
+* { 
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif; 
+    /* font: 16px Arial, Helvetica, sans-serif */
+}
+
+/* Selectores de tipo o etiqueta */
+
+/* Todos los párrafos de la página */
+p { 
+    color: #555; 
+}
+
+/* Todos los enlaces de la página */
+a { 
+    color: #CC3300;
+}
+
+/* Selectores  de id */
+/* Sólo los párrafos contenidos en #primero */
+#primero p {
+    color: #336699;
+}
+
+/* Los elementos em contenidos en #primero */
+#primero em {
+    background: #FFFFCC; 
+    padding: 2px; 
+}
+
+/* Selectores de clase */
+/* Todos los elementos em de tipo especial en toda la página */
+em.especial { 
+    background: #FFCC99; 
+    padding: 2px;
+    border-style: solid;
+    border-color: #FF9900;
+    /* border: solid #FF9900; */  
+}
+
+/* Elementos span contenidos en .normal */
+.normal span {
+    font-weight: bold; /* Especifica el grueso de la letra */ 
+}

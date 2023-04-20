@@ -1,0 +1,20 @@
+/* Enlace en estado normal */
+a {
+	margin: 16px;
+	color: #CC0000; 
+	float: left;
+	clear: left;
+	padding: 2px;
+}
+
+/* Enlace cuando el usuario pasa el mouse */
+a:hover {
+	text-decoration: none;
+	background-color: #CC0000;
+	color: #FFF;
+}
+
+/* Enlace visitado */
+a:visited {
+	color: #CCC;
+}
