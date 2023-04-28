@@ -12,7 +12,7 @@
 ![HTML con y sin CSS](img/css_bundler.png)
 
 * El HTML define el contenido.
-* El CSS se usa para colocar el contenido y definir la presentación: el color, la imagen de fondo, los márgenes, el tamño del texto, etc.
+* El CSS se usa para colocar el contenido y definir la presentación: el color, la imagen de fondo, los márgenes, el tamaño del texto, etc.
 * CSS necesita una página HTML para funcionar.
 
 ## Incorporación de CSS en un documento HTML. Técnicas

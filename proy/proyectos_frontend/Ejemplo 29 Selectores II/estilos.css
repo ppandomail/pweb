@@ -4,7 +4,7 @@ table, tr, th, td {
     padding: 5px;
 }
 
-h1#titulo {
+#titulo {
     color: teal; 
 }
 
@@ -16,7 +16,7 @@ span.destacado {
     color: orange; 
 }
 
-h2#subtitulo {
+#subtitulo {
     color: blue; 
 }
 
@@ -32,15 +32,15 @@ a em {
     color: blue;
 }
 
-div#adicional p { 
+#adicional p { 
     color: olive; 
 }
 
-div#adicional span#especial {
+#adicional span#especial {
     color: fuchsia; 
 }
 
-div#adicional a {
+#adicional a {
     color: green; 
 }
 
