@@ -49,5 +49,3 @@ console.log("And: op1 && op2 ",  op1&&op2)
 console.log("Or: op1 || op2 ",   op1||op2)
 console.log("Null: op1 ?? op2 ", op1??op2)
 console.log("Not: !op1 ",        !op1)
-
-

@@ -20,6 +20,12 @@ function sumarPorDeclaracion(op1, op2) {
 }
 
 console.log(sumarPorDeclaracion(2, 4))
+console.log(sumarPorDeclaracion("pepe", 2))
+console.log(sumarPorDeclaracion(2, "pepe"))
+console.log(sumarPorDeclaracion("pepe", "pepe"))
+console.log(sumarPorDeclaracion(true, "pepe"))
+console.log(sumarPorDeclaracion(true, true))
+console.log(sumarPorDeclaracion(true, 4))
 
 // Creación de una función por expresión
 // El nombre de la función pasa a ser el nombre de la variable, 
@@ -29,7 +35,7 @@ const sumarPorExpresion = function (op1, op2) {
     return op1 + op2
 }
 
-console.log(sumarPorExpresion)
+console.log(sumarPorExpresion, typeof(sumarPorExpresion))
 console.log(sumarPorExpresion(2, 4))
 
 /*
