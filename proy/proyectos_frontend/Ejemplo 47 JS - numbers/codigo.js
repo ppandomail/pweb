@@ -2,32 +2,33 @@ numero = 4
 decimal = 15.8
 
 // ¿Número finito?
+Number.isFinite(0)           // true
 Number.isFinite(42)          // true
 Number.isFinite(551.3)       // true
 Number.isFinite(Infinity)    // false, es infinito
 
 // ¿Número entero?
 Number.isInteger(5)          // true
-Number.isInteger(4.6)        // false, es decimal
+Number.isInteger(4.6);       // false, es decimal
 
 // Notación exponencial
-(1.25).toExponential(0)      // "1e+0"
-(1.25).toExponential(1)      // "1.3e+0"
-(1.25).toExponential(2)      // "1.25e+0"
-(1.25).toExponential(3)      // "1.250e+0"
+(1.25).toExponential(0);     // "1e+0"
+(1.25).toExponential(1);     // "1.3e+0"
+(1.25).toExponential(2);     // "1.25e+0"
+(1.25).toExponential(3);     // "1.250e+0"
 
 // Notación punto fijo
-(1.25).toFixed(0)            // "1"
-(1.25).toFixed(1)            // "1.3"
-(1.25).toFixed(2)            // "1.25"
-(1.25).toFixed(3)            // "1.250"
+(1.25).toFixed(0);            // "1"
+(1.25).toFixed(1);            // "1.3"
+(1.25).toFixed(2);            // "1.25"
+(1.25).toFixed(3);            // "1.250"
 
 // Cambiando precisión
-(523.75).toPrecision(1)      // "5e+2"
-(523.75).toPrecision(2)      // "5.2e+2"
-(523.75).toPrecision(3)      // "524"
-(523.75).toPrecision(4)      // "523.8"
-(523.75).toPrecision(5)      // "523.75"
+(523.75).toPrecision(1);      // "5e+2"
+(523.75).toPrecision(2);      // "5.2e+2"
+(523.75).toPrecision(3);      // "524"
+(523.75).toPrecision(4);      // "523.8"
+(523.75).toPrecision(5)       // "523.75"
 
 // Convertir un string en number
 Number.parseInt("42")        // 42
@@ -63,6 +64,7 @@ x = Math.floor(x)
 // Redondeo natural, el más cercano
 Math.round(3.75)           // 4
 Math.round(3.25)           // 3
+Math.round(3.5)            // 4
 
 // Redondeo superior (el más alto)
 Math.ceil(3.75)            // 4
