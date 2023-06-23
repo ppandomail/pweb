@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interacci&oacute;n con servicios HTTP</title>
+</head>
+<body>
+    <h1>Interacción con servicios HTTP</h1>
+
+    <button onclick="getOfertasTrabajo()">Obtener ofertas de trabajo</button>
+    <button onclick="getOfertaTrabajoById('603fe74c70d4861234567890')">Obtener oferta de trabajo por ID</button>
+    <button onclick="crearOfertaTrabajo()">Crear oferta de trabajo</button>
+    <button onclick="actualizarOfertaTrabajo('648780ce6320bf29f2317a20')">Actualizar oferta de trabajo por ID</button>
+    <button onclick="eliminarOfertaTrabajo('648780cf6320bf29f2317a21')">Eliminar oferta de trabajo por ID</button>
+
+    <script>
+        // Funciones para interactuar con los servicios HTTP
+
+        function getOfertasTrabajo() {
+            fetch('http://localhost:3000/ofertasTrabajo')
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+                })
+                .catch(error => {
+                    console.error(error);
+                });
+        }
+
+        function getOfertaTrabajoById(id) {
+            fetch(`http://localhost:3000/ofertasTrabajo/${id}`)
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+                })
+                .catch(error => {
+                    console.error(error);
+                });
+        }
+
+        function crearOfertaTrabajo() {
+            const nuevaOferta = {
+                nombre: "Nombre de la oferta",
+                apellido: "Apellido del solicitante",
+                email: "correo@example.com",
+                salarioMinimo: 50000
+            };
+
+            fetch('http://localhost:3000/ofertasTrabajo', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(nuevaOferta)
+            })
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+                })
+                .catch(error => {
+                    console.error(error);
+                });
+        }
+
+        function actualizarOfertaTrabajo(id) {
+            const ofertaActualizada = {
+                nombre: "Nombre actualizado",
+                apellido: "Apellido actualizado",
+                email: "nuevo_correo@example.com",
+                salarioMinimo: 60000
+            };
+
+            fetch(`http://localhost:3000/ofertasTrabajo/${id}`, {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(ofertaActualizada)
+            })
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+                })
+                .catch(error => {
+                    console.error(error);
+                });
+        }
+
+        function eliminarOfertaTrabajo(id) {
+            fetch(`http://localhost:3000/ofertasTrabajo/${id}`, {
+                method: 'DELETE'
+            })
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+                })
+                .catch(error => {
+                    console.error(error);
+                });
+        }
+    </script>
+</body>
+</html>
+
