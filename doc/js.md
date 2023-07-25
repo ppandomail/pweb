@@ -44,6 +44,10 @@
     </html>
     ```
 
+## Sintaxis
+
+![Sintaxis](img/js-sintaxis.jpg)
+
 ## Variables
 
 * Una variable es un lugar donde guardar un valor que voy a necesitar más adelante.
@@ -115,6 +119,8 @@ switch (semaforo) {
     default: console.log('Error'); break
 }
 ```
+
+![JS Condicionales](img/js-conditions.JPG)
 
 * **Bucles**: un bucle, o ciclo de repetición, es una estructura de control que me permite ejecutar cierto código mientras se cumpla una condición. A diferencia del condicional, una vez ejecutado el código, si la condición se sigue cumpliendo el código se vuelve a ejecutar.
 
@@ -283,6 +289,8 @@ s.replace("H","B") // "Bola"
 " Hola   ".trim()  // "Hola" 
 ```
 
+![Strings](img/js-strings.JPG)
+
 * Objeto Array
 
 ```javascript
@@ -305,6 +313,8 @@ nums.every(num => num > 3) // false, verifica si c/u cumple con la condición
 nums.some(num => num > 3)  // true, verifica si alguno cumple con la condición
 nums.map(num => num * 2)   // [2, 4, 6, 8, 10], transforma los elementos
 ```
+
+![Arrays](img/js-array.JPG)
 
 * Objeto Date
   * Almacena la fecha como un número que representa los milisegundos que han pasado desde el 1/1/1970 a las 00:00:00.000.
@@ -1100,3 +1110,7 @@ $(function() {
     ```
 
 1. Hacer una calculadora con 15 botones: 10 Dígitos, 4 Operaciones, 1 Igual. Escribir el código HTML correspondiente. recordar que deben dejar un espacio para el resultado. Luego mediante JS programar todos los eventos y los handlers.
+1. Implementar la siguiente página web:
+    ![Ejercicio Personas](img/ejercicio-personas.JPG)
+1. Escribe un programa que contenga un formulario con cinco botones. Cada uno de los botones debe tener como etiqueta el nombre de un color y al pulsarlo pondrá el color del fondo del documento del mismo color que indica.
+1. Como ampliación del ejercicio anterior, añade a los cinco botones, la posibilidad de elegir el cambio de color para el fondo del documento o para el fondo de una capa situa da en la esquina superior derecha del documento. (sugerencia.- Usar un formulario del tipo type=' radio' para elegir entre cambiar el documento o la capa).

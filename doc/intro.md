@@ -218,6 +218,8 @@ Un desarrollador web frontend se encarga de producir código HTML, CSS y JS para
 
 ![Meme](img/meme.jpg)
 
+![Deploy](img/deploy.jpg)
+
 ## La importancia del Testing
 
 * Permite definir la fiabilidad y la robustez que la aplicación íntegra, y también los errores, conocidos como bugs, que esta tiene.
