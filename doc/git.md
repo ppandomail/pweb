@@ -5,7 +5,7 @@
 * Los programas que escribimos se componen de uno o más archivos de texto.
 * A esta composición la llamamos proyecto.
 * Estos archivos pueden ser el código propiamente dicho o archivos de configuración de la solución.
-* Tenerlo en una carpeta en nuestra compu parece una buena idea.
+* Tenerlo en una carpeta en nuestra computadora parece una buena idea.
 * Pero ¿que pasa si necesitamos volver a una versión anterior? ¿compartirlo con nuestros compañeros? ¿controlar los cambios?
 * Necesitamos:
   * un lugar compartido por el equipo donde guardarlo
@@ -21,15 +21,17 @@
   * Funciona bajo cualquier plataforma (Windows, MacOS, Linux, etc.)
   * Está integrado en una amplia variedad de entornos de desarrollo (IDEs)
 
-[Sitio Oficial Git](https://git-scm.com)
+  ![Git Concepto](img/git-concepto.jpg)
+  [Sitio Oficial Git](https://git-scm.com)
 
 * **GitHub/GitLab** son plataformas web para gestionar proyectos con Git en equipo
   * Grupos / Proyectos
   * Permite el seguimiento de Issues
   * Permite colaborar entre distintos equipos
 
-[Sitio Oficial GitHub](https://github.com)
-[Sitio Oficial GitLab](https://about.gitlab.com)
+  ![GitHub vs GitLab](img/git-github-gitlab.jpg)
+  [Sitio Oficial GitHub](https://github.com)
+  [Sitio Oficial GitLab](https://about.gitlab.com)
 
 ## Git
 
@@ -40,6 +42,20 @@
   * Clonando un repo
 
 ![Git Flujo](img/git-flujo.png)
+
+![Formas de hacer commit de tu código](img/git-commit.jpg)
+
+![Git términos](img/git-terminos-1.jpg)
+
+![Git términos](img/git-terminos-2.jpg)
+
+## Git - contribuyendo en un proyecto
+
+![Contribuyendo en un proyecto con Git](img/git-contribucion.jpg)
+
+## ¿Cómo trabajar en equipo con Git?
+
+![Git trabajo en equipo]()
 
 ## Git - creando un repo local
 
@@ -216,12 +232,20 @@ $git checkout -b nuevo
 | Comando | Uso |
 | -- | -- |
 | **git init** | crea un proyecto nuevo en git |
+| **git clone** | hace una copia del servidor central a tu computadora |
 | **git add \<file>** | pasa los archivos del working directory al stagging area |
-| **git status** | ver en que estado están los archivos |
 | **git commit** | pasa del stagging area al local repo |
 | **git push** | subir a un repositorio remoto |
 | **git pull** | trae los cambios de los desarrolladores |
-| **git clone** | hace una copia del servidor central a tu computadora |
+| **git status** | ver en que estado están los archivos |
+
+![Git comandos básicos](img/git-comandos-basicos.jpg)
+
+![Comandos](img/git-comandos-1.JPG)
+![Comandos](img/git-comandos-2.JPG)
+![Comandos](img/git-comandos-3.JPG)
+![Comandos](img/git-comandos-4.JPG)
+![Comandos](img/git-comandos-5.JPG)
 
 ## Guia de inicio rápido
 
