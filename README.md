@@ -5,7 +5,6 @@
 * Titular: Mg. Ing. Pablo Pandolfo
 * UNO:
   * Adjunto: Ing. Pedro Occhipinti
-  * Ayudante: Sr. Martin Ivaldi
 
 ## Objetivos
 
@@ -19,28 +18,27 @@
 
 ## Programa
 
-1. [Ecosistema Web -> Vocabulario](doc/intro.md)
-1. [Git -> Colaboración](doc/git.md)
+1. [Ecosistema Web](doc/intro.md)
+1. [Git](doc/git.md)
 1. **Desarrollo Frontend**
-     1. [HTML5 -> Estructura](doc/html5.md)
-     1. [CSS3 -> Diseño](doc/css3.md)
-     1. [A11Y -> Accesibilidad](https://github.com/ppandomail/a11y)
-     1. [Bootstrap -> Usabilidad](doc/bootstrap.md)
-     1. [RWD -> Adaptabilidad](doc/rwd.md)
-     1. [Javascript -> Lógica](doc/js.md)
+     1. [HTML5](doc/html5.md)
+     1. [A11Y](https://github.com/ppandomail/a11y)
+     1. [CSS3](doc/css3.md)
+     1. [Bootstrap](doc/bootstrap.md)
+     1. [Javascript](doc/js.md)
      1. [Vue](doc/vue.md) (Sólo UB)
 1. **Desarrollo Backend (Sólo UB)**
-     1. [NodeJS y MongoDB](doc/nodejs.md)
-     1. [Java Spring Boot](doc/spring-boot.md)
-     1. [Python Django](doc/django.md)
-     1. [Python Flask](doc/flask.md)
+     1. [NodeJS](doc/nodejs.md)
+     1. [Spring Boot](doc/spring-boot.md)
+     1. [Django](doc/django.md)
+     1. [Flask](doc/flask.md)
 
 ## Bibliografía
 
 * [GitHub](https://docs.github.com/en/get-started/quickstart/hello-world)
 * [HTML](https://developer.mozilla.org/es/docs/Web/HTML)
-* [CSS](https://developer.mozilla.org/es/docs/Web/CSS)
 * [A11Y](https://www.w3.org/WAI/)
+* [CSS](https://developer.mozilla.org/es/docs/Web/CSS)
 * [Bootstrap](https://getbootstrap.com)
 * [JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference)
 * [Java](https://docs.oracle.com/javaee/7/index.html)
@@ -55,31 +53,34 @@
 
 | **Clase** | **Fecha** | **Tema** |
 | -- | -- | -- |
-| 01 | 03/03 | Presentación - Docentes/Alumnos |
-| 02 | 10/03 | Presentación - Materia |
-| 03 | 17/03 | Ecosistema Web. Git |
-| 04 | 24/03 | **FERIADO** |
-| 05 | 31/03 | HTML5 |
-| 06 | 07/04 | **FERIADO** |
-| 07 | 14/04 | HTML5 |
-| 08 | 21/04 | CSS3 |
-| 09 | 28/04 | **Entrega 1** |
-| 10 | 05/05 | CSS3 |
-| 11 | 12/05 | JS |
-| 12 | 19/05 | JS |
-| 13 | 26/05 | **FERIADO** |
-| 14 | 02/06 | JS |
-| 15 | 09/06 | **Entrega 2** |
-| 16 | 16/06 | PHP / NodeJS |
-| 17 | 23/06 | **Recuperatorios** |
-| 18 | 30/06 | Cierre de Notas |
+| 01 | 11/08 | Presentación - Ecosistema Web - Git |
+| 02 | 18/08 | HTML5 |
+| 03 | 25/08 | HTML5 |
+| 04 | 01/09 | HTML5 - A11Y |
+| 05 | 08/09 | CSS3 |
+| 06 | 15/09 | CSS3 |
+| 07 | 22/09 | CSS3 - Bootstrap |
+| 08 | 29/09 | **Entrega 1** |
+| 09 | 06/10 | JS |
+| 10 | 13/10 | **FERIADO** |
+| 11 | 20/10 | JS |
+| 12 | 27/10 | JS |
+| 13 | 03/11 | JS |
+| 14 | 10/11 | JS - NodeJS |
+| 15 | 17/11 | **Entrega 2** |
+| 16 | 24/11 | **Recuperatorios** y **Cierre** |
 
 ## Clases
 
 * Clases teóricas - contenido virtual
 * Ejercicios cortos conceptuales
 * Consultas
-* Trabajo sobre los proyectos y las entregas (ejemplo CV Web)
+* Trabajo sobre los proyectos y las entregas:
+
+  | Año | Cuatrimestre | TP |
+  | -- | -- | -- |
+  | 2023 | 1 | CV Web |
+  | 2023 | 2 | Juego Didáctico en el Aula |
 
 ## Requisitos
 
