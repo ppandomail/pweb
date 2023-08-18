@@ -55,7 +55,7 @@
 
 ## ¿Cómo trabajar en equipo con Git?
 
-![Git trabajo en equipo]()
+![Git trabajo en equipo](img/git-trabajo-equipo.jpg)
 
 ## Git - creando un repo local
 
