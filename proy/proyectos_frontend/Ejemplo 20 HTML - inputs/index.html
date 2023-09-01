@@ -37,7 +37,6 @@
     <input type="password" name="pass" size="25" placeholder="Elije una contraseña fuerte" />
     <br>
     <input type="password" name="pass" pattern="[A-Za-z][A-Za-z0-9]*[0-9][A-Za-z0-9]*" title="Una contraseña válida es una secuencia de caracteres, donde cada uno consiste de una letra mayúscula o minúscula, o un dígito. La contraseña debe empezar con una letra y contener al menos un dígito" required />
-
     <h2>Teléfono</h2>
     <input type="tel" name="telefono" placeholder="(Código de área) Número" />
     <br>
@@ -200,7 +199,8 @@
     </p>
 
     <h2>Archivos</h2>
-    <input type="file" name="archivosubido" />
+    <label for="files" class="btn">Presione aqui</label>
+    <input type="file" id="files" name="archivosubido" style="display:none;" />
     <br>
     <input type="file" name="archivossubidos" multiple />
     <br>

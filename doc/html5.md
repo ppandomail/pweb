@@ -445,15 +445,15 @@
 
 
       ```html
-      <input type="text" name="nombre" maxlength="20" ...>
+      <input type="text" name="nombre" maxlength="20" ... />
       <input type="password" .../>
       <input type="hidden" ... />
-      <input type="number" name="edad" step="0.1" ...>
+      <input type="number" name="edad" step="0.1" ... />
       <input type="range" ... />
-      <input type="checkbox" name="vainilla" checked ...>
+      <input type="checkbox" name="vainilla" checked ... />
       <input type="radio" ... /> <!-- se agrupan mediante el atributo name -->
-      <input type="color" name="color" ... >
-      <input type="date" name="fecha_nac" ...>
+      <input type="color" name="color" ... />
+      <input type="date" name="fecha_nac" ... />
       <input type="time" ... />
       <input type="datetime-local" ... />
       <input type="week" ... />
@@ -502,8 +502,8 @@
 ## Ejemplo 1 de formulario
 
     ```html
+    <h1>Trabajo con Formularios HTML</h1>
     <form>
-      <h1>Trabajo con Formularios HTML</h1>
       <label for="nombre">Nombre:</label><br>
       <input type="text" name="nombre" id="nombre" placeholder="Ingrese su(s) nombre(s)" /><br>
       <label for="apellido">Apellido:</label><br>
@@ -521,13 +521,13 @@
     <!DOCTYPE html>
     <html>
     <body>
-    <h2>HTML Forms</h2>
+    <h1>HTML Forms</h1>
     <form action="/action_page.php">
       <label for="fname">First name:</label><br>
-      <input type="text" id="fname" name="fname" value="John"><br>
+      <input type="text" id="fname" name="fname" value="John" /><br>
       <label for="lname">Last name:</label><br>
-      <input type="text" id="lname" name="lname" value="Doe"><br><br>
-      <input type="submit" value="Submit">
+      <input type="text" id="lname" name="lname" value="Doe" /><br><br>
+      <input type="submit" value="Submit" />
     </form> 
     <p> Si hace clic en el botón “enviar”, los datos del formulario  se enviaran a la página llamada "/action_page.php".</p>
     </body>
@@ -540,7 +540,7 @@
     <!DOCTYPE html>
     <html>
     <body>
-    <h2>The select Element</h2>
+    <h1>The select Element</h1>
     <p>The select element defines a drop-down list:</p>
     <form action="/action_page.php">
       <label for="cars">Choose a car:</label>
@@ -550,7 +550,7 @@
         <option value="fiat">Fiat</option>
         <option value="audi">Audi</option>
       </select>
-      <input type="submit">
+      <input type="submit" />
     </form>
     </body>
     </html>
@@ -562,14 +562,14 @@
     <!DOCTYPE html>
     <html>
     <body>
-    <h2>Text field</h2>
+    <h1>Text field</h1>
     <p>The <strong>input type="text"</strong> defines a one-line text input field:</p>
     <form action="/action_page.php">
       <label for="fname">First name:</label><br>
-      <input type="text" id="fname" name="fname"><br>
+      <input type="text" id="fname" name="fname" /><br>
       <label for="lname">Last name:</label><br>
-      <input type="text" id="lname" name="lname"><br><br>
-      <input type="submit" value="Submit">
+      <input type="text" id="lname" name="lname" /><br><br>
+      <input type="submit" value="Submit" />
     </form>
     <p>Note that the form itself is not visible.</p>
     <p>Also note that the default width of a text field is 20 characters.</p>
@@ -583,17 +583,16 @@
     <!DOCTYPE html>
     <html>
     <body>
-    <h2>Password field</h2>
+    <h1>Password field</h1>
     <p>The <strong>input type="password"</strong> defines a password field:</p>
     <form action="/action_page.php">
       <label for="username">Username:</label><br>
-      <input type="text" id="username" name="username"><br>
+      <input type="text" id="username" name="username" /><br>
       <label for="pwd">Password:</label><br>
-      <input type="password" id="pwd" name="pwd"><br><br>
-      <input type="submit" value="Submit">
+      <input type="password" id="pwd" name="pwd" /><br><br>
+      <input type="submit" value="Submit" />
     </form>
     <p>The characters in a password field are masked (shown as asterisks or circles).</p>
-
     </body>
     </html>
     ```
@@ -603,17 +602,16 @@
     ```html
     <html>
     <body>
-
-    <h1>el atributo de formulario de entrada</h1>
+    <h1>El atributo de formulario de entrada</h1>
     <p>El atributo especifica el formulario al que pertenece un elemento de entrada.</p>
     <form action="/action_page.php" id="form1">
       <label for="fname">First name:</label>
-      <input type="text" id="fname" name="fname"><br><br>
-      <input type="submit" value="Submit">
+      <input type="text" id="fname" name="fname" /><br><br>
+      <input type="submit" value="Submit" />
     </form>
     <p>The "Last name" field below is outside the form element, but still part of the form.</p>
     <label for="lname">Last name:</label>
-    <input type="text" id="lname" name="lname" form="form1">
+    <input type="text" id="lname" name="lname" form="form1" />
 
     </body>
     </html>
