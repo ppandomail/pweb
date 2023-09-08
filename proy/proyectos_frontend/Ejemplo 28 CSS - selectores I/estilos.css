@@ -37,7 +37,8 @@ em.especial {
     padding: 2px;
     border-style: solid;
     border-color: #FF9900;
-    /* border: solid #FF9900; */  
+    border-width: 10px;
+    /* border: 10px solid #FF9900; */  
 }
 
 /* Elementos span contenidos en .normal */
