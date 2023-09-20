@@ -16,7 +16,7 @@ span.requerido {
 .row {
     margin: 0;
     padding: 1em;
-    width: 50%;
+    width: 95%;
     position: relative;
     overflow: hidden;
     border-top: 1px solid #CCC;
@@ -92,5 +92,5 @@ input#telefonofijo, input#telefonomovil {
     position: absolute;
     top: 0;
     right: 0;
-    width: 150px;
+    width: 100px;
 }
