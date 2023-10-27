@@ -4,7 +4,7 @@ texto.length       // 8
 texto[0]           // "B"
 texto[8]           // undefined
 texto + " Pepe"    // Bemvindo Pepe
-t = `Oi, ${texto}` // "Oi, Bemvindo"
+t = `Oi, ${texto}` // "Oi, Bemvindo". Es un "template literal"
 
 // Posiciones y substrings
 texto.charAt(0)         // "B"

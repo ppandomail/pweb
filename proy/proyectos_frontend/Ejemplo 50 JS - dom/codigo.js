@@ -78,8 +78,8 @@ app.appendChild(div)                 // <div id="app"><div>Esto es un div insert
 
 // Eliminar elementos
 div = document.querySelector(".deleteme")
-div.isConnected     // true
+div.isConnected()     // true
 div.remove()
-div.isConnected     // false
+div.isConnected()     // false
 
 
