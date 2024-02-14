@@ -3,8 +3,6 @@
 ## Docentes
 
 * Titular: Mg. Ing. Pablo Pandolfo
-* UNO:
-  * Adjunto: Ing. Pedro Occhipinti
 
 ## Objetivos
 
