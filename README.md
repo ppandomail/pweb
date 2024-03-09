@@ -1,97 +1,63 @@
-# Programación Web 1 (UNO) / Programación 3 (UB)
+# Programación Web 1 (UNO) / Programación Web 2 (UNO)
 
 ## Docentes
 
 * Titular: Mg. Ing. Pablo Pandolfo
 
+* Ayudante: Anta. Alexander Andrada
+
 ## Objetivos
 
-* Que los alumnos adquieran los conocimientos iniciales para desarrollarse en el área de programación; con experiencia en tecnologías web: HTML, CSS y Javascript.
+* En estas materias se presentan las tecnologías que complementan el desarrollo de aplicaciones o portales web, tanto estáticos como dinámicos. El recorrido comienza con los lenguajes de frontend, para luego pasar al desarrollo backend. Finalmente se integrarán estos saberes con el ecosistema móvil y de webapps.
 
-## Reglas
+## Programa Programación Web 1 (Frontend)
 
-* Respeto
-* Puntualidad
-* Mantenerse al día con las tecnologías
+| # | Tema | Apuntes | Fuentes |
+| -- | -- | -- | -- |
+| 1 | Ecosistema Web | [Apunte](doc/intro.md) | |
+| 2 | Git | [Apuntes](doc/git.md) | [Fuentes](https://docs.github.com/es) |
+| 3 | HTML5 | [Apuntes](doc/html5.md) | [Fuentes](https://developer.mozilla.org/es/docs/Web/HTML) |
+| 4 | A11Y | [Apuntes](https://github.com/ppandomail/a11y) | [Fuentes](https://www.w3.org/WAI/) |
+| 5 | CSS3 | [Apuntes](doc/css3.md) | [Fuentes](https://developer.mozilla.org/es/docs/Web/CSS) |
+| 6 | Bootstrap | [Apuntes](doc/bootstrap.md) | [Fuentes](https://getbootstrap.com) |
+| 7 | Javascript | [Apuntes](doc/js.md) | [Fuentes](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference) |
 
-## Programa
+## Crono Programación Web 1
 
-1. [Ecosistema Web](doc/intro.md)
-1. [Git](doc/git.md)
-1. **Desarrollo Frontend**
-     1. [HTML5](doc/html5.md)
-     1. [A11Y](https://github.com/ppandomail/a11y)
-     1. [CSS3](doc/css3.md)
-     1. [Bootstrap](doc/bootstrap.md)
-     1. [Javascript](doc/js.md)
-     1. [Vue](doc/vue.md) (Sólo UB)
-1. **Desarrollo Backend (Sólo UB)**
-     1. [NodeJS](doc/nodejs.md)
-     1. [Spring Boot](doc/spring-boot.md)
-     1. [Django](doc/django.md)
-     1. [Flask](doc/flask.md)
+| Fecha | Entregas |
+| -- | -- |
+| Mitad del Cuatri | **Entrega 1: Maquetado + Estilos** |
+| Final del Cuatri | **Entrega 2: Lógica del lado del cliente** |
+| Última Clase | **Recuperatorios** y **Cierre** |
 
-## Bibliografía
+## Programa Programación Web 2 (Backend)
 
-* [GitHub](https://docs.github.com/en/get-started/quickstart/hello-world)
-* [HTML](https://developer.mozilla.org/es/docs/Web/HTML)
-* [A11Y](https://www.w3.org/WAI/)
-* [CSS](https://developer.mozilla.org/es/docs/Web/CSS)
-* [Bootstrap](https://getbootstrap.com)
-* [JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference)
-* [Java](https://docs.oracle.com/javaee/7/index.html)
-* [Spring Boot](https://spring.io/projects/spring-boot)
-* [Python](https://www.python.org)
-* [Flask](https://flask-es.readthedocs.io)
-* [Django](https://www.djangoproject.com)
-* [Stack Overflow](https://es.stackoverflow.com)
-* [Apuntes (Pablo Pandolfo)](doc/)
+| # | Tema | Apuntes | Fuentes |
+| -- | -- | -- | -- |
+| 1 | Ecosistema Web | [Apuntes](doc/intro2.md) | |
+| 2 | Nodejs | [Apuntes](doc/nodejs.md) | [Fuentes](https://nodejs.org/) |
+| 3 | Express | [Apuntes](doc/express.md) | [Fuentes](https://expressjs.com/es/) |
+| 4 | BD | | |
+| 4 | Postman | [Apuntes](doc/postman.md) | [Fuentes](https://www.postman.com/) |
+| 4 | Cypress | [Apuntes](doc/cypress.md) | [Fuentes](https://www.cypress.io/) |
 
-## Cronograma UNO
+## Otros Frameworks de Backend
 
-| **Clase** | **Fecha** | **Tema** |
+| Tema | Apuntes | Fuentes |
 | -- | -- | -- |
-| 01 | 11/08 | Presentación - Ecosistema Web - Git |
-| 02 | 18/08 | HTML5 |
-| 03 | 25/08 | HTML5 |
-| 04 | 01/09 | HTML5 - A11Y |
-| 05 | 08/09 | CSS3 |
-| 06 | 15/09 | CSS3 |
-| 07 | 22/09 | CSS3 - Bootstrap |
-| 08 | 29/09 | **Entrega 1** |
-| 09 | 06/10 | JS |
-| 10 | 13/10 | **FERIADO** |
-| 11 | 20/10 | JS |
-| 12 | 27/10 | JS |
-| 13 | 03/11 | JS |
-| 14 | 10/11 | JS - NodeJS |
-| 15 | 17/11 | **Entrega 2** |
-| 16 | 24/11 | **Recuperatorios** y **Cierre** |
+| Spring Boot | [Apuntes](doc/spring-boot.md) | [Fuentes](https://spring.io/projects/spring-boot) |
+| Django | [Apuntes](doc/django.md) | [Fuentes](https://www.djangoproject.com) |
+| Flask | [Apuntes](doc/flask.md) | [Fuentes](https://flask-es.readthedocs.io) |
 
-## Clases
+## Crono Programación Web 2
 
-* Clases teóricas - contenido virtual
-* Ejercicios cortos conceptuales
-* Consultas
-* Trabajo sobre los proyectos y las entregas:
+| Fecha | Entregas |
+| -- | -- |
+| Mitad del Cuatri | **Entrega 1: APIs** |
+| Final del Cuatri | **Entrega 2: Datos + TA** |
+| Última Clase | **Recuperatorios** y **Cierre** |
 
-  | Año | Cuatrimestre | TP |
-  | -- | -- | -- |
-  | 2023 | 1 | CV Web |
-  | 2023 | 2 | Juego Didáctico en el Aula |
-
-## Requisitos
-
-* Computadora con acceso a Internet
-* ACTITUD + PROACTIVIDAD
-
-## Proceso
-
-* No es fácil
-* No es rápido
-* Intentar ser DIVERTIDO
-
-## Criterios de evaluación UNO
+## Criterios de evaluación UNO para ambas materias
 
 * **Regularidad**
   * Dos entregas, con nota >= 4
