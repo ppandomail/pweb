@@ -2,25 +2,25 @@
 
 ## Docentes
 
-* Titular: Mg. Ing. Pablo Pandolfo
+* **Titular**: Mg. Ing. Pablo Pandolfo
 
-* Ayudante: Anta. Alexander Andrada
+* **Ayudante**: Anta. Alexander Andrada
 
 ## Objetivos
 
-* En estas materias se presentan las tecnologías que complementan el desarrollo de aplicaciones o portales web, tanto estáticos como dinámicos. El recorrido comienza con los lenguajes de frontend, para luego pasar al desarrollo backend. Finalmente se integrarán estos saberes con el ecosistema móvil y de webapps.
+* En estas materias se presentan las tecnologías que complementan el desarrollo de aplicaciones o portales web, tanto estáticos como dinámicos. El recorrido comienza con los lenguajes de frontend, para luego pasar al desarrollo backend.
 
 ## Programa Programación Web 1 (Frontend)
 
 | # | Tema | Apuntes | Fuentes |
 | -- | -- | -- | -- |
-| 1 | Ecosistema Web | [Apunte](doc/intro.md) | |
+| 1 | Intro | [Apunte](doc/intro.md) | |
 | 2 | Git | [Apuntes](doc/git.md) | [Fuentes](https://docs.github.com/es) |
 | 3 | HTML5 | [Apuntes](doc/html5.md) | [Fuentes](https://developer.mozilla.org/es/docs/Web/HTML) |
 | 4 | A11Y | [Apuntes](https://github.com/ppandomail/a11y) | [Fuentes](https://www.w3.org/WAI/) |
 | 5 | CSS3 | [Apuntes](doc/css3.md) | [Fuentes](https://developer.mozilla.org/es/docs/Web/CSS) |
-| 6 | Bootstrap | [Apuntes](doc/bootstrap.md) | [Fuentes](https://getbootstrap.com) |
-| 7 | Javascript | [Apuntes](doc/js.md) | [Fuentes](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference) |
+| 6 | BS | [Apuntes](doc/bootstrap.md) | [Fuentes](https://getbootstrap.com) |
+| 7 | JS | [Apuntes](doc/js.md) | [Fuentes](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference) |
 
 ## Crono Programación Web 1
 
@@ -34,12 +34,12 @@
 
 | # | Tema | Apuntes | Fuentes |
 | -- | -- | -- | -- |
-| 1 | Ecosistema Web | [Apuntes](doc/intro2.md) | |
+| 1 | Intro| [Apuntes](doc/intro2.md) | |
 | 2 | Nodejs | [Apuntes](doc/nodejs.md) | [Fuentes](https://nodejs.org/) |
 | 3 | Express | [Apuntes](doc/express.md) | [Fuentes](https://expressjs.com/es/) |
 | 4 | BD | | |
-| 4 | Postman | [Apuntes](doc/postman.md) | [Fuentes](https://www.postman.com/) |
-| 4 | Cypress | [Apuntes](doc/cypress.md) | [Fuentes](https://www.cypress.io/) |
+| 5 | Postman | [Apuntes](doc/postman.md) | [Fuentes](https://www.postman.com/) |
+| 6 | Cypress | [Apuntes](doc/cypress.md) | [Fuentes](https://www.cypress.io/) |
 
 ## Otros Frameworks de Backend
 

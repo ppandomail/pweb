@@ -859,10 +859,13 @@ gedit app.js
 ```
 
 ```js
+// Importar el módulo de Express
 const express = require("express");
+// Crear una instancia de la aplicación Express
 const app = express();
 const port = 3000;
 
+// Definir una ruta para la raíz del sitio
 app.get("/", (req, res) => {
   res.send("<h1>Bienvenido</h1>");
 });
@@ -871,6 +874,7 @@ app.get("/about", (req, res) => {
   res.send("<h1>Acerca de</h1>");
 });
 
+// Escuchar en el puerto 3000
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
