@@ -3,6 +3,7 @@
 ## Concepto
 
 * Es un entorno de ejecución de JS
+* Se utiliza para ejecutar código JS fuera del navegador.
 * Se instala en el SO
 * Permite crear aplicaciones fullstack (backend y frontend)
 * Desde 2009
@@ -36,7 +37,7 @@ node -e "console.log(10 + 10)"
 node -e "console.log(os.userInfo())"
 ```
 
-* Guardar y cargar desde archivo 
+* Guardar y cargar desde archivo
 
 ```sh
 > .save prueba.js
@@ -67,7 +68,7 @@ node index.js
 
 ## JS en Nodejs
 
-### Ejemplo 1 - variables
+### Ejemplo 0 - variables
 
 ```js
 let username = 'pablo'
@@ -81,6 +82,19 @@ let user = {
 const PI = 3.1415
 
 console.log(username)
+```
+
+```sh
+node index.js
+```
+
+### Ejemplo 1 - suma
+
+```js
+var a = 5
+var b = 10
+var c = a + b
+console.log('c = ' + c)
 ```
 
 ```sh
@@ -152,7 +166,7 @@ setTimeout(() => {
 
 ## CommonJS Modules
 
-* Módulos son archivos que podemos agregar 
+* Módulos son archivos que podemos agregar
 a un archivo principal y crear una aplicación grande
 
 ### Ejemplo export individual
@@ -160,11 +174,12 @@ a un archivo principal y crear una aplicación grande
 * module
   * myModule.js
 
-  ```js
-  const myString = "pepe"
+      ```js
+      const myString = "pepe"
 
-  module.exports = myString
-  ```
+      module.exports = myString
+      ```
+
 * main.js
 
   ```js
@@ -175,7 +190,6 @@ a un archivo principal y crear una aplicación grande
 
 ### Ejemplo export masivo
 
-
 * myModule.js
 
   ```js
@@ -185,6 +199,7 @@ a un archivo principal y crear una aplicación grande
 
   module.exports = {myString, myNumber, myArray}
   ```
+
 * main.js
 
 ```js
@@ -264,9 +279,11 @@ console.log(math.multiply(10, 20))
 console.log(math.divide(10, 20))
 ```
 
-## Módulos 
+## Módulos
 
 * Nodejs ya nos dá funciones creadas mediante los módulos (API de NodeJS)
+* Permite a los desarrolladores organizar y reutilizar código de manera eficiente
+* Estos módulos pueden publicarse en NPM (Node Package Manager)
 * [Módulos de Nodejs](https://nodejs.org/api/modules.html)
 
 ## Módulo OS
@@ -297,7 +314,6 @@ console.log(path.resolve('dist'))
 ```
 
 ## Módulo FS (FileSystem)
-
 
 ### Ejemplo Sync
 
@@ -424,7 +440,7 @@ npm install colors
 * Agregó 2 archivos y 1 carpeta:
   * package.json : tiene las dependencias
   * package-lock.json : lista de las dependencias por cada módulo instalado para el funcionamiento interno de nodejs
-  * node_modules : en esta carpeta se descargan los módulos 
+  * node_modules : en esta carpeta se descargan los módulos
 
 ```js
 const colors = require('colors')
@@ -443,65 +459,65 @@ npm install
 
 1. Crear una carpeta. Ejemplo:
 
-  ```sh
-  mkdir first-node-project
-  ```
+    ```sh
+    mkdir first-node-project
+    ```
 
 1. Iniciar nuevo proyecto en nodejs
 
-  ```sh
-  npm init
+    ```sh
+    npm init
 
-  #pregunta por: name, version, description, archivo inicial, git repository, keywords, author, license
-  #Con esto crea un package.json con más información
-  ```
+    #pregunta por: name, version, description, archivo inicial, git repository, keywords, author, license
+    #Con esto crea un package.json con más información
+    ```
 
 1. Otra forma (más rápida) de iniciar nuevo proyecto en nodejs
 
-  ```sh
-  npm init -y
-  ```
+    ```sh
+    npm init -y
+    ```
 
 1. Instalar dependencias
 
-  ```sh
-  npm i colors
-  ```
+    ```sh
+    npm i colors
+    ```
 
 1. Modificar sección de scripts dentro de package.json
 
-  ```json
-  "scripts" : {
-    "start" : "node src/app.js",
-    "dev" : "node src/app.js"
-  },
-  ```
+    ```json
+    "scripts" : {
+      "start" : "node src/app.js",
+      "dev" : "node src/app.js"
+    },
+    ```
 
-  ```sh
-  npm start    #cuando es start sin run
-  npm run dev  #cuando no es start con run
-  ```
+    ```sh
+    npm start    #cuando es start sin run
+    npm run dev  #cuando no es start con run
+    ```
 
 1. Instalar módulo de desarrollo "nodemon" para reiniciar automáticamente la aplicación cuando se detectan cambios
 
-  ```sh
-  npm i nodemon -D
+    ```sh
+    npm i nodemon -D
 
-  # -D hace que el módulo sea de desarrollo y no esencial para la aplicación
-  # Crea en package.json la sección: 
-  # "devDependencies": {
-  #  "nodemon": "^3.1.0"
-  # }
-  # Tenemos que poner en la sección script:
-  # "dev" : "nodemon src/app.js"
-  # Ejecutar: npm run dev
-  # Al realizar cambios en app.js se reinicia automáticamente la aplicación
-  ```
+    # -D hace que el módulo sea de desarrollo y no esencial para la aplicación
+    # Crea en package.json la sección: 
+    # "devDependencies": {
+    #  "nodemon": "^3.1.0"
+    # }
+    # Tenemos que poner en la sección script:
+    # "dev" : "nodemon src/app.js"
+    # Ejecutar: npm run dev
+    # Al realizar cambios en app.js se reinicia automáticamente la aplicación
+    ```
 
 ## Global modules
 
 * Es otra forma de instalar módulos
-* Al hacer require, busca 
+* Al hacer require, busca
   * 1ro. en carpeta node_modules
   * 2do. entre nuestro modulos del proyecto
   * 3ro. modulos que tiene node instalados
@@ -518,34 +534,34 @@ npm list -g           # lista módulos instalados en forma global
 
 * Ejecutar aplicaciones de consola que pueden instalarse con nodejs
 
-```sh
-npx cowsay Hello world!   #vaca que dice Hello world!
-```
+  ```sh
+  npx cowsay Hello world!   #vaca que dice Hello world!
+  ```
 
 * Otro ejemplo: creamos una carpeta llamada public y dentro un archivo index.html
 
-  ```html
-  <html>
-  <head>
-    <title>Hello world!</title>
-  </head>
-  <body>
-    <h1>Hello world!</h1>
-  </body>
-  </html>
-  ```
+    ```html
+    <html>
+    <head>
+      <title>Hello world!</title>
+    </head>
+    <body>
+      <h1>Hello world!</h1>
+    </body>
+    </html>
+    ```
 
 * Luego ejecutamos un módulo servidor llamado "serve"
 
-```sh
-npx serve public   #public es la carpeta creada
-```
+  ```sh
+  npx serve public   #public es la carpeta creada
+  ```
 
 * Otro ejemplo
 
-```sh
-npx nodemon index.js
-```
+  ```sh
+  npx nodemon index.js
+  ```
 
 ## Event Loop
 
@@ -823,13 +839,17 @@ stream.on("close", () => {
 ## FETCH
 
 * Es una API que viene incluida
-* Permite traer datos de una URL
+* Permite traer datos (recursos) de una URL de forma asíncrona (la solicitud se realiza en segundo plano y no bloquea la ejecución del resto del código JS)
 * [Sitio que nos da datos falsos](https://jsonplaceholder.typicode.com/)
 
 ```js
 fetch("https://jsonplaceholder.typicode.com/posts")
+  // manipular la respuesta recibida
   .then((res) => res.json())
-  .then((data) => console.log(data));
+  .then((data) => console.log(data))
+  .catch(error => {
+    // capturar y manejar cualquier error de red
+  })
 ```
 
 * Lo mismo que el programa de arriba pero con async/await
@@ -842,6 +862,29 @@ async function loadData() {
 }
 
 loadData()
+```
+
+## JSON
+
+* JSON : JavaScript Object Notation
+* Es un formato ligero de intercambio de datos.
+* Es muy usado para representar y transmitir datos en aplicaciones web.
+* Está compuesto por una colección de pares de clave-valor, donde la clave es una cadena y el valor puede ser de cualquier tipo de dato válido en JSON, como un número, una cadena de texto, un booleano, un objeto JSON anidado o un arreglo de valores.
+* { } para delimitar el JSON y los pares clave-valor separados por dos puntos (:)
+* Ejemplo:
+
+```json
+{
+  "nombre": "Juan",
+  "edad": 30,
+  "activo": true,
+  "hobbies": ["futbol", "lectura", "viajes"],
+  "direccion": {
+    "calle": "Calle Principal",
+    "numero": 123,
+    "ciudad": "Ciudad Ejemplo"
+  }
+}
 ```
 
 ## EXPRESS
@@ -895,7 +938,7 @@ node app.js
 * Servidores para hacer deploy gratis: HEROKU, Firebase, GitHub Pages, netlify
 * HEROKU es un servicio en la nube que permite desplegar aplicaciones en distintos lenguajes. Es gratuito.
   * [Sitio](https://www.heroku.com/)
-  * Registrarse  ppandomail@gmail.com / HolaMundo123!!!
+  * Registrarse
   * Boton Create new app
   * Completar App name
   * Instalar Herokucli
