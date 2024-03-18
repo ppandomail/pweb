@@ -4,7 +4,9 @@
 
 * **Titular**: Mg. Ing. Pablo Pandolfo
 
-* **Ayudante**: Anta. Alexander Andrada
+  * **Adjunto**: Lic. Pedro Occhipinti
+
+  * **Ayudante**: Anta. Alexander Andrada
 
 ## Objetivos
 
