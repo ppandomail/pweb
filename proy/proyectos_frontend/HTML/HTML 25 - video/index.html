@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Video</title>
+  </head>
+
+  <body>
+    <!-- autoplay: permite ejecutar automáticamente el video una vez que la página web se cargó -->
+    <!-- controls: habilita play, tiempo, volumen, mute, pantalla completa y descargar -->
+    <!-- loop: establece por defecto la reproducción continua del video -->
+    <!-- muted: inicia el video con el audio silenciado por defecto -->
+    <!-- poster: si no se carga una imagen, aparecerá el hueco del video -->
+    <video width="720" controls poster="portada.jpg">
+      <!-- src: especifica el archivo de video por reproducir -->
+      <source src="nombre.mp4" type="video/mp4" />
+      <source src="nombre.ogg" type="video/ogg" />
+      <source src="nombre.webm" type="video/webm" />
+      Tu navegador no puede reproducir este formato de video.
+    </video>
+  </body>
+</html>

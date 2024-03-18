@@ -17,10 +17,9 @@
 | 1 | Intro | [Apunte](doc/intro.md) | |
 | 2 | Git | [Apuntes](doc/git.md) | [Fuentes](https://docs.github.com/es) |
 | 3 | HTML5 | [Apuntes](doc/html5.md) | [Fuentes](https://developer.mozilla.org/es/docs/Web/HTML) |
-| 4 | A11Y | [Apuntes](https://github.com/ppandomail/a11y) | [Fuentes](https://www.w3.org/WAI/) |
-| 5 | CSS3 | [Apuntes](doc/css3.md) | [Fuentes](https://developer.mozilla.org/es/docs/Web/CSS) |
-| 6 | BS | [Apuntes](doc/bootstrap.md) | [Fuentes](https://getbootstrap.com) |
-| 7 | JS | [Apuntes](doc/js.md) | [Fuentes](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference) |
+| 4 | CSS3 | [Apuntes](doc/css3.md) | [Fuentes](https://developer.mozilla.org/es/docs/Web/CSS) |
+| 5 | BS | [Apuntes](doc/bootstrap.md) | [Fuentes](https://getbootstrap.com) |
+| 6 | JS | [Apuntes](doc/js.md) | [Fuentes](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference) |
 
 ## Crono Programación Web 1
 
