@@ -1,20 +1,5 @@
 # Ecosistema Web
 
-## Habilidades Digitales
-
-* [Búsquedas en Google](https://ignaciosantiago.com/como-buscar-en-google/)
-  * Ejemplos: entrecomillar para frases exactas, combinar términos con OR, etc.
-
-    ![Trucos para Google](img/trucos-google.JPG)
-
-* **Lectura de Documentación Oficial**: todas las tecnologías tienen y cuentan con documentación oficial
-  * Ejemplo: [HTML](https://developer.mozilla.org/es/docs/Web/HTML)
-* **Traductores de navegador**
-  * Ejemplo: Google Traductor
-* Licencias y versionado
-  * Licencias de software Shareware: corresponden a un tipo de distribución de aplicaciones que consiste en liberar gratuitamente una versión con funcionamiento limitado.
-  * Licencias de software libre
-
 ## ¿Qué es la Web?
 
 * En la metáfora que se propone, la World Wide Web serían las calles que unen a los distintos edificios o **servidores**. En ellos están almacenados todos los contenidos y servicios disponibles en Internet y los hacen disponibles para cualquier computadora. Es por ello que los servidores deben estar prendidos perpetuamente (tienen sistemas de seguridad ante problemas eléctricos u otros).
