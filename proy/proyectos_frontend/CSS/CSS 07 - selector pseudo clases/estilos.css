@@ -1,20 +1,34 @@
 /* Enlace en estado normal */
 a {
-	margin: 16px;
-	color: #CC0000; 
-	float: left;
-	clear: left;
-	padding: 2px;
+  margin: 16px;
+  color: #cc0000;
+  float: left;
+  clear: left;
+  padding: 2px;
 }
 
 /* Enlace cuando el usuario pasa el mouse */
 a:hover {
-	text-decoration: none;
-	background-color: #CC0000;
-	color: #FFF;
+  text-decoration: none;
+  background-color: #cc0000;
+  color: #fff;
 }
 
 /* Enlace visitado */
 a:visited {
-	color: #CCC;
+  color: #ccc;
 }
+
+/* 
+Otros eventos o pseudoclases: 
+-----------------------------
+input:valid {...}
+input:invalid {...}
+input[type="email"]:invalid {...}
+input:checked {...}
+input[name*="dato"]:checked {...}
+input:focus {...}
+
+a:hover {...}
+a:active {...}
+*/

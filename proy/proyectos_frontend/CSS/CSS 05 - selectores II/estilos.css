@@ -1,65 +1,68 @@
-table, tr, th, td {
-    border: 1px solid #000; 
-    border-collapse: collapse; /* modelo de bordes de las celdas de la tabla */
-    padding: 5px;
+table,
+tr,
+th,
+td {
+  border: 1px solid #000;
+  border-collapse: collapse; /* modelo de bordes de las celdas de la tabla */
+  padding: 5px;
 }
 
 #titulo {
-    color: teal; 
+  color: teal;
 }
 
-strong { 
-    color: red; 
+strong {
+  color: red;
 }
 
 span.destacado {
-    color: orange; 
+  color: orange;
 }
 
 #subtitulo {
-    color: blue; 
+  color: blue;
 }
 
 span.especial {
-    color: purple; 
+  color: purple;
 }
 
-a { 
-    color: red; 
+a {
+  color: red;
 }
 
 a em {
-    color: blue;
+  color: blue;
 }
 
-#adicional p { 
-    color: olive; 
+#adicional p {
+  color: olive;
 }
 
 #adicional span#especial {
-    color: fuchsia; 
+  color: fuchsia;
 }
 
 #adicional a {
-    color: green; 
+  color: green;
 }
 
 caption {
-    color: blue; 
+  color: blue;
 }
 
-td { 
-    color: green; 
+td {
+  color: green;
 }
 
 td strong {
-    color: orange; 
+  color: orange;
 }
 
 th {
-    color: red; 
+  color: red;
 }
 
-th.especial { 
-    color: orange; 
+th.especial {
+  color: orange;
 }

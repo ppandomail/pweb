@@ -1,0 +1,61 @@
+/*
+Animaciones:
+. Permiten que un elemento HTML cambie gradualmente de un estilo hacia otro.
+. @keyframes: son los "fotogramas" en que la animación cambia.
+Esta regla es la encargada de ejecutar los estilos CSS predefinidos.
+Cada estilo definido dentro de esta se ejecutará, alternando el estilo original, dentro de una cantidad de tiempo. Este período está definido, a través de la propiedad animation-delay, en segundos.
+Todos esos segundos se deben dividir en % dentro de la regla @keyframes, que le asigna un % determinado a cada uno de los estilos que se ejecutarán dentro de dicha animación (desde 0% hasta 100%)
+*/
+
+#anima {
+  background: white;
+  width: 400px;
+  height: 400px;
+  border: 1px solid lightgray;
+}
+
+#anima:hover {
+  background: white;
+  animation-name: ejemplo; /* nombre de la animación para poder identificarla y ejecutarla */
+  animation-delay: 2s; /* especifica cuántos segundos se retarda la animación, desde el momento que se activa su ejecución */
+  animation-duration: 4s; /* es el tiempo (en segundos), que durará la animación */
+}
+
+@keyframes ejemplo {
+  0% {
+    background: lightgray;
+  }
+  20% {
+    background: dimgray;
+  }
+  40% {
+    background: darkslategray;
+  }
+  60% {
+    background: black;
+  }
+  80% {
+    background: dimgray;
+  }
+  100% {
+    background: black;
+  }
+}
+
+#demo {
+  width: 300px;
+  height: 300px;
+  animation: blinking 1s infinite; /* name, delay, duration*/
+}
+
+@keyframes blinking {
+  0% {
+    background-color: red;
+  }
+  50% {
+    background-color: blue;
+  }
+  100% {
+    background: green;
+  }
+}

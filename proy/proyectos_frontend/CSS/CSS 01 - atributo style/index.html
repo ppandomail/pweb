@@ -1,14 +1,32 @@
+<!-- CSS: Cascading Style Sheets (Hojas de Estilo en Cascada) -->
+<!-- Nació en 1996 -->
+<!-- Permite gestionar la apariencia (estilos) del sitio web (trazado, posicionamiento, diseño, color, tamaño del texto, etc.) -->
+<!-- HTML define el contenido y CSS se usa para colocar el contenido y definir la presentación -->
+<!-- CSS necesita una página HTML para funcionar -->
+<!-- Formas de insertar CSS: en línea (atributo style), interno (elemento style) y externo (archivo) -->
+<!-- Estilos en línea es una manera práctica de probar estilos pero no se recomiendan, por no ser reutilizables -->
+<!-- Tienen la máxima prioridad y anulará los otros tipos de estilos -->
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <title>Ejemplo de atributo style</title>
-</head>
+  </head>
 
-<body>
-    <p style="background-color: gray;">Hola! Este va a ser un <strong style="color: white; text-decoration: underline;">gran</strong> día!</p>
-    <p style="background-color: green;">Este es nuestro <span style="color:yellow">segundo</span> párrafo</p>
-</body>
-
+  <body>
+    <!-- style con una propiedad -->
+    <!-- sintaxis: propiedad : valor -->
+    <!-- background-color: asigna un fondo de color a un elemento -->
+    <p style="background-color: gray">
+      Hola! Este va a ser un
+      <!-- style con una lista de propiedades -->
+      <!-- color: declara el color del contenido del elemento -->
+      <!-- text-decoration: decoración del texto -->
+      <strong style="color: white; text-decoration: underline">gran</strong>
+      día!
+    </p>
+    <p style="background-color: green">
+      Este es nuestro <span style="color: yellow">segundo</span> párrafo
+    </p>
+  </body>
 </html>

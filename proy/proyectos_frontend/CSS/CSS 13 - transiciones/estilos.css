@@ -1,0 +1,24 @@
+/* 
+Transiciones:
+. Permiten cambiar de forma gradual los valores de las otras propiedades de animación, integrando una fusión de uno o más efectos con un tiempo de duración determinado.
+. Se activan con el :hover y el :focus.
+
+ease: Inicia despacio, sucede rápido y termina despacio
+linear: Mantiene la transición con estilo de velocidad igual en toda la duración de la misma
+ease-in: Inicia despacio, luego sucede normal y termina normal
+ease-out: Inicia normal, sucede normal  y termina despacio
+ease-in-out: Inicia despacio, sucede normal y termina despacio
+*/
+
+img {
+  opacity: 0.4;
+  width: 200px;
+  border: 2px solid lightgray;
+  transition: all 0.3s ease-out;
+}
+
+img:hover {
+  opacity: 1;
+  width: 220px;
+  transform: rotate(-3deg);
+}

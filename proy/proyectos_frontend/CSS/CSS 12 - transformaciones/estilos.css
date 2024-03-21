@@ -1,0 +1,16 @@
+/* 
+Tranformaciones: 
+. Permiten aplicar, sobre elementos HTML, diferentes efectos, cambiando el estado original de estos.
+. Dentro de los efectos se puede aplicar:
+  . translate(x, y) : mueve un elemento entre sus ejes x e y. También: translateX(n) o translateY(n).
+  . scale(x, y) : cambia ancho y alto. También scaleX(n) o scaleY(n).
+  . rotate(aº) : rota un elemento hacia un ángulo determinado [0º,360º] en el sentido de las agujas reloj o [0º,-360º] caso contrario.
+  . skew(xº, yº) : Tuerce un elemento sobre los ejes X e Y. También skewX(nº) o skewY(nº)
+*/
+
+div {
+  width: 200px;
+  height: 100px;
+  background-color: yellow;
+  transform: rotate(7deg);
+}

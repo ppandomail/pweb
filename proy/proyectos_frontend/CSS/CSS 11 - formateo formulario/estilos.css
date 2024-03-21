@@ -1,96 +1,99 @@
 body {
-    font: 13px/1.6 Tahoma, sans-serif;
-    background: #F5F5F5;
-    border: 1px solid silver;
-    margin: 1em auto;
-    padding: 1em;
-    width: 700px;
+  font: 13px/1.6 Tahoma, sans-serif;
+  background: #f5f5f5;
+  border: 1px solid silver;
+  margin: 1em auto;
+  padding: 1em;
+  width: 700px;
 }
 
 span.requerido {
-    font-size: 1.3em;
-    font-weight: bold;
-    color: #C00;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #c00;
 }
 
 .row {
-    margin: 0;
-    padding: 1em;
-    width: 95%;
-    position: relative;
-    overflow: hidden;
-    border-top: 1px solid #CCC;
+  margin: 0;
+  padding: 1em;
+  width: 95%;
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid #ccc;
 }
 
 .row label.titulo {
-    font-weight: bold;
-    text-align: right;
-    width: 100px;
+  font-weight: bold;
+  text-align: right;
+  width: 100px;
 }
 
 .row div .data {
-    float: left;
-    padding: 0.3em 0;
+  float: left;
+  padding: 0.3em 0;
 }
 
 .row div .data label {
-    display: block;
-    font: normal 0.8em arial, sans-serif;
-    color: #333;
+  display: block;
+  font: normal 0.8em arial, sans-serif;
+  color: #333;
 }
 
 .row p.ayuda {
-    display: none;
+  display: none;
 }
 
 .row input {
-    padding: 0.2em;
+  padding: 0.2em;
 }
 
-input#apellido, input#direccion, input#email {
-    width: 180px;
+input#apellido,
+input#direccion,
+input#email {
+  width: 180px;
 }
 
 input#codigopostal {
-    width: 80px;
+  width: 80px;
 }
 
 select#provincia {
-    width: 90px;
+  width: 90px;
 }
 
 select#pais {
-    width: 150px;
+  width: 150px;
 }
 
-input#telefonofijo, input#telefonomovil {
-    width: 135px;
+input#telefonofijo,
+input#telefonomovil {
+  width: 135px;
 }
 
 /* Cambiar el color en el :hover y resaltar los campos en el :focus */
 .row:hover {
-    background-color: #FF9;
+  background-color: #ff9;
 }
 
 .row input:focus {
-    border: 2px solid #E6B700;
+  border: 2px solid #e6b700;
 }
 
 .row label.titulo {
-    float: left;
-    width: 150px;
+  float: left;
+  width: 150px;
 }
 
 .row div {
-    margin-left: 10px;
-    overflow: hidden;
+  margin-left: 10px;
+  overflow: hidden;
 }
 
 .row:hover p.ayuda {
-    display: block;
-    margin: 0.3em;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100px;
+  display: block;
+  margin: 0.3em;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
 }

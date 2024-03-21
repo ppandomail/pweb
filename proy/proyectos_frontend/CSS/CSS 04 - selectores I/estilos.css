@@ -1,47 +1,47 @@
 /* Selector universal */
 /* Todos los elementos de la página */
-* { 
-    font-size: 32px;
-    font-family: Arial, Helvetica, sans-serif; 
-    /* font: 16px Arial, Helvetica, sans-serif */
+* {
+  font-size: 32px; /* tamaño de la letra */
+  font-family: Arial, Helvetica, sans-serif; /* tipo de letra */
+  /* font: 16px Arial, Helvetica, sans-serif */
 }
 
 /* Selectores de tipo o etiqueta */
 
 /* Todos los párrafos de la página */
-p { 
-    color: #555; 
+p {
+  color: #555;
 }
 
 /* Todos los enlaces de la página */
-a { 
-    color: #CC3300;
+a {
+  color: #cc3300;
 }
 
 /* Selectores  de id */
 /* Sólo los párrafos contenidos en #primero */
 #primero p {
-    color: #336699;
+  color: #336699;
 }
 
 /* Los elementos em contenidos en #primero */
 #primero em {
-    background: #FFFFCC; 
-    padding: 2px; 
+  background: #ffffcc;
+  padding: 2px;
 }
 
 /* Selectores de clase */
 /* Todos los elementos em de tipo especial en toda la página */
-em.especial { 
-    background: #FFCC99; 
-    padding: 2px;
-    border-style: solid;
-    border-color: #FF9900;
-    border-width: 10px;
-    /* border: 10px solid #FF9900; */  
+em.especial {
+  background: #ffcc99;
+  padding: 2px;
+  border-style: solid;
+  border-color: #ff9900;
+  border-width: 10px;
+  /* border: 10px solid #FF9900; */
 }
 
 /* Elementos span contenidos en .normal */
 .normal span {
-    font-weight: bold; /* Especifica el grueso de la letra */ 
+  font-weight: bold; /* Especifica el grueso de la letra */
 }

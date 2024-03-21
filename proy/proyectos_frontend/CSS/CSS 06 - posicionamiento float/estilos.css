@@ -1,19 +1,19 @@
 #paginacion {
-    border: 1px solid #CCC;
-    background-color: #E0E0E0;
-    padding: .5em;
+  border: 1px solid #ccc;
+  background-color: #e0e0e0;
+  padding: 0.5em;
 }
 
 .derecha {
-    float: right; /* ubica un elemento al lado derecho de su contenedor */
+  float: right; /* ubica un elemento al lado derecho de su contenedor */
 }
 
 .izquierda {
-    float: left; /* ubica un elemento al lado izquierdo de su contenedor */
+  float: left; /* ubica un elemento al lado izquierdo de su contenedor */
 }
 
 .clear {
-    clear: both; /* hace que la caja sobre la que se aplica baje hasta que su borde superior esté por debajo del borde inferior de cualquier elemento flotado a la izquierda o a la derecha.*/
-    border-color: black;
-    border-style: solid;
+  clear: both; /* hace que la caja sobre la que se aplica baje hasta que su borde superior esté por debajo del borde inferior de cualquier elemento flotado a la izquierda o a la derecha.*/
+  border-color: black;
+  border-style: solid;
 }

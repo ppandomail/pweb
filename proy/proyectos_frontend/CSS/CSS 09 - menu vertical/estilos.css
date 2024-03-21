@@ -1,6 +1,6 @@
 ul.menu {
     width: 130px;
-    list-style: none;
+    list-style: none; /* sin estilo de viñeta */
     margin: 0;
     padding: 0;
     border: 1px solid #7C7C7C;
@@ -14,7 +14,7 @@ ul.menu li {
 
 ul.menu li a {
     padding: .2em 0 .2em 1.3em;
-    display: block;
+    display: block; /* muestra el elemento en una nueva línea y con un tamaño personalizado */
     text-decoration: none;
     color: #333;
     background: #F4F4F4 url("img/flecha_inactiva.png") no-repeat 3px;
