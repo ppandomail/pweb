@@ -54,9 +54,9 @@
 
 | Fecha | Entregas |
 | -- | -- |
-| Mitad del Cuatri | **Entrega 1: APIs** |
-| Final del Cuatri | **Entrega 2: Datos + TA** |
-| Última Clase | **Recuperatorios** y **Cierre** |
+| 03/05 | **Entrega 1: APIs** |
+| 14/06 | **Entrega 2: Datos + TA** |
+| 28/06 | **Recuperatorios** y **Cierre** |
 
 ## Criterios de evaluación UNO para ambas materias
 

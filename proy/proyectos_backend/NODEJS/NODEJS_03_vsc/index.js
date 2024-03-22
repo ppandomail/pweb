@@ -2,7 +2,7 @@
 
 VSC Visual Studio Code
 
-. Editor de código gratuito
+. IDE. Editor de código gratuito
 . Instalación: https://code.visualstudio.com/
 . Descargar el instalador de VSC (todo siguiente)
 . Extensiones: Prettier - Code formatter, Material Icon Theme
