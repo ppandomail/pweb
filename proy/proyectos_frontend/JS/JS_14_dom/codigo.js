@@ -1,11 +1,72 @@
 /*
-DOM: Document Object Model, o lo que es lo mismo, la estructura del documento HTML.
-En JS, cuando nos referimos al DOM nos referimos a esta estructura, 
-que podemos modificar de forma dinámica desde JS, agregando nuevas etiquetas, 
-modificando o eliminando otras, cambiando sus atributos HTML, cambiando el contenido de texto, etc...
+
+DOM: 
+
+. Document Object Model
+. Es la estructura del documento HTML (árbol de objetos)
+. Se puede modificar de forma dinámica desde JS: 
+  . agregar, modificar, eliminar etiquetas, 
+  . agregar, modificar, eliminar atributos,
+  . agregar, modificar, eliminar estilos CSS 
+  . agregar, modificar, eliminar contenido de texto 
+  . etc.
+
+. Objetos: window, navigator, screen, history, location, document
+
 */
 
-// Seleccionar elementos del DOM
+// window: ventana del navegador donde se está visualizando la página
+
+v1 = window.open("mi_pagina.html");
+v2 = window.open(
+  "mi_pagina.html",
+  "titulo",
+  "width=200, height=300, top=100, left=400"
+);
+
+// navigator: información del navegador
+
+navigator.userAgent;
+navigator.language;
+navigator.cookieEnabled;
+
+// screen: información de la configuración de pantalla
+
+screen.width;
+screen.height;
+screen.colorDepth;
+
+// history: almacena el historial de visitas del navegador
+
+history.length;
+history.back();
+history.forward();
+history.go(posicion);
+
+// location: información de la URL actual
+
+location.href;
+location.hostname;
+location.pathname;
+location.search;
+location.port;
+location.protocol;
+location.assign("http://www.google.com"); // se redirecciona a otra página
+location.reload(); // recarga la página actual idem F5
+
+// document: elementos (texto, imágenes, enlaces, formularios, etc.)
+
+var miForm = document.forms["formNuevoUsuario"];
+var miImage = document.images["logo"];
+var miLink = document.links[3];
+var miScript = document.scripts[0];
+
+document.doctype;
+document.title;
+document.lastModified;
+
+document.write("Esto es un texto <B> en negrita </B>");
+
 page = document.getElementById("page"); // <div id="page"></div>. Si no lo encuentra devuelve NULL
 items = document.getElementsByClassName("item"); // [div, div, div]. Si no encuentra ninguno devuelve []
 names = document.getElementsByName("nickname"); // <p name="nickname"></p>
@@ -18,9 +79,9 @@ names = document.querySelectorAll('[name="nickname"]'); // Obtiene todos los ele
 divs = document.querySelectorAll("div"); // Obtiene todos los elementos <div> de la página HTML
 
 // Crear elementos HTML
-div = document.createElement("div"); // Creamos un <div></div>
-span = document.createElement("span"); // Creamos un <span></span>
-img = document.createElement("img"); // Creamos un <img>
+div = document.createElement("div"); // Se crea un <div></div>
+span = document.createElement("span"); // Se crea un <span></span>
+img = document.createElement("img"); // Se crea un <img>
 
 comment = document.createComment("Comentario"); // <!--Comentario-->
 text = document.createTextNode("Hola"); // Nodo de texto: 'hola'

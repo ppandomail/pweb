@@ -1,0 +1,68 @@
+<!-- 
+
+AJAX 
+
+. JavaScript Asíncrono y XML (AJAX).
+. Es un conjunto de técnicas de desarrollo web que permiten evitar las demoras que pueden presentarse en las clásicas peticiones y posteriores resultados del servidor; para lograrlo se encarga de transmitir pequeños paquetes de datos en segundo plano.
+. Entonces, la principal característica de AJAX reside en que hace posible efectuar peticiones al servidor y obtener resultados en segundo plano. Luego, utiliza los datos obtenidos para modificar los contenidos presentes en la página con la posibilidad de ofrecer efectos dinámicos y que se desplieguen con rapidez.
+. Esto es posible pues no se necesita recargar la página por completo como sucede con otras tecnologías que realizan peticiones al servidor.
+. Crea aplicaciones más rápidas y con mejor respuesta a las acciones del usuario.
+
+Pasos: 
+1. Usuario realiza una acción en la página.
+2. Se invoca a XMLHttpRequest para iniciar la petición al servidor.
+3. Se ejecuta una petición asíncrona.
+4. Servidor procesa los datos recibidos y devuelve un XML con la información necesaria.
+5. XMLHttpRequest interpreta el XML y reparte la información a los lugares que corresponde.
+6. Se actualiza solo aquella parte de la página requerida por los datos, es escrita y se forma el objeto DOM con los nuevos datos.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>AJAX Básico</title>
+  </head>
+  <body>
+    <button type="button" onclick="cargar_usuarios()">Obtener Usuarios</button>
+    <br />
+    <br />
+    <table id="usuarios"></table>
+    <script>
+      function cargar_usuarios() {
+        // Permite realizar la comunicación con el servidor en segundo plano
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function () {
+          // readyState: representa la situación del intercambio de datos a través del objeto
+          // 0: no iniciado, 1: conexión con servidor establecida, 2: recibida petición en servidor, 3: enviando información, 4: completado
+          // status: código enviado por el servidor que indica el tipo de respuesta dada a la petición
+          // 200: OK, 404: no encontrado, 500: error interno del servidor
+          if (this.readyState == 4 && this.status == 200)
+            procesarRespuesta(this);
+        };
+        // Crea la petición para el servidor
+        xmlhttp.open("GET", "https://reqres.in/api/users?page=1");
+        // Envia la petición al servidor
+        xmlhttp.send();
+      }
+
+      function procesarRespuesta(xmlhttp) {
+        // responseText: contiene la respuesta del servidor en formato texto
+        var json = JSON.parse(xmlhttp.responseText).data;
+        var table =
+          "<tr> <th> Name </th> <th> Email </th> <th> Avatar </th> </tr>";
+        for (var i = 0; i < json.length; i++)
+          table +=
+            "<tr> <td>" +
+            json[i].first_name +
+            "</td> <td>" +
+            json[i].email +
+            "</td> <td> <img src='" +
+            json[i].avatar +
+            "' /> </td> </tr>";
+        document.getElementById("usuarios").innerHTML = table;
+      }
+    </script>
+  </body>
+</html>

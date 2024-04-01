@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Ejemplo validate form</title>
+  </head>
+
+  <body>
+    <h1>Formulario para darse de alta como usuario en nuestra Web</h1>
+    <form id="form" name="formRegistro" action="registrar.php" method="post">
+      Username: <input type="text" id="ent1" name="usuario" maxlength="8" />(Máximo 8 caracteres) <br />
+      Password: <input type="password" id="ent2" name="clave" /> <br />
+      Repetir: <input type="password" id="ent3" name="claveRepe" />(Deben coincidir) <br />
+      Email: <input type="text" id="ent4" name="email" size="40" /> 
+      Idioma:
+      <select id="sel1" name="idioma">
+        <option id="opc1" value="EN">Inglés</option>
+        <option id="opc2" value="ES" selected>Español</option>
+        <option id="opc3" value="PT">Portugués</option>
+      </select>
+      <br />
+      <br />
+      <input type="checkbox" id="sel2" name="publicidad" />Quiero recibir publicidad mensual en mi mail <br />
+      <a href="javascript:validarRegistro()">Validar formulario</a>
+    </form>
+    <script src="codigo.js"></script>
+  </body>
+</html>
