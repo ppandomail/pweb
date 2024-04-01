@@ -1,15 +1,82 @@
-<html>
+<!--
+
+JQuery
+
+. Creada en 2006 por John Resig
+. Es una librería JavaScript, gratuita con licencia GNU
+. Simplifica las tareas de:
+  . Manipulación HTML/DOM y CSS
+  . Métodos para los eventos HTML
+  . Efectos y animaciones
+  . AJAX
+  . Utilidades
+. Sitio: https://jquery.com
+
+. Sintaxis básica: $(selector).action()
+  . $(this).hide()    // oculta el elemento actual
+  . $("p").hide()     // oculta todos los elementos <p>
+  . $(".test").hide() // oculta todos los elementos con class = "test"
+  . $("#test").hide() // oculta el elemento con id = "test"
+
+. Funciones:
+  . html()	                        // devuelve contenido html
+  . html('Un poco de <em> markup ')	// asigna nuevo html
+  . text()	                        // devuelve contenido textual
+  . text('Pepe')	                  // asigna contenido textual
+  . empty()	                        // equivale a html('')
+  . css('color')	                  // devuelve valor de la prop css
+  . css('color', 'red')	            // asigna el estilo css
+  . attr('src')	                    // devuelve el valor del atributo
+  . attr('src', 'http://')	        // asigna un nuevo valor al atributo
+
+. Eventos:
+  . click(callback)
+  . change(callback)
+  . blur(callback)
+  . focus(callback)
+  . submit(callback)
+  . hover(callback)
+  . hover(callbackIn, callbackOut)
+  . Otros eventos: https://api.jquery.com/category/events/
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <title>jQuery</title>
   </head>
   <body>
     <h1>HTML</h1>
+    <button id="btn1">Pulsar aquí</button>
+    <div id="miDiv"></div>
     <script src="jquery-3.7.1.min.js"></script>
     <script>
+      // DOM
       $("h1").text("jQuery está en la casa");
       console.log(document.querySelector("h1").innerText);
       console.log($("h1").text());
+
+      // Evento
+      $("#btn1").click(function () {
+        console.log("click");
+      });
+
+      // AJAX
+      $.ajax({
+        url:'https://reqres.in/api/users?page=1'
+      })
+      .done(recibir)
+      .fail(manejarError);
+   
+      function recibir(datos){
+        $('#miDiv').text(JSON.stringify(datos));
+      }
+   
+      function manejarError() {
+        alert('Se produjo un error');
+      }
     </script>
   </body>
 </html>
