@@ -20,8 +20,8 @@
 
 * Simple configuración.
 * Resolución de dependencias: tiene ciertos módulos que permiten trabajar con REST API, web, streaming, SQL, NoSQL, etc.
-* Despliegues sencillos: Spring Boot está diseñado para poner una aplicación en funcionamiento lo más rápido posible, con una configuración inicial mínima de Spring. 
-* Se puede usar con Java, Kotlin y Groovy. 
+* Despliegues sencillos: Spring Boot está diseñado para poner una aplicación en funcionamiento lo más rápido posible, con una configuración inicial mínima de Spring.
+* Se puede usar con Java, Kotlin y Groovy.
 * En Spring Boot las aplicaciones son consideradas STANDALONE ya que el framework tienen un servidor Apache Tomcat embebido en el proyecto.
 
 ### ¿Qué tipo de proyectos se puede hacer con Spring Boot?
@@ -43,7 +43,7 @@
 * Crear monolitos backend de controladores y frontend thymeleaf
 * Crear un backend de servicios rest e integraarlos con frontend como Angular, React.js, Vue.js
 
-### Empresas que usan Spring Boot:
+### Empresas que usan Spring Boot
 
 * MIT
 * OpenGo
@@ -58,7 +58,7 @@
 * Es de código abierto para la plataforma Java, Kotlin y Groovy.
 * Lanzado en 2003 para Java.
 
-### Ventajas de Spring:
+### Ventajas de Spring
 
 * Tecnología robusta y estable.
 * Organización modular.
@@ -67,21 +67,21 @@
 * Ecosistema amplio.
 * Gran comunidad de desarrolladores la respaldan.
 
-### Empresas que usan Spring:
+### Empresas que usan Spring
 
 * Ebay
 * Google
 * Netflix
 * etc.
 
-### Información Técnica y Requisitos:
+### Información Técnica y Requisitos
 
 * Java versión 8 o +
 (https://www.oracle.com/technetwork/es/java/javase/downloads/index.html)
 * Spring tiene su propio IDE (Spring Tool Suite) está basado en Eclipse (https://spring.io/tools).Es un portable (no necesita instalación)
 * Se puede usar cualquier otro IDE (NetBeans, IntelliJ, Eclipse).
 
-### Spring Initializr:
+### Spring Initializr
 
 * Spring Boot dá un proyecto base.
 * La forma más conocida se encuentra en su página oficial, donde se crea el proyecto, es decir, se completa el formulario (metadata, dependencias) se lo descarga como un .zip y luego se lo importa al IDE. (https://start.spring.io/ )
@@ -89,26 +89,26 @@
 
 ## Proyecto Consola
 
-### Pasos:
+### Pasos
 
 1. Configurar y generar el proyecto con Spring Initializr:
-  * Project: Gradle Project
-  * Language: Java
-  * Spring Boot: (dejar la que viene seleccionada por default)
-  * Group: ar.edu.ub
-  * Artifact: proyecto_consola
-  * Name: proyecto_consola
-  * Description: Demo project for Spring Boot
-  * Project name: ar.edu.ub.proyecto_consola
-  * Packaging: Jar
-  * Java: (dejar la que viene seleccionada por default)
-  * Dependencies: No dependency selected
+		* Project: Gradle Project
+		* Language: Java
+		* Spring Boot: (dejar la que viene seleccionada por default)
+		* Group: ar.edu.ub
+		* Artifact: proyecto_consola
+		* Name: proyecto_consola
+		* Description: Demo project for Spring Boot
+		* Project name: ar.edu.ub.proyecto_consola
+		* Packaging: Jar
+		* Java: (dejar la que viene seleccionada por default)
+		* Dependencies: No dependency selected
 
 2. Copiar el zip generado en el workspace y descomprimirlo.
 3. Importar como proyecto Gradle desde el Eclipse.
 4. Verificar que compila, sino botón derecho sobre el proyecto (Gradle -> Refresh Gradle Project). Reconstruye el proyecto según el contenido del archivo build.gradle:
 
-```
+```plain
 …
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
@@ -147,17 +147,18 @@ public class ProyectoConsolaApplication implements CommandLineRunner {
 
 }
 ```
+
 7. Ejecutar la clase ProyectoConsolaApplication como aplicación Java.
 
 
-### Inyección de dependencias:
+### Inyección de dependencias
 
 * Dependency Injection, DI
 * Es un patrón usado en el diseño orientado a objetos de una aplicación.
 * Tiene como finalidad solucionar un problema de mantener los componentes o capas de una aplicación lo más desacopladas posible. 
 * Busca que sea mucho más sencillo reemplazar la implementación de un componente por otro. Así, evitar un gran cambio o impacto en la aplicación que pudiera originar que deje de funcionar por completo.
-* Permite inyectar comportamientos a componentes haciendo que las piezas de software sean independientes y se comuniquen únicamente a través de una interface. 
-* Esto extrae responsabilidades a un componente para delegarlas en otro, estableciendo un mecanismo a través del cual el nuevo componente puede ser cambiado en tiempo de ejecución. 
+* Permite inyectar comportamientos a componentes haciendo que las piezas de software sean independientes y se comuniquen únicamente a través de una interface.
+* Esto extrae responsabilidades a un componente para delegarlas en otro, estableciendo un mecanismo a través del cual el nuevo componente puede ser cambiado en tiempo de ejecución.
 * Para lograr esta tarea DI se basa en un patrón más genérico llamado Inversión de Control (Inversion of Control).
 * Se suministran objetos a una clase en lugar de ser la propia clase la que cree dichos objetos.
 
@@ -200,8 +201,7 @@ public class Aplicacion {
 * Con la annotation @Autowired, automáticamente el framework va a buscar una instancia definida por algún estereotipo.
 * El mismo framework nos provee las instancias, en Spring las instancias son manejadas con ámbito Singleton.
 
-
-### Estereotipos:
+### Estereotipos
 
 * Los estereotipos (@Controller, @Service, @Repository, @Component) sólo indican que se va a crear un bean en el contenedor de Spring, a modo de contextualizar un uso.
 * Sirven para poder registrar un bean en el contenedor de Spring.
@@ -212,10 +212,10 @@ public class Aplicacion {
 
 ```
 
-### Qualifier:
+### Qualifier
 
-* En algunas ocasiones se necesita tener más de una implementación de alguna interface. 
-* Ejemplo: 
+* En algunas ocasiones se necesita tener más de una implementación de alguna interface.
+* Ejemplo:
 
 ```java
 

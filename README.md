@@ -18,7 +18,7 @@
 | -- | -- | -- | -- |
 | 1 | Intro | [Apunte](doc/intro.md) | |
 | 2 | Git | [Apuntes](doc/git.md) | [Fuentes](https://docs.github.com/es) |
-| 3 | HTML5 | [Apuntes](doc/html5.md) | [Fuentes](https://developer.mozilla.org/es/docs/Web/HTML) |
+| 3 | HTML5 | [Ejemplos](proy/proyectos_frontend/HTML/)| [Fuentes](https://developer.mozilla.org/es/docs/Web/HTML) |
 | 4 | CSS3 | [Apuntes](doc/css3.md) | [Fuentes](https://developer.mozilla.org/es/docs/Web/CSS) |
 | 5 | BS | [Apuntes](doc/bootstrap.md) | [Fuentes](https://getbootstrap.com) |
 | 6 | JS | [Apuntes](doc/js.md) | [Fuentes](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference) |

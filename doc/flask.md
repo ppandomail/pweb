@@ -18,79 +18,81 @@
 * Permite crear aplicaciones web de todo tipo rapidamente.
 
 ### Configuración del entorno de programación
+
 * Python instalado.
 * Virtualenv instalado. Virtualenv nos permite aislar nuestra aplicación junto con todas sus dependencias de otras aplicaciones Python que tengamos en nuestro sistema, de manera que las librerías de cada una de las aplicaciones no entren en conflicto.
 
+```sh
+mkdir prueba-flask
+cd prueba-flask
+virtualenv venv
+source venv/bin/activate    # en Linux/Mac
+venv\Scripts\activate.bat   # en Windows
 ```
-$ mkdir prueba-flask
-$ cd prueba-flask
-$ virtualenv venv
-$ source venv/bin/activate    # en Linux/Mac
-$ venv\Scripts\activate.bat   # en Windows
-```
+
 * Sabemos que el entorno está activo porque el prompt comienza con la palabra "venv"
 
-```
+```sh
 (venv) usuario:~/Proyectos/prueba-flask$
 ```
 
 ### Instalación de Flask
 
-```
-$ pip install flask
+```sh
+pip install flask
 ```
 
 * De manera que dentro de nuestro entorno "venv", se instalarán el framework y las librerías que necesite.
 * Podemos ver todas las dependencias de nuestra aplicación si ejecutamos el siguiente comando:
 
+```sh
+pip freeze
 ```
-$ pip freeze
-```
-
 
 ### Aplicación "Hola Mundo!"
 
 1. Crear y editar el archivo hello.py
 
-```python
-from flask import Flask
+    ```python
+    from flask import Flask
 
-app = Flask(__name__)
+    app = Flask(__name__)
 
-@app.route('/')
-def index():
-    return 'Hola mundo!'
-```
+    @app.route('/')
+    def index():
+        return 'Hola mundo!'
+    ```
 
-* Flask se encarga de hacernos transparente el cómo a partir de una petición URL se ejecuta finalmente nuestra rutina.
-* El decorador "route" de la aplicación app es el encargado de decirle a Flask qué URL debe ejecutar su correspondiente función.
-* La función debe devolver la respuesta que será mostrada en el navegador del usuario.
+    * Flask se encarga de hacernos transparente el cómo a partir de una petición URL se ejecuta finalmente nuestra rutina.
+    * El decorador "route" de la aplicación app es el encargado de decirle a Flask qué URL debe ejecutar su correspondiente función.
+    * La función debe devolver la respuesta que será mostrada en el navegador del usuario.
 
-2. Ejecutar el servidor interno 
+2. Ejecutar el servidor interno
 
-```
-$ export FLASK_APP=hello.py
-$ flask run
-```
+    ```sh
+    export FLASK_APP=hello.py
+    flask run
+    ```
 
-* Otra forma de hacerlo es modificar el archivo "activate" del entorno de Python (venv/bin/activate) agregando al final del archivo:
+    * Otra forma de hacerlo es modificar el archivo "activate" del entorno de Python (venv/bin/activate) agregando al final del archivo:
 
-```
-export FLASK_APP=hello.py   # En Linux/Mac
-set "FLASK_APP=hello.py"    # En Windows
-```
-* Para que los cambios realizados se tengan en cuenta debemos salir del entorno Python y volver a entrar:
+    ```sh
+    export FLASK_APP=hello.py   # En Linux/Mac
+    set "FLASK_APP=hello.py"    # En Windows
+    ```
 
-```
-$ source venv/bin/deactivate
-$ source venv/bin/activate
-```
+    * Para que los cambios realizados se tengan en cuenta debemos salir del entorno Python y volver a entrar:
 
-* Luego lanzamos el servidor de Flask:
+    ```sh
+    source venv/bin/deactivate
+    source venv/bin/activate
+    ```
 
-```
-$ flask run
-```
+    * Luego lanzamos el servidor de Flask:
+
+    ```sh
+    flask run
+    ```
 
 3. Para comprobar que nuestra aplicación funciona, podemos entrar al navegador y en la barra de direcciones introducir "localhost:5000/"
 
@@ -101,56 +103,55 @@ $ flask run
 * Para aceptar peticiones de otras computadoras de nuestra red lanzaremos el servidor de la siguiente manera: flask run --host 0.0.0.0
 * Para salir del servidor (CTRL + C)
 
-
 ### Aplicación con formato
 
 1. Crear y editar el archivo formato.py
 
-```python
-from flask import Flask
+    ```python
+    from flask import Flask
 
-app = Flask(__name__)
+    app = Flask(__name__)
 
-@app.route('/contacto')
-def contacto():
-    return '<h1>Contacto</h1>'
-```
+    @app.route('/contacto')
+    def contacto():
+        return '<h1>Contacto</h1>'
+    ```
 
-* Aclaración: al definir una URL terminada con '/', si el usuario accede a esa URL sin dicho caracter, Flask lo redigirá a la URL terminada en '/'. En cambio, si la URL se define sin terminar en '/' y el usuario accede indicando la '/' al final, Flask dará un error HTTP 404.
+    * Aclaración: al definir una URL terminada con '/', si el usuario accede a esa URL sin dicho caracter, Flask lo redigirá a la URL terminada en '/'. En cambio, si la URL se define sin terminar en '/' y el usuario accede indicando la '/' al final, Flask dará un error HTTP 404.
 
 2. Ejecutar el servidor interno
 
-```
-$ export FLASK_APP=formato.py
-$ flask run
-```
+    ```sh
+    export FLASK_APP=formato.py
+    flask run
+    ```
 
-* En un navegador: localhost:5000/contacto
+    * En un navegador: localhost:5000/contacto
 
 ### Aplicación con parámetro
 
 * En una aplicación web no todas las páginas tienen una URL definida de antemano, como es el caso de la página principal.
 * A una URL le podemos agregar secciones variables o parametrizadas con "param".
 * La vista recibirá "param" como un parámetro con ese mismo nombre.
-* Opcionalmente se puede indicar un conversor "converter" para especificar el tipo de dicho parámetro así "converter:param" 
+* Opcionalmente se puede indicar un conversor "converter" para especificar el tipo de dicho parámetro así "converter:param"
 
 1. Crear y editar el archivo parametros.py
 
-```python
-from flask import Flask
+    ```python
+    from flask import Flask
 
-app = Flask(__name__)
+    app = Flask(__name__)
 
-@app.route('/hola/<string:nombre>')
-def hola(nombre):
-    return f'<h1>Hola {nombre}</h1>'
-```
+    @app.route('/hola/<string:nombre>')
+    def hola(nombre):
+        return f'<h1>Hola {nombre}</h1>'
+    ```
 
 2. Ejecutar el servidor interno
 
-```
-$ export FLASK_APP=parametros.py
-$ flask run
+```sh
+export FLASK_APP=parametros.py
+flask run
 ```
 
 * En un navegador: localhost:5000/hola/Pablo
@@ -161,7 +162,6 @@ $ flask run
   * float
   * path: como string pero acepta cadenas con '/'
   * uuid: acepta cadenas con formato UUID (32 dígitos hexadecimales). Ejemplo: 550e8400-e29b-41d4-a716-446655440000 
-
 
 ## Uso de plantillas para las páginas HTML
 
@@ -197,7 +197,6 @@ def home():
 
 ### Template con pasaje de parámetro
 
-
 ```python
 from flask import Flask, render_template
 
@@ -225,7 +224,7 @@ def home():
 
 ### Archivos estáticos
 
-* Su contenido no cambia a lo largo del ciclo de ejecución de una aplicación web. 
+* Su contenido no cambia a lo largo del ciclo de ejecución de una aplicación web.
 * Ejemplo: archivos CSS, imágenes, código javascript
 * Flask facilita una vista para servir los recursos estáticos de nuestra aplicación, evitando de preocuparnos de configuraciones.
 * Estoa archivos se deben ubicar en un directorio llamado "static" situado al mismo nivel que el directorio "template". Este directorio estará accesible en la URL "/static"
