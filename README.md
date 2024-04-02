@@ -20,8 +20,8 @@
 | 2 | Git | [Apuntes](doc/git.md) | [Fuentes](https://docs.github.com/es) |
 | 3 | HTML5 | [Ejemplos](proy/proyectos_frontend/HTML/)| [Fuentes](https://developer.mozilla.org/es/docs/Web/HTML) |
 | 4 | CSS3 | [Ejemplos](proy/proyectos_frontend/CSS/) | [Fuentes](https://developer.mozilla.org/es/docs/Web/CSS) |
-| 5 | BS | [Apuntes](doc/bootstrap.md) | [Fuentes](https://getbootstrap.com) |
-| 6 | JS | [Apuntes](doc/js.md) | [Fuentes](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference) |
+| 5 | BS | [Ejemplos](proy/proyectos_frontend/BS/) | [Fuentes](https://getbootstrap.com) |
+| 6 | JS | [Ejemplos](proy/proyectos_frontend/JS/) | [Fuentes](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference) |
 
 ## Crono Programación Web 1
 

@@ -1,0 +1,61 @@
+<!-- 
+  
+Bootstrap: 
+
+. Framework frontend para interfaces web responsivas
+. Incluye plantillas de diseño basadas en HTML y CSS para: 
+  . tipografía
+  . formularios
+  . botones
+  . tablas
+  . etc.
+
+. Integración al proyecto:
+  . Descargando y referenciando los archivos localmente
+  . Referenciando el framework a través de un CDN válido
+
+Clases
+
+. Los estilos de bootstrap están definido por clases que permiten aplicar diseño rápido a los elementos del HTML.
+. Se busca en bootstrap el estilo que se desea aplicar y se le da esa clase al elemento.
+. Un elemento puede tener más de una clase
+
+Sitio Bootstrap: https://getbootstrap.com/ 
+
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ejemplo Bootstrap contenedores</title>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <h1>Ejemplos Bootstrap</h1>
+    <h2>Contenedores</h2>
+    <h3>Container</h3>
+    <div class="container">
+      <h1>My First Bootstrap Page</h1>
+      <p>This is some text.</p>
+    </div>
+    <h3>Container fluid</h3>
+    <div class="container-fluid">
+      <h1>My First Bootstrap Page</h1>
+      <p>This is some text.</p>
+    </div>
+  </body>
+</html>
