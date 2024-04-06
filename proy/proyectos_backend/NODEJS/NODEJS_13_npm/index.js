@@ -19,7 +19,7 @@ npm install colors       # también npm i colors
 
 */
 
-const colors = require('colors')
+require('colors')
 
 console.log('hello world'.bgGreen)
 console.log('google.com'.bgYellow)

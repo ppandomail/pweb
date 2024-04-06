@@ -19,7 +19,7 @@ async function resquestHandler(req, res) {
     const tasks = await Tasks.findById(user.tasksId);
     tasks.completed = true;
     await tasks.save();
-    res.send("Tak Completed");
+    res.send("Tarefa resolvida");
   } catch (err) {
     res.send(err);
   }
