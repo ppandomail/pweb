@@ -32,5 +32,10 @@ app.delete("/produto", (req, res) => {
   res.send("Removendo produto");
 });
 
+// Significa que la ruta funciona con métodos get, post, put, delete
+app.all("/info", (req, res) => {
+  res.send('Informação do servidor')
+})
+
 app.listen(3000);
 console.log("Servidor no porto 3000");
