@@ -1,4 +1,5 @@
 const express = require("express");
+
 const app = express();
 
 app.get("/", (req, res) => {
@@ -8,4 +9,4 @@ app.get("/", (req, res) => {
 });
 
 app.listen(3000);
-console.log("Server on port 3000");
+console.log("Servidor escutando no porto 3000");

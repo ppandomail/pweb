@@ -10,10 +10,10 @@ Queries:
 const express = require("express");
 const app = express();
 
-app.get("/soma/:nome", (req, res) => {
+app.get("/soma/:nome_do_computador", (req, res) => {
   console.log(req.query);
   const { x, y } = req.query;
-  res.send(`Resultado da soma: ${parseInt(x) + parseInt(y)}`);
+  res.send(`Resultado da soma para computador ${req.params.nome_do_computador} é ${parseInt(x) + parseInt(y)}`);
 });
 // en el browser  https://localhost:3000/soma/pepe?x=20&y=30
 

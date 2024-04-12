@@ -1,8 +1,18 @@
+/*
+
+MongoDB:
+
+. Base de datos NoSQL
+. Utiliza un enfoque basado en documentos, donde los datos se organizan en documentos flexibles 
+  similares a JSON.
+
+*/
+
 const { MongoClient, ServerApiVersion } = require("mongodb");
 const uri =
   "mongodb+srv://ppandomail:Gr1ll1t0@cluster0.qliwatk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
-// Create a MongoClient with a MongoClientOptions object to set the Stable API version
+// Crea un MongoClient con un objeto MongoClientOptions para setear la version Stable API
 const client = new MongoClient(uri, {
   serverApi: {
     version: ServerApiVersion.v1,
@@ -13,9 +23,9 @@ const client = new MongoClient(uri, {
 
 async function run() {
   try {
-    // Connect the client to the server	(optional starting in v4.7)
+    // Conecta el cliente al servidor	
     await client.connect();
-    // Send a ping to confirm a successful connection
+    // Envia un ping para confirmar una conexión exitosa
     await client.db("admin").command({ ping: 1 });
     console.log(
       "Pinged your deployment. You successfully connected to MongoDB!"

@@ -26,14 +26,14 @@ app.use(express.urlencoded({ extended: false }));
 // Body -> Text : Bemvindo
 app.post("/texto", (req, res) => {
   console.log(req.body);
-  res.send("Recebi o texto");
+  res.send(`Recebi o texto ${req.body}`);
 });
 
 // Probar con el cliente rest (plugin Thunder Client) Body
 // Json -> { "email" : "pepe@gmail.com" }
 app.post("/usuario", (req, res) => {
   console.log(req.body);
-  res.send("Novo usuário criado");
+  res.send("Novo usuário criado com dados json");
 });
 
 // Probar con el cliente rest (plugin Thunder Client)
@@ -42,7 +42,7 @@ app.post("/usuario", (req, res) => {
 // age       18
 app.post("/usuario", (req, res) => {
   console.log(req.body);
-  res.send("Novo usuário criado");
+  res.send("Novo usuário criado com dados formulário");
 });
 
 app.listen(3000);

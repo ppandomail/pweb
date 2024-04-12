@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
   res.send("Bemvindo");
 });
 
-app.get("/miarquivo", (req, res) => {
+app.get("/meuarquivo", (req, res) => {
   res.sendFile("./bandeira.jpg", {
     root: __dirname,
   });

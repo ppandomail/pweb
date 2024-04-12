@@ -20,8 +20,8 @@ app.get("/ola/:nome", (req, res) => {
 app.get("/soma/:x/:y", (req, res) => {
   const x = parseInt(req.params.x);
   const y = parseInt(req.params.y);
-  const result = x + y;
-  res.send(`Resultado da soma: ${result}`);
+  const resultado = x + y;
+  res.send(`Resultado da soma: ${resultado}`);
 });
 // en el browser  https://localhost:3000/soma/20/30
 

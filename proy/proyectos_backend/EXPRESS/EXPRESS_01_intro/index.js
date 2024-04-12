@@ -17,7 +17,7 @@ mkdir myapp
 cd myapp
 npm init -y
 npm i express
-touch index.js
+touch index.js  o  en windows: echo > index.js
 gedit index.js
 
 */
