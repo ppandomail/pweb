@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Pessoas</title>
+  </head>
+  <body>
+    <h1>Pessoas</h1>
+    <table>
+      <tr>
+        <th>Id</th>
+        <th>Nome</th>
+        <th>Idade</th>
+        <th>Açoes</th>
+      </tr>
+      <% for(i = 0; i < pessoas.length; i++) { %>
+      <tr>
+        <td><%= pessoas[i].id %></td>
+        <td><%= pessoas[i].nome %></td>
+        <td><%= pessoas[i].idade %></td>
+        <td>
+            <button onclick='editar()'>...</button>
+            <button onclick='eliminar()'>X</button>
+        </td>
+      </tr>
+      <% } %>
+    </table>
+  </body>
+</html>
