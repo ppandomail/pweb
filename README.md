@@ -38,7 +38,7 @@
 | 1 | Intro| [Apuntes](doc/intro2.md) | |
 | 2 | Nodejs | [Ejemplos](proy/proyectos_backend/NODEJS/) | [Fuentes](https://nodejs.org/) |
 | 3 | Express | [Ejemplos](proy/proyectos_backend/EXPRESS/) | [Fuentes](https://expressjs.com/es/) |
-| 4 | BD | [Apuntes](doc/bd.md) | |
+| 4 | BD | [Apuntes](proy/proyectos_backend/BD/) | |
 | 5 | Postman | [Apuntes](doc/postman.md) | [Fuentes](https://www.postman.com/) |
 | 6 | Cypress | [Apuntes](doc/cypress.md) | [Fuentes-1](https://www.cypress.io/) [Fuentes-2](https://docs.cypress.io/guides/overview/why-cypress)|
 | 7 | Deploy | [Apuntes](doc/deploy.md) | [Fuentes](https://www.heroku.com/) |
