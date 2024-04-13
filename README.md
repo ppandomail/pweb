@@ -40,7 +40,7 @@
 | 3 | Express | [Ejemplos](proy/proyectos_backend/EXPRESS/) | [Fuentes](https://expressjs.com/es/) |
 | 4 | BD | [Apuntes](proy/proyectos_backend/BD/) | |
 | 5 | Postman | [Apuntes](doc/postman.md) | [Fuentes](https://www.postman.com/) |
-| 6 | Cypress | [Apuntes](doc/cypress.md) | [Fuentes-1](https://www.cypress.io/) [Fuentes-2](https://docs.cypress.io/guides/overview/why-cypress)|
+| 6 | Cypress | [Apuntes](proy/proyectos_backend/CY/) | [Fuentes-1](https://www.cypress.io/) [Fuentes-2](https://docs.cypress.io/guides/overview/why-cypress)|
 | 7 | Deploy | [Apuntes](doc/deploy.md) | [Fuentes](https://www.heroku.com/) |
 
 ## Otros Frameworks de Backend
@@ -55,8 +55,8 @@
 
 | Fecha | Entregas |
 | -- | -- |
-| 03/05 | **Entrega 1: APIs** |
-| 14/06 | **Entrega 2: Datos + TA** |
+| 03/05 | **Entrega 1: BE (APIs)** |
+| 14/06 | **Entrega 2: FE + BE(APIs y BD) + CY + DEPLOY** |
 | 28/06 | **Recuperatorios** y **Cierre** |
 
 ## Criterios de evaluación UNO para ambas materias
