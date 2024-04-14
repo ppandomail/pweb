@@ -19,7 +19,7 @@ import fileUpload from "express-fileupload";
 
 const app = express();
 
-// middleware, pone al req la prop file
+// middleware, pone al req la prop files
 app.use(
   fileUpload({
     useTempFiles: true,
@@ -32,7 +32,7 @@ app.get("/", (req, res) => {
 });
 
 app.post("/arquivos", (req, res) => {
-  console.log(req.file);
+  console.log(req.files);
   res.json({ message: "Arquivo baixado" });
 });
 // usar Thunder Client y en Body/Form check en File 

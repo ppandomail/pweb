@@ -1,8 +1,7 @@
-import {config} from 'dotenv'
-config()
+import { config } from "dotenv";
+config();
 
-const AWS_BUCKET_NAME = process.env.AWS_BUCKET_NAME
-const AWS_BUCKET_REGION = process.env.AWS_BUCKET_REGION
-const AWS_PUBLIC_KEY = process.env.AWS_PUBLIC_KEY
-const AWS_PRIVATE_KEY = process.env.AWS_PRIVATE_KEY
-
+export const AWS_BUCKET_NAME = process.env.AWS_BUCKET_NAME;
+export const AWS_BUCKET_REGION = process.env.AWS_BUCKET_REGION;
+export const AWS_PUBLIC_KEY = process.env.AWS_PUBLIC_KEY;
+export const AWS_PRIVATE_KEY = process.env.AWS_PRIVATE_KEY;
