@@ -1,39 +1,32 @@
-const { MongoClient } = require("mongodb");
+import express from "express";
+import { procurarTudo, procurar, inserir, atualizar, apagar } from "./db.js";
 
-const uri =
-  "mongodb+srv://ppandomail:Gr1ll1t0@cluster0.qliwatk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
-const client = new MongoClient(uri);
-const database = client.db("db");
-const pessoas = database.collection("pessoas");
+const app = express();
 
-async function procurar(query) {
-  const pessoa = await pessoas.findOne(query);
-  console.log(pessoa);
-  fechar()
-}
+app.get("/", async (req, res) => {
+  const resultado = await procurarTudo();
+  res.json(resultado);
+});
 
-async function inserir(pessoa) {
-  await pessoas.insertOne(pessoa);
-  fechar()
-}
+app.get("/pessoa/:nome", async (req, res) => {
+  const resultado = await procurar(req.params.nome);
+  res.json(resultado);
+});
 
-async function atualizar(query, set) {
-  await pessoas.updateOne(query, set)
-  fechar()
-}
+app.post("/pessoa/nome/:nome/idade/:idade", async (req, res) => {
+  await inserir({ nome: req.params.nome, idade: req.params.idade });
+  res.json({ message: "Pessoa inserida" });
+});
 
-async function apagar(pessoa) {
-  await pessoas.deleteOne(pessoa);
-  fechar()
-}
+app.put("/pessoa/nome/:nome/idade/:idade", async (req, res) => {
+  await atualizar(req.params.nome, req.params.idade);
+  res.json({ message: "Pessoa atualizada" });
+});
 
-async function fechar() {
-  await client.close();
-}
+app.delete("/pessoa/nome/:nome", async (req, res) => {
+  await apagar(req.params.nome);
+  res.json({ message: "Pessoa apagada" });
+});
 
-// inserir({ nome: "pepe", idade: 24 });
-// atualizar({ nome: "pepe" }, { $set: { idade: 44 } });
-// procurar({ nome: "pepe" });
- procurar({});
-// apagar({ nome: "pepe" });
-// fechar();
+app.listen(3000);
+console.log("Servidor no porto 3000");
