@@ -28,6 +28,9 @@ const morgan = require("morgan");
 
 const app = express();
 let produtos = [];
+produtos.push({ nome: "zapatillas", preço: 20, id: 1 });
+produtos.push({ nome: "notebook", preço: 2000, id: 2 });
+produtos.push({ nome: "caneta", preço: 5, id: 3 });
 
 app.use(morgan("dev"));
 app.use(express.json());
@@ -38,12 +41,12 @@ app.get("/produtos", (req, res) => {
 
 app.post("/produtos", (req, res) => {
   // se crea un nuevo objeto con id
-  const novoProduto = { ...req.body, id: products.length + 1 };
+  const novoProduto = { ...req.body, id: produtos.at(-1).id + 1 };
   produtos.push(novoProduto);
   res.send(novoProduto);
 });
 
-app.put("/produtos", (req, res) => {
+app.put("/produtos/:id", (req, res) => {
   const novoDado = req.body;
   const produtoEncontrado = produtos.find(
     (p) => p.id === parseInt(req.params.id)
@@ -58,7 +61,7 @@ app.put("/produtos", (req, res) => {
   });
 });
 
-app.delete("/produtos", (req, res) => {
+app.delete("/produtos/:id", (req, res) => {
   const produtoEncontrado = produtos.find(
     (p) => p.id === parseInt(req.params.id)
   );
