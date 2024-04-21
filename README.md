@@ -22,6 +22,7 @@
 | 4 | CSS3 | [Ejemplos](proy/proyectos_frontend/CSS/) | [Fuentes](https://developer.mozilla.org/es/docs/Web/CSS) |
 | 5 | BS | [Ejemplos](proy/proyectos_frontend/BS/) | [Fuentes](https://getbootstrap.com) |
 | 6 | JS | [Ejemplos](proy/proyectos_frontend/JS/) | [Fuentes](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference) |
+| 7 | VUE | [Ejemplos](proy/proyectos_frontend/VUE/) | [Fuentes](https://vuejs.org/) |
 
 ## Crono Programación Web 1
 
