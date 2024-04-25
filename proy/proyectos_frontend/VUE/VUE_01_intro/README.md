@@ -50,5 +50,3 @@ npm run dev             # luego ir a localhost:5173
 ## SFC (single file component)
 
 * Es una técnica que permite separar estructura (HTML), lógica (JS) y estilos (CSS)
-
-## Sintaxis de plantilla
