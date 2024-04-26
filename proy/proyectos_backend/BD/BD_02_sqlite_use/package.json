@@ -1,5 +1,5 @@
 {
-  "name": "BD_02_mysql_use",
+  "name": "BD_02_sqlite_use",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,8 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@sqlitecloud/drivers": "0.0.56",
     "ejs": "^3.1.9",
-    "express": "^4.19.2",
-    "mysql2": "^3.9.4"
+    "express": "^4.19.2"
   }
 }

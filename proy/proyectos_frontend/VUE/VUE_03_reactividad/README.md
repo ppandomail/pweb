@@ -1,29 +1,25 @@
 # VUE_03_reactividad
 
-This template should help get you started developing with Vue 3 in Vite.
-
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
+## Deploy
 
 ```sh
 npm run build
 ```
+
+* Compila la aplicación para que el navegador renderice e interprete y crea una carpeta llamada dist, que es la que se sube a un servidor para que se visualice el sitio web.
+* Se puede probar que en la carpeta dist se haya compilado todo correctamente:
+
+```sh
+npm run preview
+```
+
+* Levanta un servidor pero sólo de la carpeta dist para probar la aplicación.
+
+### Netlify
+
+* Es un proveedor de alojamiento de sitios web estáticos o aplicaciones web (hosting gratuito)
+* [netlify](https://www.netlify.com/) => (credenciales de GitHub)
+
+1. Log in
+1. Sites
+1. Deploy manual (drag and drop de la carpeta dist)

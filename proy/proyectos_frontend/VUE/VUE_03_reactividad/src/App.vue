@@ -24,6 +24,8 @@ import { ref, computed } from 'vue'
 // variable reactiva
 let contador = ref(0)
 
+const lista = ref([])
+
 const aumentar = () => contador.value++
 const diminuir = () => contador.value--
 const reiniciar = () => contador.value = 0
@@ -33,17 +35,31 @@ const classContador = computed(() => {
   if (contador.value > 0) return 'positivo'
   if (contador.value < 0) return 'negativo'
 })
+
+const adicionar = () => lista.value.push(contador.value)
+const desabilitar = computed(() => lista.value.includes(contador.value))
+
 </script>
 
 <template>
-
-  <h1>Reatividade</h1>
-  <!-- que pasaría si es cero se pinta de color peru -->
-  <!-- <h2 :class="contador > 0 ? 'positivo' : 'negativo'">{{ contador }}</h2> -->
-  <h2 :class="classContador">{{ contador }}</h2>
-  <button @click="aumentar()">Aumentar</button>
-  <button @click="diminuir()">Diminuir</button>
-  <button @click="reiniciar()">Reiniciar</button>
+  <div class="container text-center mt-3">
+    <h1>Reatividade</h1>
+    <!-- que pasaría si es cero se pinta de color peru -->
+    <!-- <h2 :class="contador > 0 ? 'positivo' : 'negativo'">{{ contador }}</h2> -->
+    <h2 :class="classContador">{{ contador }}</h2>
+    <div class="btn-group">
+      <button @click="aumentar()" class="btn btn-success">Aumentar</button>
+      <button @click="diminuir()" class="btn btn-danger">Diminuir</button>
+      <button @click="reiniciar()" class="btn btn-secondary">Reiniciar</button>
+      <button :disabled="desabilitar" @click="adicionar()" class="btn btn-primary">Adicionar</button>
+    </div>
+    <h2 class="mt-3">Meus favoritos</h2>
+    <ul class="list-group mt-2">
+      <li class="list-group-item" v-for="(num, index) in lista" :key="index">
+        {{ num }}
+      </li>
+    </ul>
+  </div>
 
 </template>
 

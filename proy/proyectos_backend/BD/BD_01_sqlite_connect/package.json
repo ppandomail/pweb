@@ -1,5 +1,5 @@
 {
-  "name": "BD_01_intro",
+  "name": "BD_01_sqlite_connect",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "mysql2": "^3.9.4"
+    "@sqlitecloud/drivers": "0.0.56"
   }
 }
