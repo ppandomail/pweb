@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title><% titulo %></title>
+    <title><%= titulo %></title>
   </head>
   <body>
-    <h1><% titulo %></h1>
+    <h1><%= titulo %></h1>
     <% if (estaVivo) { %>
     <p>O servidor está ativo</p>
     <% } else { %>
@@ -14,7 +14,7 @@
     <h2>Ferramentas de prova de aplicativos:</h2>
     <ul>
       <% for(i = 0; i < ferramentas.length; i++) { %>
-        <li> <%= ferramentas[i].nome %> </li>
+        <li> <%= ferramentas[i].id %> , <%= ferramentas[i].nome %> </li>
       <% } %>
     </ul>
   </body>

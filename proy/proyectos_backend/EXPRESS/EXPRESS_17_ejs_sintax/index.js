@@ -15,7 +15,7 @@ app.get("/", (req, res) => {
   ]
   res.render('index', {
     titulo: 'Página de informação',
-    estaVivo: true,
+    estaVivo: false,
     ferramentas: ferramentas
   })
 });

@@ -4,6 +4,9 @@ Async code:
 
 . Como manejar código que no está en nuestro servidor 
 que podemos consultarlo a otro sistema externo (BD, servidor, etc.)
+. Axios es un Cliente HTTP basado en promesas 
+  para el navegador (usa XMLHttpRequests) y nodejs (módulo nativo http)
+. Hace peticiones.
 . Instalar módulo axios: npm i axios
 
 */

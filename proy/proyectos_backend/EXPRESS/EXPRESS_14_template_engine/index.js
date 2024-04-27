@@ -8,7 +8,7 @@ Template engine:
 . Módulo ejs: Embedded JavaScript templating
 . Sitio: https://ejs.co/
 
-. Intalar en el proyecto: npm i ejs
+. Instalar en el proyecto: npm i ejs
 . Crear en el proyecto la carpeta views y dentro un archivo index.ejs 
   (no tiene porque estar en una carpeta tampoco tiene porque tener extensión ejs)
 

@@ -6,9 +6,9 @@ Rest API CRUD
 . Ejemplo: aplicación que guarde productos (ejemplo arreglo de JS)
   . GET /produtos
   . POST /produtos
-  * GET /produtos/:id
-  * PUT /produtos/:id
-  * DELETE /produtos/:id
+  . GET /produtos/:id
+  . PUT /produtos/:id
+  . DELETE /produtos/:id
 
 . Crear proyecto nodejs e instalar express y morgan. 
 . Para desarrollo instalar nodemon
