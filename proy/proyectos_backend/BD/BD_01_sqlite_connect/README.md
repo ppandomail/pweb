@@ -136,8 +136,8 @@
     -- 6. ORDER BY
     ```
 
-  * Insertar, modificar y eliminar datos => INSERT, UPDATE, DELETE
   * Crear, modificar y borrar objetos de la BD => CREATE, ALTER, DROP
+  * Insertar, modificar y eliminar datos => INSERT, UPDATE, DELETE
   * Controlar el acceso a la información => GRANT, REVOKE
   * Controlar las transacciones => COMMIT, ROLLBACK
 
