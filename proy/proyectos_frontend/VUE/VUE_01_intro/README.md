@@ -3,8 +3,10 @@
 ## VUE 3
 
 * Es un framework de JS para construir GUI
+* Es un framework (libreria, conjunto de herramientas) de intefaces (desarrollo frontend) reactivas (al ejecutar nuestras construcciones, estas van a ir actualizando la información en el navegador sin necesidad que estemos actualizando peticiones del refresco del navegador)
 * Se basa en HTML, CSS y JS estándar
 * Proporciona un modelo de programación declarativo y basado en componentes que lo ayuda a desarrollar GUI de manera eficiente
+* Arquitectura: patrón MVVM (Modelo-Vista-Vista-Modelo)
 * Comenzar con API composition
 
 ## Vite
@@ -13,6 +15,18 @@
 * Traduce (transpila) archivos .sass, .vue a archivos .html, .css, .js que el browser entiende
 
 ## Instalación con Vite
+
+* Es necesario tener instalado Node.js (entorno de ejecución de JS).
+* Ir al Sitio para descargarlo. [Sitio Oficial de Node.js](https://nodejs.org/en)
+* Verificar que node esté instalado:
+
+```sh
+node --version
+```
+
+* Agregar al Navegador de Chrome las Vue.js devtools, esto va a permitir debugear aplicaciones Vue.js
+
+* Agregar al VSC el plugins: Vue 3 Snippets
 
 ```sh
 cd VUE
