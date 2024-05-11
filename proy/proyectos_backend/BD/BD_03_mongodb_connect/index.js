@@ -1,16 +1,11 @@
 /*
 
-Base de Datos: 
-
-. Es un programa que se encarga de almacenar todos los datos relacionados con el contexto de una 
-aplicación.
-
 MongoDB:
 
 . Es una BD opensource NoSQL (Not Only SQL), múltipleplataforma
 . Enfocada a manejar enorme cantidad de datos que se generan demasiado rápido
 . Mongo viene de Humongous (gigante)
-. Escalable (agregar mas recursos), flexible y de propósito general 
+. Escalable (agregar más recursos), flexible y de propósito general 
   (cualquier tipo de applicación: data science, web, etc).
 . Utiliza un enfoque basado en documentos, donde los datos se organizan en documentos flexibles 
   similares a JSON.
@@ -21,13 +16,15 @@ MongoDB:
 Colección:
 
 . Organizar los datos. Ejemplos: users, products, categories, etc.
-. En una colección se guardan datos. en formato JSON (documento)
+. En una colección se guardan datos en formato JSON (documento)
 
 */
 
 const { MongoClient, ServerApiVersion } = require("mongodb");
+const  { MONGODB_USR, MONGODB_PWD } = require('./config.js')
+
 const uri =
-  "mongodb+srv://ppandomail:Gr1ll1t0@cluster0.qliwatk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+  "mongodb+srv://" + MONGODB_USR + ":" + MONGODB_PWD + "@cluster0.qliwatk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 // Crea un MongoClient con un objeto MongoClientOptions para setear la version Stable API
 const client = new MongoClient(uri, {

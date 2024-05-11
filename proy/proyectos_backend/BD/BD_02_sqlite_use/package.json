@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "@sqlitecloud/drivers": "0.0.56",
+    "dotenv": "^16.4.5",
     "ejs": "^3.1.9",
     "express": "^4.19.2"
   }

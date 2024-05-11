@@ -1,5 +1,5 @@
-import express from "express";
-import { procurarTudo, procurar, inserir, atualizar, apagar } from "./db.js";
+const express = require("express");
+const { procurarTudo, procurar, inserir, atualizar, apagar } = require("./db.js");
 
 const app = express();
 

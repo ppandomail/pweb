@@ -2,13 +2,13 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Musica</title>
+    <title>Música</title>
   </head>
   <body>
-    <h1>Musica</h1>
+    <h1>Música</h1>
     <ul>
       <% for(i = 0; i < resultado.length; i++) { %>
-        <li> <%= resultado[i].Title %> </li>
+      <li><%= resultado[i].title + " ===> " + resultado[i].name %></li>
       <% } %>
     </ul>
   </body>

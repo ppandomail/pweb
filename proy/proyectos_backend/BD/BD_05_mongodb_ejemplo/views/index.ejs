@@ -6,24 +6,40 @@
   </head>
   <body>
     <h1>Pessoas</h1>
+    <form action="http://localhost:3000/pessoa" method="post">
+      <fieldset>
+        <legend>Inserir pessoa:</legend>
+        <p><label>Nome: <input type="text" name="nome" /></label></p>
+        <p><label>Idade: <input type="number" name="idade"/></label></p>
+        <p><input type="submit" name="submit" value="Inserir"/></p>
+      </fieldset>
+    </form>
+    <fieldset>
+      <legend>Tabela de pessoas:</legend>
     <table>
       <tr>
-        <th>Id</th>
         <th>Nome</th>
         <th>Idade</th>
         <th>Açoes</th>
       </tr>
       <% for(i = 0; i < pessoas.length; i++) { %>
       <tr>
-        <td><%= pessoas[i].id %></td>
         <td><%= pessoas[i].nome %></td>
         <td><%= pessoas[i].idade %></td>
         <td>
-            <button onclick='editar()'>...</button>
-            <button onclick='eliminar()'>X</button>
+            <button onclick="apagar('<%= pessoas[i].nome %>')">X</button>
         </td>
       </tr>
       <% } %>
     </table>
+  </fieldset>
+  <script>
+    function apagar(nome) {
+      fetch("http://localhost:3000/pessoa", {
+        method: "DELETE",
+        body: nome
+      })
+    }
+  </script>
   </body>
 </html>

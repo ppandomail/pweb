@@ -19,7 +19,7 @@ app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 
 app.get("/info", async (req, res) => {
-  res.render("index", {resultado : await getAlbums()});
+  res.render("index", { resultado: await getAlbums() });
 });
 
 app.listen(3000);

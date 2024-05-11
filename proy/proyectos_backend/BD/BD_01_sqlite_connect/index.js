@@ -16,16 +16,26 @@ SQLite Cloud:
 */
 
 const { Database } = require("@sqlitecloud/drivers");
+const { SQLITE_USR, SQLITE_PWD } = require("./config.js");
 
 async function connectDB() {
   const database = new Database(
-    "sqlitecloud://admin:HolaMundo123!!!@ctccla0bsk.sqlite.cloud:8860"
+    "sqlitecloud://" +
+      SQLITE_USR +
+      ":" +
+      SQLITE_PWD +
+      "@ctccla0bsk.sqlite.cloud:8860"
   );
+
   await database.sql("USE DATABASE test");
   resultado = await database.sql(
-    "SELECT p.nome, p.sobrenome, c.nome " + 
-    "FROM pessoas AS p, cidades AS c " +
-    "WHERE p.cidade_id = c.cidade_id");
+    "SELECT p.nome, p.sobrenome, c.nome " +
+      "FROM pessoas AS p, cidades AS c " +
+      "WHERE p.cidade_id = c.cidade_id"
+  );
+  console.log(resultado);
+
+  resultado = await database.sql("SELECT * FROM pessoas WHERE nome != 'Bill'");
   console.log(resultado);
 }
 
