@@ -63,14 +63,14 @@ describe("todos los tests", () => {
 
 ## Ejecución
 
-* Para ejecutar:
+### Para ejecutar
 
 1. npx cypress open
 2. Clic en E2E Testing
 3. Clic en Start E2E Testing in [Chrome | Electron | Firefox]
 4. Clic en el archivo basico.cy.js
 
-* Para ejecutar por línea de comando
+### Para ejecutar por línea de comando
 
 npx cypress run "cypress/e2e/basico.cy.js"
 
@@ -78,13 +78,13 @@ npx cypress run "cypress/e2e/basico.cy.js"
 
 * Lenguaje natural:
 
-1. Visitar: https://example.cypress.io
+1. Visitar: <https://example.cypress.io>
 1. Encontrar el elemento con contenido:type
 1. Hacer clic al elemento
 1. Obtener la URL
 1. Verificar que incluye: /commands/actions
 1. Obtener el campo de texto con el valor action-email del atibuto data-testid
-1. Escribir fake@email.com en el campo de texto
+1. Escribir <fake@email.com> en el campo de texto
 1. Verificar que el campo de texto refleja el nuevo valor
 
 * En sintaxis Gherkin (BDD):
