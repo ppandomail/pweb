@@ -5,6 +5,9 @@ describe("Minha primeira prova", () => {
     cy.url().should("include", "/commands/actions");
     cy.get(".action-email").type("pepe@email.com");
     cy.get(".action-email").should("have.value", "pepe@email.com");
+    cy.get(".action-email").invoke("val").then((p) => {
+      cy.log(p)
+    })
   });
 });
 
