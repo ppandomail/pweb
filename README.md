@@ -42,7 +42,7 @@
 | 4 | BD | [Apuntes](proy/proyectos_backend/BD/) | |
 | 5 | Postman | [Apuntes](doc/postman.md) | [Fuentes](https://www.postman.com/) |
 | 6 | Cypress | [Apuntes](proy/proyectos_backend/CY/) | [Fuentes-1](https://www.cypress.io/) [Fuentes-2](https://docs.cypress.io/guides/overview/why-cypress)|
-| 7 | Deploy | [Apuntes](doc/deploy.md) | [Fuentes](https://www.heroku.com/) |
+| 7 | Deploy | [Apuntes](doc/deploy.md) | [Fuentes](https://render.com/) |
 
 ## Otros Frameworks de Backend
 
