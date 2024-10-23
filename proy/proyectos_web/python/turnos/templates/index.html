@@ -1,0 +1,127 @@
+<!-- Inheriting all linked files -->
+{% extends 'base.html' %} {% include 'header.html' %}
+
+<!-- head section -->
+{% block title %} Administración de Turnos {% endblock %}
+
+
+<!-- Body section -->
+{% block body %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="jumbotron p-3">
+
+                <h3 class="text-center">Administrar <b>Turnos</b> 
+                    <button type="button" class="btn btn-success float-right" data-toggle="modal" data-target="#mymodal">Agregar nuevo turno </button> 
+                    <a href="/reporte/" class="btn btn-success float-left">Reporte</a> 
+                </h3>
+
+                {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
+
+                <div class="alert alert-success alert-dismissable" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="close">
+                        <span aria-hidden="true">
+                            x
+                        </span>
+                    </button> {{message}}
+                </div>
+
+                {% endfor %} {% endif %} {%endwith%}
+
+                <table class="table table-hover table-dark">
+
+                    <tr>
+                        <th>ID</th>
+                        <th>Paciente</th>
+                        <th>Fecha y Hora</th>
+                        <th>Acción</th>
+                    </tr>
+
+                    {% for row in all_data %}
+
+                    <tr>
+                        <td>{{row.id}}</td>
+                        <td>{{row.paciente}}</td>
+                        <td>{{row.fecha}}</td>
+                        <td>
+                            <a href="/update/{{row.id}}" class="btn btn-info btn-xs" data-toggle="modal" data-target="#modaledit{{row.id}}">Editar</a>
+                            <a href="/delete/{{row.id}}" class="btn btn-danger btn-xs" onclick="return confirm('Esta seguro?')">Eliminar</a>
+                        </td>
+                    </tr>
+
+                    <!-- Model for updating employee data -->
+                    <div id="modaledit{{row.id}}" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title"> Update Employee Data </h4>
+                                </div>
+                                <div class="modal-body">
+                                    <form action="{{url_for('update')}}" method="POST">
+
+                                        <div class="form-group">
+                                            <label>Paciente</label>
+                                            <input type="hidden" name="id" value="{{row.id}}">
+                                            <input type="text" class="form-control" name="paciente" value="{{row.paciente}}" required="1">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Fecha y Hora</label>
+                                            <input type="datetime-local" class="form-control" name="fecha" value="{{row.fecha}}" required="1">
+                                        </div>
+
+                                        <div class="modal-footer">
+                                            <button class="btn btn-info" type="submit"> Modificar</button>
+                                            <button class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {% endfor %}
+
+                </table>
+
+            </div>
+
+            <!-- Modelo para agregar turno -->
+            <div id="mymodal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title"> Agregar Turno </h4>
+                        </div>
+                        <div class="modal-body">
+                            <form action="{{url_for('insert')}}" method="POST">
+
+                                <div class="form-group">
+                                    <label>Paciente</label>
+                                    <input type="text" class="form-control" name="paciente" required="1">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Fecha y Hora</label>
+                                    <input type="datetime-local" class="form-control" name="fecha" required="1">
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button class="btn btn-success" type="submit"> Agregar Turno </button>
+                                    <button class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}
