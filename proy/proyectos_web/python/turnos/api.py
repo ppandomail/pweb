@@ -42,7 +42,7 @@ def update():
 def delete(id):
     con = sqlite3.connect('turnos.db')
     cur = con.cursor()
-    cur.execute('DELETE FROM turnos WHERE id = ?', (id))
+    cur.execute('DELETE FROM turnos WHERE id = ?', (id,))
     con.commit()
     flash("Turno eliminado satisfactoriamente")
     return redirect(url_for('index'))
