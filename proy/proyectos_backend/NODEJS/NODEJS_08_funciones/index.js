@@ -1,11 +1,11 @@
-function showUserInfo(userName, userAge) {
+function mostrarInfoUsuario(userName, userAge) {
   // return `The username is ${userName}, the user is ${userAge} years old`
   // return "The username is " + userName + ", the user is " + userAge + " years old";
-  return "The username is ".concat(userName).concat(", the user is ").concat(userAge).concat(" years old")
+  return "El username es ".concat(userName).concat(", el usuario tiene ").concat(userAge).concat(" años")
 }
 
-console.log(showUserInfo('Joe', 30))
-console.log(showUserInfo('Maria', 50))
+console.log(mostrarInfoUsuario('Joe', 30))
+console.log(mostrarInfoUsuario('Maria', 50))
 
 function suma(op1, op2) {
   return op1 + op2;

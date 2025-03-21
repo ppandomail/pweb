@@ -15,7 +15,7 @@ node
 Welcome to Node.js v21.7.1.
 Type ".help" for more information.
 
-> console.log('Olá mundo')
+> console.log('Hola mundo')
 
 > 5 + 5
 
@@ -25,9 +25,9 @@ Type ".help" for more information.
 
 > total
 
-> let cumprimento = 'oi'
+> let saludo = 'hola'
 
-> cumprimento
+> saludo
 
 > let x = 0
 

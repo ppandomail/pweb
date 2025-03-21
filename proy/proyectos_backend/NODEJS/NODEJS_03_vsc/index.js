@@ -10,9 +10,9 @@ VSC Visual Studio Code
 1. Abrir VSC
 2. Crear una carpeta: prueba
 3. Crear un archivo: index.js
-4. Editar el archivo index.js con console.log('Olá mundo!')
+4. Editar el archivo index.js con console.log('Hola mundo!')
 5. Ejecutar en terminal: node index.js
 
 */
 
-console.log("Olá mundo!");
+console.log("Hola mundo!");

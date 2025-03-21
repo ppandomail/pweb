@@ -1,9 +1,9 @@
-const age = 39;
+const edad = 39;
 
-if (age >= 18) {
-  console.log("You are an adult");
+if (edad >= 18) {
+  console.log("Es un adulto");
 } else {
-  console.log("You are a child");
+  console.log("Es un niño");
 }
 
-// console.log(age >= 18 ? "You are an adult" : "You are a child");
+// console.log(edad >= 18 ? "Es un adulto" : "Es un niño");
