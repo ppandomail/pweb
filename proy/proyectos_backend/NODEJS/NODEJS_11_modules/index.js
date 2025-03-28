@@ -16,12 +16,12 @@ const todo = require("./modules/modules_masive");
 const { myNumber, myArray } = require("./modules/modules_masive");
 
 // se importan funciones
-const { add, subtract } = require("./modules/math");
+const { sumar, restar } = require("./modules/math");
 
 console.log(mystring);
 console.log(todo);
 console.log(myNumber);
 console.log(myArray);
-console.log(add(2, 3));
-console.log(subtract(2, 3));
-console.log(add(30, 40));
+console.log(sumar(2, 3));
+console.log(restar(2, 3));
+console.log(sumar(30, 40));

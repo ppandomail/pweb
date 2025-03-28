@@ -1,22 +1,22 @@
-function add(x, y) {
+function sumar(x, y) {
   return x + y;
 }
 
-function subtract(x, y) {
+function restar(x, y) {
   return x - y;
 }
 
-function multiply(x, y) {
+function multiplicar(x, y) {
   return x * y;
 }
 
-function divide(x, y) {
+function dividir(x, y) {
   return x / y;
 }
 
 module.exports = {
-  add,
-  subtract,
-  multiply,
-  divide,
+  sumar,
+  restar,
+  multiplicar,
+  dividir,
 };

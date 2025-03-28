@@ -1,13 +1,13 @@
-console.log("Primeiro");
+console.log("Primero");
 setTimeout(() => {
   console.log("Segundo");
 }, 3000);
-console.log("Terceiro");
+console.log("Tercero");
 
 /*
 
-Primeiro
-Terceiro
+Primero
+Tercero
 Segundo
 
 Nodejs coloca la función que muestra "Segundo" como una tarea pendiente y 

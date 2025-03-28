@@ -4,17 +4,17 @@ const server = http.createServer((req, res) => {
   console.log(req.url);
 
   if (req.url === "/") {
-    res.write("Welcome to the server");
+    res.write("Bienvenidos al Servidor");
     return res.end();
   }
 
-  if (req.url === "/about") {
-    res.write("About");
+  if (req.url === "/acerca") {
+    res.write("Acerca de ...");
     return res.end();
   }
 
   res.write(`
-        <h1>Not Found</h1>
+        <h1>No Encontrado</h1>
         <p>Esta pagina no se encontro</p>
         <a href='/'>Volver a la pagina principal</a>
     `);

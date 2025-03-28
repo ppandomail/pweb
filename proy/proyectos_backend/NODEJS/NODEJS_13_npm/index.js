@@ -50,7 +50,7 @@ NPM init
   # se crea archivo package-lock.json y carpeta node_modules 
 
 5. Crear carpeta src y dentro archivo app.js con la instrucción:
-  console.log('Hello world')
+  console.log('Hola Mundo')
 
 6. Modificar sección de scripts dentro de package.json
   "scripts" : {

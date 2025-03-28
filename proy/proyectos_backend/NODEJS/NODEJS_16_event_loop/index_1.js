@@ -1,11 +1,11 @@
-console.log("Primeiro");
+console.log("Primero");
 console.log("Segundo");
-console.log("Terceiro");
+console.log("Tercero");
 
 /* 
 
-Primeiro
+Primero
 Segundo
-Terceiro
+Tercero
 
 */
