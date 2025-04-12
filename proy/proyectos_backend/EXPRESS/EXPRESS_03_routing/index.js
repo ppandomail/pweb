@@ -12,21 +12,21 @@ const app = express();
 const port = 3000;
 
 app.get("/", (req, res) => {
-  res.send("Bemvindo");
+  res.send("Biemvenido");
 });
 
 app.get("/perfil", (req, res) => {
-  res.send("Perfil de usuário");
+  res.send("Perfil de usuario");
 });
 
 app.get("/clima", (req, res) => {
-  res.send("O clima atual é chuvoso");
+  res.send("El clima actual es lluvioso");
 });
 
 app.use((req, res) => {
-  res.status(404).send("A página não existe");
+  res.status(404).send("La página no existe");
 });
 
 app.listen(port, () => {
-  console.log(`Aplicativo de exemplo escutando no porto ${port}`);
+  console.log(`La aplicación está escuchando en el puerto ${port}`);
 });

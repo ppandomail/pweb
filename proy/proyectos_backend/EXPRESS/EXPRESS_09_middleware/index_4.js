@@ -19,8 +19,8 @@ app.get("/perfil", (req, res) => {
 });
 
 app.get("/info", (req, res) => {
-  res.send("Página de informação");
+  res.send("Página de información");
 });
 
 app.listen(3000);
-console.log("Servidor no porto 3000");
+console.log("Servidor en el puerto 3000");

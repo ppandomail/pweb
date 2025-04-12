@@ -23,27 +23,27 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 // Probar con el cliente rest (plugin Thunder Client)
-// Body -> Text : Bemvindo
+// Body -> Text : Bienvenido
 app.post("/texto", (req, res) => {
   console.log(req.body);
-  res.send(`Recebi o texto ${req.body}`);
+  res.send(`Recibi el texto ${req.body}`);
 });
 
 // Probar con el cliente rest (plugin Thunder Client) Body
 // Json -> { "email" : "pepe@gmail.com" }
 app.post("/usuario", (req, res) => {
   console.log(req.body);
-  res.send("Novo usuário criado com dados json");
+  res.send("Nuevo usuario creado con los datos del json");
 });
 
 // Probar con el cliente rest (plugin Thunder Client)
 // Body -> Form-encode :
 // username  "pepe"
 // age       18
-app.post("/usuario", (req, res) => {
+app.post("/usuario2", (req, res) => {
   console.log(req.body);
-  res.send("Novo usuário criado com dados formulário");
+  res.send("Nuevo usuario creado con los datos del formulario");
 });
 
 app.listen(3000);
-console.log("Servidor no porto 3000");
+console.log("Servidor en el puerto 3000");

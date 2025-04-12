@@ -11,17 +11,17 @@ const express = require("express");
 const app = express();
 
 app.get("/", (req, res) => {
-  res.send("Bemvindo");
+  res.send("Bienvenido");
 });
 
-app.get("/meuarquivo", (req, res) => {
-  res.sendFile("./bandeira.jpg", {
+app.get("/mi_archivo", (req, res) => {
+  res.sendFile("./bandera.jpg", {
     root: __dirname,
   });
 });
 
 app.get("/usuario", (req, res) => {
-  res.json({ nome: "pepe" });
+  res.json({ nombre: "pepe" });
 });
 
 // Validador de json: https://jsonformatter.curiousconcept.com/
@@ -33,4 +33,4 @@ app.get("/isAlive", (req, res) => {
 // 204: Este código significa que el servidor ha procesado con éxito la solicitud, pero no va a devolver ningún contenido
 
 app.listen(3000);
-console.log("Servidor no porto 3000");
+console.log("Servidor en el puerto 3000");

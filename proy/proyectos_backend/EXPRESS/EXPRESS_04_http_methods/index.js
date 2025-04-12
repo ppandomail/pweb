@@ -16,26 +16,26 @@ HTTP Methods:
 const express = require("express");
 const app = express();
 
-app.get("/produtos", (req, res) => {
-  res.send("Lista de produtos");
+app.get("/productos", (req, res) => {
+  res.send("Lista de productos");
 });
 
-app.post("/produto", (req, res) => {
-  res.send("Criando produto");
+app.post("/producto", (req, res) => {
+  res.send("Creando producto");
 });
 
-app.put("/produto", (req, res) => {
-  res.send("Atualizando produto");
+app.put("/producto", (req, res) => {
+  res.send("Actualizando producto");
 });
 
-app.delete("/produto", (req, res) => {
-  res.send("Removendo produto");
+app.delete("/producto", (req, res) => {
+  res.send("Eliminando producto");
 });
 
 // Significa que la ruta funciona con métodos get, post, put, delete
 app.all("/info", (req, res) => {
-  res.send('Informação do servidor')
+  res.send('Información del servidor')
 })
 
 app.listen(3000);
-console.log("Servidor no porto 3000");
+console.log("Servidor en el puerto 3000");
