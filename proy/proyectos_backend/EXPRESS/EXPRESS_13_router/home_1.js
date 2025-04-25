@@ -1,10 +1,10 @@
 function HomeRoutes(app) {
   app.get("/info", (req, res) => {
-    res.send("Informaçao do servidor");
+    res.send("Información del servidor");
   });
 
-  app.get("/produtos", (req, res) => {
-    res.send("Página de produtos");
+  app.get("/productos", (req, res) => {
+    res.send("Página de productos");
   });
 }
 

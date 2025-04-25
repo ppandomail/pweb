@@ -8,8 +8,8 @@ app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 
 app.get("/info", (req, res) => {
-  const umTitulo = "Meu página criada desde Express";
-  res.render("info", { titulo: umTitulo });
+  const unTitulo = "Mi página creada desde Express";
+  res.render("info", { titulo: unTitulo });
 });
 
 app.get("/perfil", (req, res) => {
@@ -21,4 +21,4 @@ app.get("/dashboard", (req, res) => {
 });
 
 app.listen(3000);
-console.log("Servidor no porto 3000");
+console.log("Servidor en el puerto 3000");

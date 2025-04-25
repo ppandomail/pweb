@@ -7,14 +7,14 @@
   <body>
     <h1><%= titulo %></h1>
     <% if (estaVivo) { %>
-    <p>O servidor está ativo</p>
+    <p>El servidor está activo</p>
     <% } else { %>
-    <p>O servidor não está ativo</p>
+    <p>El servidor no está activo</p>
     <% } %> <%= new Date() %>
-    <h2>Ferramentas de prova de aplicativos:</h2>
+    <h2>Herramientas de testing:</h2>
     <ul>
-      <% for(i = 0; i < ferramentas.length; i++) { %>
-        <li> <%= ferramentas[i].id %> , <%= ferramentas[i].nome %> </li>
+      <% for(i = 0; i < herramientas.length; i++) { %>
+        <li> <%= herramientas[i].id %> -> <%= herramientas[i].nombre %> </li>
       <% } %>
     </ul>
   </body>

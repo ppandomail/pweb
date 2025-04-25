@@ -1,6 +1,6 @@
 function UserRoutes(app) {
-  app.get("/nome", (req, res) => {
-    res.send("Nome do usuário");
+  app.get("/nombre", (req, res) => {
+    res.send("Nombre del usuario");
   });
 
   app.get("/perfil", (req, res) => {

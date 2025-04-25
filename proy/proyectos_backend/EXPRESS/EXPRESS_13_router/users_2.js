@@ -2,8 +2,8 @@ const express = require("express");
 
 const router = express.Router();
 
-router.get("/nome", (req, res) => {
-  res.send("Nome do usuário");
+router.get("/nombre", (req, res) => {
+  res.send("Nombre del usuario");
 });
 
 router.get("/perfil", (req, res) => {

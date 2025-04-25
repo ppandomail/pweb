@@ -18,11 +18,11 @@ const app = express();
 app.use(express.static("./static"));
 
 app.listen(3000);
-console.log("Servidor no porto 3000");
+console.log("Servidor en el puerto 3000");
 
 /*
 
 . Si en el browser pongo https://localhost:3000/ vemos que están los css
-. Si abro la consola del navegador está el texto Bemvindo
+. Si abro la consola del navegador está el texto Bienvenido
 
 */

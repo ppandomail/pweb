@@ -9,16 +9,17 @@ app.set("views", path.join(__dirname, "views"));
 
 app.get("/", (req, res) => {
 
-  const ferramentas = [
-    { id: 1, nome: "cypress"},
-    { id: 2, nome: "selenium"}
+  const herramientas = [
+    { id: 1, nombre: "cypress" },
+    { id: 2, nombre: "selenium" }
   ]
+
   res.render('index', {
-    titulo: 'Página de informação',
-    estaVivo: false,
-    ferramentas: ferramentas
+    titulo: 'Página de información',
+    estaVivo: true,
+    herramientas: herramientas
   })
 });
 
 app.listen(3000);
-console.log("Servidor no porto 3000");
+console.log("Servidor en el puerto 3000");
