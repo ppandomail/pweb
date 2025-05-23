@@ -29,13 +29,13 @@ async function connectDB() {
 
   await database.sql("USE DATABASE test");
   resultado = await database.sql(
-    "SELECT p.nome, p.sobrenome, c.nome " +
-      "FROM pessoas AS p, cidades AS c " +
-      "WHERE p.cidade_id = c.cidade_id"
+    "SELECT p.nombre AS nombre_persona, p.apellido AS apellido_persona, c.nombre AS nombre_ciudad " +
+      "FROM personas AS p, ciudades AS c " +
+      "WHERE p.ciudad_id = c.ciudad_id"
   );
   console.log(resultado);
 
-  resultado = await database.sql("SELECT * FROM pessoas WHERE nome != 'Bill'");
+  resultado = await database.sql("SELECT * FROM personas WHERE nombre != 'Bill'");
   console.log(resultado);
 }
 
