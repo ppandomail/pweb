@@ -2,7 +2,7 @@
 
 ## Qué es ?
 
-* Es una herramienta plug and play para realizar tests automáticos.
+* Es una herramienta plug and play para realizar tests automáticos
 * Diseñado para el testeo de pruebas E2E, Pruebas Unitarias y Pruebas de Integración con la posibilidad de realizar pruebas de API.
 * Utiliza la librería Mocha para la generación de los test suite y Chai para generar de los asserts.
 
@@ -18,14 +18,7 @@
 * Gran cantidad de documentación y muy detallada
 * Ejemplos de pruebas
 
-## Flexibilidad en la estructura
-
-* TestSuite: describe() o context()
-* Test: it() o specify()
-* .should(), .expect(), .assert()  
-
-* describe y it vienen de Mocha (framework de prueba de JS)
-* expect viene de Chai (libreria de aserciones)
+## Estructura del Test
 
 ```js
 // Testsuite

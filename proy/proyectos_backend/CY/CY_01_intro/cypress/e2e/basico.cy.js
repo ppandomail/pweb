@@ -1,10 +1,10 @@
-describe("Minha primeira prova", () => {
+describe("Mi primera prueba", () => {
   it("Gets, types e asserts", () => {
     cy.visit("https://example.cypress.io");
     cy.contains("type").click();
     cy.url().should("include", "/commands/actions");
     cy.get(".action-email").type("pepe@email.com");
-    cy.get(".action-email").should("have.value", "pepe@email.com");
+    cy.get(".action-email").should("have.value", "pepe@email.com.ar");
     cy.get(".action-email").invoke("val").then((p) => {
       cy.log(p)
     })
