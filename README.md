@@ -5,57 +5,32 @@
 * **Titular**: Mg. Ing. Pablo Pandolfo
 * **Ayudante**: Anta. Alexander Andrada
 
-## Objetivos
+## Objetivo
 
-* En estas materias se presentan las tecnologías que complementan el desarrollo de aplicaciones o portales web, tanto estáticos como dinámicos. El recorrido comienza con los lenguajes de frontend, para luego pasar al desarrollo backend.
+* Se presentan las tecnologías backend de desarrollo de aplicaciones web
 
-## Programa Programación Web 1 (Frontend)
+## Programa
 
-| # | Tema | Apuntes | Fuentes |
-| -- | -- | -- | -- |
-| 1 | Intro | [Apunte](doc/intro.md)                   | |
-| 2 | Git   | [Apuntes](doc/git.md)                    | [Fuentes](https://docs.github.com/es) |
-| 3 | HTML5 | [Ejemplos](proy/proyectos_frontend/HTML/)| [Fuentes](https://developer.mozilla.org/es/docs/Web/HTML) |
-| 4 | CSS3  | [Ejemplos](proy/proyectos_frontend/CSS/) | [Fuentes](https://developer.mozilla.org/es/docs/Web/CSS) |
-| 5 | BS    | [Ejemplos](proy/proyectos_frontend/BS/)  | [Fuentes](https://getbootstrap.com) |
-| 6 | JS    | [Ejemplos](proy/proyectos_frontend/JS/)  | [Fuentes](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference) |
-| 7 | VUE   | [Ejemplos](proy/proyectos_frontend/VUE/) | [Fuentes](https://vuejs.org/) |
+| #  | Contenido                                 | TP |
+| -- | --                                        | -- |
+| 01 | [Ecosistema Web](doc/01-ecosistema.ipynb) |    |
+| 02 | [Request/Response](doc/02-request.ipynb)  |    |
+| 03 | [Flask](doc/03-flask.ipynb)               |    |
+| 04 | [BD](doc/04-bd.ipynb)                     |    |
+| 05 | [TDD](doc/05-tdd.ipynb)                   |    |
+| 06 | [Deploy](doc/06-deploy.ipynb)             |    |
 
-## Crono Programación Web 1
+## Bibliografía
 
-| Fecha | Entregas |
-| -- | -- |
-| Mitad del Cuatri | **Entrega 1: Maquetado + Estilos** |
-| Final del Cuatri | **Entrega 2: Lógica del lado del cliente** |
-| Última Clase     | **Recuperatorios** y **Cierre** |
+* [https://flask-es.readthedocs.io](https://flask-es.readthedocs.io)
 
-## Programa Programación Web 2 (Backend)
+## Crono de Entregas
 
-| # | Tema | Apuntes | Fuentes |
-| -- | -- | -- | -- |
-| 1 | Intro   | [Apuntes](doc/intro2.md)                    | |
-| 2 | Nodejs  | [Ejemplos](proy/proyectos_backend/NODEJS/)  | [Fuentes](https://nodejs.org/) |
-| 3 | Express | [Ejemplos](proy/proyectos_backend/EXPRESS/) | [Fuentes](https://expressjs.com/es/) |
-| 4 | BD      | [Apuntes](proy/proyectos_backend/BD/)       | |
-| 5 | Postman | [Apuntes](doc/postman.md)                   | [Fuentes](https://www.postman.com/) |
-| 6 | Cypress | [Apuntes](proy/proyectos_backend/CY/)       | [Fuentes-1](https://www.cypress.io/) [Fuentes-2](https://docs.cypress.io/guides/overview/why-cypress)|
-| 7 | Deploy  | [Apuntes](doc/deploy.md)                    | [Fuentes](https://render.com/) |
-
-## Otros Frameworks de Backend
-
-| Tema | Apuntes | Fuentes |
-| -- | -- | -- |
-| Spring Boot | [Apuntes](doc/spring-boot.md) | [Fuentes](https://spring.io/projects/spring-boot) |
-| Django      | [Apuntes](doc/django.md)      | [Fuentes](https://www.djangoproject.com) |
-| Flask       | [Apuntes](doc/flask.md)       | [Fuentes](https://flask-es.readthedocs.io) |
-
-## Crono Programación Web 2
-
-| Fecha | Entregas |
-| -- | -- |
-| Mitad del Cuatri | **Entrega 1: BE (APIs)** |
-| Final del Cuatri | **Entrega 2: FE + BE(APIs y BD) + CY + DEPLOY** |
-| Última Clase     | **Recuperatorios** y **Cierre** |
+| Fecha            | Entregas                                        |
+| --               | --                                              |
+| Mitad del Cuatri | **Entrega 1: APIs**                             |
+| Final del Cuatri | **Entrega 2: APP deployada con tests**          |
+| Última Clase     | **Recuperatorios** y **Cierre**                 |
 
 ## Criterios de evaluación UNO para ambas materias
 

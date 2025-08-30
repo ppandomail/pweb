@@ -1,7 +1,0 @@
-package ar.edu.ub.proyecto_jpa_mysql.repository;
-
-import org.springframework.data.repository.CrudRepository;
-
-public interface PersonaRepository extends CrudRepository<T, ID> {
-
-}

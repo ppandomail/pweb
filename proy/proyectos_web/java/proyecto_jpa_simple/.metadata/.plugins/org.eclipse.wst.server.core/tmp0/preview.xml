@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<server port="8080">
-  <module context="proyecto_jpa_mysql" name="proyecto_jpa_mysql" path="/Users/ppando/Proyectos/web/proyecto_jpa_simple/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/proyecto_jpa_mysql" type="j2ee"/>
-</server>
