@@ -1,4 +1,4 @@
-# Programación Web 2 (UNO)
+# Programación Web 2
 
 ## Docentes
 
