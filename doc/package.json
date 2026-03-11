@@ -1,0 +1,20 @@
+{
+  "name": "doc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sqlitecloud/drivers": "^1.0.779",
+    "axios": "^1.13.6",
+    "colors": "^1.4.0",
+    "ejs": "^5.0.1",
+    "express": "^5.2.1"
+  }
+}

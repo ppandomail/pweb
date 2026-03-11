@@ -16,9 +16,12 @@
 | 01 | [Ecosistema Web](doc/01-ecosistema.ipynb) |    |
 | 02 | [Request/Response](doc/02-request.ipynb)  |    |
 | 03 | [Flask](doc/03-flask.ipynb)               |    |
-| 04 | [BD](doc/04-bd.ipynb)                     |    |
-| 05 | [TDD](doc/05-tdd.ipynb)                   |    |
-| 06 | [Deploy](doc/06-deploy.ipynb)             |    |
+| 04 | [NodeJS](doc/04-nodejs.ipynb)             |    |
+| 05 | [Express](doc/05-express.ipynb)           |    |
+| 06 | [BDjs](doc/06-bd-js.ipynb)                |    |
+| 06 | [BDpy](doc/06-bd-py.ipynb)                |    |
+| 07 | [TDD](doc/07-tdd.ipynb)                   |    |
+| 08 | [Deploy](doc/08-deploy.ipynb)             |    |
 
 ## Bibliografía
 
