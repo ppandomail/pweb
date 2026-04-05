@@ -1,8 +1,12 @@
-{% extends 'layout.html' %}
-{% block body %}
-<h1>Bienvenido</h1>
-<form action="{{ url_for('contacto') }}" method='post'>
-    <input type='text' name='nombre' placeholder='Ingresa un nombre'>
-    <button>Enviar</button>
-</form>
-{% endblock %}
+<html>
+<head>
+    <title> Flask App </title>
+</head>
+<body>
+    {% if person %}
+         <h1>Hello {{ person }}!</h1>
+    {% else %}
+         <h1>Hello, World!</h1>
+    {% endif %}
+</body>
+</html>
