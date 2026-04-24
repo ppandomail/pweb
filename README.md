@@ -40,6 +40,8 @@
 
 ## Crono de Entregas
 
+* [TP](tps/00-tp.ipynb)
+
 | Fecha            | Entregas                                        |
 | --               | --                                              |
 | Mitad del Cuatri | **Entrega 1: APIs**                             |
