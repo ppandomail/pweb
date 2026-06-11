@@ -1,0 +1,8 @@
+url: 'http://www.python.org'
+expected: 'No results found.'
+
+search:
+    caso1:
+        filtro: 'pycon'
+    caso2:
+        filtro: 'xxxxx'
