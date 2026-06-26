@@ -1,0 +1,35 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+{
+  "manifestVersion": "2.0.0",
+  "signatureType": "grafana",
+  "signedByOrg": "grafana",
+  "signedByOrgName": "Grafana Labs",
+  "plugin": "elasticsearch",
+  "version": "12.6.5",
+  "time": 1782123478564,
+  "keyId": "7e4d0c6a708866e7",
+  "files": {
+    "LICENSE": "8486a10c4393cee1c25392769ddd3b2d6c242d6ec7928e1414efff7dfb2f07ef",
+    "query_help.md": "5a854fcc0a588ef1b502000a2dd03430d6d485998922e8f117d223466dc77254",
+    "CHANGELOG.md": "21870e904a64f6b0259f1ef49ab23910ac8ab53f7c8361e26305d37f3b756100",
+    "plugin.json": "c60b60e6eb6fd56ac292c425068e64310ecec011d61d95fa4b6ea6bdc233488e",
+    "img/elasticsearch.svg": "79e9c13448cdf9257d634af416277893aea5fd48376776c26470b902cf42206f",
+    "go_plugin_build_manifest": "46791046fa356fae461b173a963c3915144d9c92dd5484cdac52b4ac3b704f70",
+    "README.md": "1879fc1ceda6be2ec8e81261ba926a7c868560905253e570febca41e8143d7f8",
+    "module.js.map": "93a5143a077b5e61d3995abfae5b2c66f57ed31a5b3f5be2d596ef80a9ddfc68",
+    "module.js": "c2954d9a8fd8d5bdb910e222ae8cde45cf7418a28868e6e047531392482415ce",
+    "gpx_grafana_elasticsearch_datasource_linux_amd64": "8f20a08ad7702fe119ee7cd78937dff609e3b289f6982ad1c6a4a02e92ad05e8"
+  }
+}
+-----BEGIN PGP SIGNATURE-----
+
+wsA9BAETCgBtBYJqOQvWCRB+TQxqcIhm50UUAAAAAAAcACBzYWx0QG5vdGF0
+aW9ucy5vcGVucGdwanMub3Jn5oJBB6/oOJvdURan1v3yiPd5XubGpK76b3NJ
+wTffeWkWIQTzOyW2kQdOhGNlcPN+TQxqcIhm5wAAny8CB0uy+gHIYVlY3nGk
+imeE4RubYwANyFVVjcgxy7wGefybHa7lyghSz473WcDP+s1qdPP3s8cdraRL
+FszvWcMWEExQAgdrDP5CpaQx/D0alQMPrGAEKJcGIano9MdpXISBTZM6z0Bx
+0WI3vUinEF0z4jmdBB/k8qDitLi+nTKl2cxpkU2vfg==
+=nfH3
+-----END PGP SIGNATURE-----

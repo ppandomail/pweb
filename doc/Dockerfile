@@ -1,0 +1,7 @@
+
+FROM python:3.9-alpine
+WORKDIR /app
+RUN pip install --no-cache-dir flask prometheus_flask_exporter
+COPY flask_server_prometheus.py /app/flask_server_prometheus.py
+EXPOSE 8080
+CMD ["flask", "--app", "flask_server_prometheus", "run", "--host", "0.0.0.0", "--port", "8080"]
