@@ -2,4 +2,4 @@
 node_modules
 .env
 descargas
-doc/grafana-data/grafana.db
+pweb/doc/grafana-data/grafana.db
