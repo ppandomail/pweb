@@ -2,3 +2,4 @@
 node_modules
 .env
 descargas
+doc/grafana-data/
