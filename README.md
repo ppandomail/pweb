@@ -26,7 +26,6 @@
 | 08 | [TA Selenium](doc/08-ta-selenium.ipynb)   | [TP TA](tps/08-ta.ipynb)                     |
 | 08 | [TA Cypress](doc/08-ta-cypress.ipynb)     | [TP TA](tps/08-ta.ipynb)                     |
 | 09 | [Deploy](doc/09-deploy.ipynb)             |                                              |
-| 10 | [Git](doc/10-git.ipynb)                   |                                              |
 
 ## Bibliografía
 
